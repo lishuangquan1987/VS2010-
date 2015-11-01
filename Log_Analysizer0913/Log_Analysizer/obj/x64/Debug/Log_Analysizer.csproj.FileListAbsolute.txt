@@ -1,0 +1,13 @@
+D:\我的文档\Visual Studio 2010\Projects\Log_Analysizer0913\Log_Analysizer\bin\x64\Debug\Log_Analysizer.exe.config
+D:\我的文档\Visual Studio 2010\Projects\Log_Analysizer0913\Log_Analysizer\bin\x64\Debug\Log_Analysizer.exe
+D:\我的文档\Visual Studio 2010\Projects\Log_Analysizer0913\Log_Analysizer\bin\x64\Debug\Log_Analysizer.pdb
+D:\我的文档\Visual Studio 2010\Projects\Log_Analysizer0913\Log_Analysizer\bin\x64\Debug\NPOI.dll
+D:\我的文档\Visual Studio 2010\Projects\Log_Analysizer0913\Log_Analysizer\obj\x64\Debug\ResolveAssemblyReference.cache
+D:\我的文档\Visual Studio 2010\Projects\Log_Analysizer0913\Log_Analysizer\obj\x64\Debug\Log_Analysizer.Form1.resources
+D:\我的文档\Visual Studio 2010\Projects\Log_Analysizer0913\Log_Analysizer\obj\x64\Debug\Log_Analysizer.Instructions.resources
+D:\我的文档\Visual Studio 2010\Projects\Log_Analysizer0913\Log_Analysizer\obj\x64\Debug\Log_Analysizer.Properties.Resources.resources
+D:\我的文档\Visual Studio 2010\Projects\Log_Analysizer0913\Log_Analysizer\obj\x64\Debug\Log_Analysizer.ResultBox.resources
+D:\我的文档\Visual Studio 2010\Projects\Log_Analysizer0913\Log_Analysizer\obj\x64\Debug\GenerateResource.read.1.tlog
+D:\我的文档\Visual Studio 2010\Projects\Log_Analysizer0913\Log_Analysizer\obj\x64\Debug\GenerateResource.write.1.tlog
+D:\我的文档\Visual Studio 2010\Projects\Log_Analysizer0913\Log_Analysizer\obj\x64\Debug\Log_Analysizer.exe
+D:\我的文档\Visual Studio 2010\Projects\Log_Analysizer0913\Log_Analysizer\obj\x64\Debug\Log_Analysizer.pdb

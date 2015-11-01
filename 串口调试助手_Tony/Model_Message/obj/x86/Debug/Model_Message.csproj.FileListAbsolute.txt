@@ -1,0 +1,14 @@
+d:\我的文档\visual studio 2010\Projects\串口调试助手_Tony\Model_Message\obj\x86\Debug\ResolveAssemblyReference.cache
+d:\我的文档\visual studio 2010\Projects\串口调试助手_Tony\Model_Message\obj\x86\Debug\Model_Message.TextBox.resources
+d:\我的文档\visual studio 2010\Projects\串口调试助手_Tony\Model_Message\obj\x86\Debug\GenerateResource.read.1.tlog
+d:\我的文档\visual studio 2010\Projects\串口调试助手_Tony\Model_Message\obj\x86\Debug\GenerateResource.write.1.tlog
+d:\我的文档\visual studio 2010\Projects\串口调试助手_Tony\Model_Message\bin\Debug\Model_Message.dll
+d:\我的文档\visual studio 2010\Projects\串口调试助手_Tony\Model_Message\bin\Debug\Model_Message.pdb
+d:\我的文档\visual studio 2010\Projects\串口调试助手_Tony\Model_Message\obj\x86\Debug\Model_Message.dll
+d:\我的文档\visual studio 2010\Projects\串口调试助手_Tony\Model_Message\obj\x86\Debug\Model_Message.pdb
+C:\VS2012\Project\串口调试助手_Tony\Model_Message\bin\Debug\Model_Message.dll
+C:\VS2012\Project\串口调试助手_Tony\Model_Message\bin\Debug\Model_Message.pdb
+C:\VS2012\Project\串口调试助手_Tony\Model_Message\obj\x86\Debug\Model_Message.TextBox.resources
+C:\VS2012\Project\串口调试助手_Tony\Model_Message\obj\x86\Debug\Model_Message.csproj.GenerateResource.Cache
+C:\VS2012\Project\串口调试助手_Tony\Model_Message\obj\x86\Debug\Model_Message.dll
+C:\VS2012\Project\串口调试助手_Tony\Model_Message\obj\x86\Debug\Model_Message.pdb

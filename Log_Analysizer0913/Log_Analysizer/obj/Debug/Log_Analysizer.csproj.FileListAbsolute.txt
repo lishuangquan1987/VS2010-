@@ -1,0 +1,26 @@
+D:\我的文档\Visual Studio 2010\Projects\Log_Analysizer0913\Log_Analysizer\bin\Debug\Log_Analysizer.exe.config
+D:\我的文档\Visual Studio 2010\Projects\Log_Analysizer0913\Log_Analysizer\bin\Debug\Log_Analysizer.exe
+D:\我的文档\Visual Studio 2010\Projects\Log_Analysizer0913\Log_Analysizer\bin\Debug\Log_Analysizer.pdb
+D:\我的文档\Visual Studio 2010\Projects\Log_Analysizer0913\Log_Analysizer\bin\Debug\NPOI.dll
+D:\我的文档\Visual Studio 2010\Projects\Log_Analysizer0913\Log_Analysizer\obj\Debug\ResolveAssemblyReference.cache
+D:\我的文档\Visual Studio 2010\Projects\Log_Analysizer0913\Log_Analysizer\obj\Debug\Log_Analysizer.Form1.resources
+D:\我的文档\Visual Studio 2010\Projects\Log_Analysizer0913\Log_Analysizer\obj\Debug\Log_Analysizer.Instructions.resources
+D:\我的文档\Visual Studio 2010\Projects\Log_Analysizer0913\Log_Analysizer\obj\Debug\Log_Analysizer.Properties.Resources.resources
+D:\我的文档\Visual Studio 2010\Projects\Log_Analysizer0913\Log_Analysizer\obj\Debug\Log_Analysizer.ResultBox.resources
+D:\我的文档\Visual Studio 2010\Projects\Log_Analysizer0913\Log_Analysizer\obj\Debug\GenerateResource.read.1.tlog
+D:\我的文档\Visual Studio 2010\Projects\Log_Analysizer0913\Log_Analysizer\obj\Debug\GenerateResource.write.1.tlog
+D:\我的文档\Visual Studio 2010\Projects\Log_Analysizer0913\Log_Analysizer\obj\Debug\Log_Analysizer.exe
+D:\我的文档\Visual Studio 2010\Projects\Log_Analysizer0913\Log_Analysizer\obj\Debug\Log_Analysizer.pdb
+C:\VS2012\Project\Log_Analysizer0913\Log_Analysizer\bin\Debug\Log_Analysizer.exe.config
+C:\VS2012\Project\Log_Analysizer0913\Log_Analysizer\obj\Debug\Log_Analysizer.exe
+C:\VS2012\Project\Log_Analysizer0913\Log_Analysizer\obj\Debug\Log_Analysizer.pdb
+C:\VS2012\Project\Log_Analysizer0913\Log_Analysizer\bin\Debug\Log_Analysizer.exe
+C:\VS2012\Project\Log_Analysizer0913\Log_Analysizer\bin\Debug\Log_Analysizer.pdb
+C:\VS2012\Project\Log_Analysizer0913\Log_Analysizer\bin\Debug\NPOI.dll
+C:\VS2012\Project\Log_Analysizer0913\Log_Analysizer\obj\Debug\ResolveAssemblyReference.cache
+C:\VS2012\Project\Log_Analysizer0913\Log_Analysizer\obj\Debug\Log_Analysizer.Form1.resources
+C:\VS2012\Project\Log_Analysizer0913\Log_Analysizer\obj\Debug\Log_Analysizer.Instructions.resources
+C:\VS2012\Project\Log_Analysizer0913\Log_Analysizer\obj\Debug\Log_Analysizer.Properties.Resources.resources
+C:\VS2012\Project\Log_Analysizer0913\Log_Analysizer\obj\Debug\Log_Analysizer.ResultBox.resources
+C:\VS2012\Project\Log_Analysizer0913\Log_Analysizer\obj\Debug\GenerateResource.read.1.tlog
+C:\VS2012\Project\Log_Analysizer0913\Log_Analysizer\obj\Debug\GenerateResource.write.1.tlog

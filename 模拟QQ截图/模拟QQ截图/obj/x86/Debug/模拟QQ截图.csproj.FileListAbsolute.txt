@@ -1,0 +1,10 @@
+d:\我的文档\visual studio 2010\Projects\模拟QQ截图\模拟QQ截图\bin\Debug\模拟QQ截图.exe
+d:\我的文档\visual studio 2010\Projects\模拟QQ截图\模拟QQ截图\bin\Debug\模拟QQ截图.pdb
+d:\我的文档\visual studio 2010\Projects\模拟QQ截图\模拟QQ截图\obj\x86\Debug\ResolveAssemblyReference.cache
+d:\我的文档\visual studio 2010\Projects\模拟QQ截图\模拟QQ截图\obj\x86\Debug\模拟QQ截图.Form1.resources
+d:\我的文档\visual studio 2010\Projects\模拟QQ截图\模拟QQ截图\obj\x86\Debug\模拟QQ截图.Properties.Resources.resources
+d:\我的文档\visual studio 2010\Projects\模拟QQ截图\模拟QQ截图\obj\x86\Debug\GenerateResource.read.1.tlog
+d:\我的文档\visual studio 2010\Projects\模拟QQ截图\模拟QQ截图\obj\x86\Debug\GenerateResource.write.1.tlog
+d:\我的文档\visual studio 2010\Projects\模拟QQ截图\模拟QQ截图\obj\x86\Debug\模拟QQ截图.exe
+d:\我的文档\visual studio 2010\Projects\模拟QQ截图\模拟QQ截图\obj\x86\Debug\模拟QQ截图.pdb
+D:\我的文档\Visual Studio 2010\Projects\模拟QQ截图\模拟QQ截图\obj\x86\Debug\模拟QQ截图.Demo.resources

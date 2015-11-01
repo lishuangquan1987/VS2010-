@@ -1,0 +1,29 @@
+d:\我的文档\visual studio 2010\Projects\串口调试助手_Tony\串口调试助手_Tony\bin\Debug\串口调试助手_Tony.exe
+d:\我的文档\visual studio 2010\Projects\串口调试助手_Tony\串口调试助手_Tony\bin\Debug\串口调试助手_Tony.pdb
+d:\我的文档\visual studio 2010\Projects\串口调试助手_Tony\串口调试助手_Tony\obj\x86\Debug\ResolveAssemblyReference.cache
+d:\我的文档\visual studio 2010\Projects\串口调试助手_Tony\串口调试助手_Tony\obj\x86\Debug\串口调试助手_Tony.Form1.resources
+d:\我的文档\visual studio 2010\Projects\串口调试助手_Tony\串口调试助手_Tony\obj\x86\Debug\串口调试助手_Tony.Properties.Resources.resources
+d:\我的文档\visual studio 2010\Projects\串口调试助手_Tony\串口调试助手_Tony\obj\x86\Debug\GenerateResource.read.1.tlog
+d:\我的文档\visual studio 2010\Projects\串口调试助手_Tony\串口调试助手_Tony\obj\x86\Debug\GenerateResource.write.1.tlog
+d:\我的文档\visual studio 2010\Projects\串口调试助手_Tony\串口调试助手_Tony\obj\x86\Debug\串口调试助手_Tony.exe
+d:\我的文档\visual studio 2010\Projects\串口调试助手_Tony\串口调试助手_Tony\obj\x86\Debug\串口调试助手_Tony.pdb
+d:\我的文档\visual studio 2010\Projects\串口调试助手_Tony\串口调试助手_Tony\bin\Debug\串口调试助手_Tony.exe.config
+d:\我的文档\visual studio 2010\Projects\串口调试助手_Tony\串口调试助手_Tony\bin\Debug\Model_Message.dll
+d:\我的文档\visual studio 2010\Projects\串口调试助手_Tony\串口调试助手_Tony\bin\Debug\Model_Message.pdb
+d:\我的文档\visual studio 2010\Projects\串口调试助手_Tony\串口调试助手_Tony\bin\Debug\Model_SerialPort.dll
+d:\我的文档\visual studio 2010\Projects\串口调试助手_Tony\串口调试助手_Tony\bin\Debug\Model_SerialPort.pdb
+D:\我的文档\Visual Studio 2010\Projects\串口调试助手_Tony\串口调试助手_Tony\obj\x86\Debug\串口调试助手_Tony.Extend.resources
+C:\VS2012\Project\串口调试助手_Tony\串口调试助手_Tony\bin\Debug\串口调试助手_Tony.exe.config
+C:\VS2012\Project\串口调试助手_Tony\串口调试助手_Tony\obj\x86\Debug\串口调试助手_Tony.exe
+C:\VS2012\Project\串口调试助手_Tony\串口调试助手_Tony\obj\x86\Debug\串口调试助手_Tony.pdb
+C:\VS2012\Project\串口调试助手_Tony\串口调试助手_Tony\bin\Debug\串口调试助手_Tony.exe
+C:\VS2012\Project\串口调试助手_Tony\串口调试助手_Tony\bin\Debug\串口调试助手_Tony.pdb
+C:\VS2012\Project\串口调试助手_Tony\串口调试助手_Tony\bin\Debug\Model_Message.dll
+C:\VS2012\Project\串口调试助手_Tony\串口调试助手_Tony\bin\Debug\Model_SerialPort.dll
+C:\VS2012\Project\串口调试助手_Tony\串口调试助手_Tony\bin\Debug\Model_Message.pdb
+C:\VS2012\Project\串口调试助手_Tony\串口调试助手_Tony\bin\Debug\Model_SerialPort.pdb
+C:\VS2012\Project\串口调试助手_Tony\串口调试助手_Tony\obj\x86\Debug\串口调试助手_Tony.csprojResolveAssemblyReference.cache
+C:\VS2012\Project\串口调试助手_Tony\串口调试助手_Tony\obj\x86\Debug\串口调试助手_Tony.Extend.resources
+C:\VS2012\Project\串口调试助手_Tony\串口调试助手_Tony\obj\x86\Debug\串口调试助手_Tony.Form1.resources
+C:\VS2012\Project\串口调试助手_Tony\串口调试助手_Tony\obj\x86\Debug\串口调试助手_Tony.Properties.Resources.resources
+C:\VS2012\Project\串口调试助手_Tony\串口调试助手_Tony\obj\x86\Debug\串口调试助手_Tony.csproj.GenerateResource.Cache

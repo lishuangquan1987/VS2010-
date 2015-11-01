@@ -1,0 +1,10 @@
+d:\我的文档\visual studio 2010\Projects\TCP实现文件的传输\TCP实现文件的传输\bin\Debug\TCP实现文件的传输.exe
+d:\我的文档\visual studio 2010\Projects\TCP实现文件的传输\TCP实现文件的传输\bin\Debug\TCP实现文件的传输.pdb
+d:\我的文档\visual studio 2010\Projects\TCP实现文件的传输\TCP实现文件的传输\obj\x86\Debug\ResolveAssemblyReference.cache
+d:\我的文档\visual studio 2010\Projects\TCP实现文件的传输\TCP实现文件的传输\obj\x86\Debug\TCP实现文件的传输.Form1.resources
+d:\我的文档\visual studio 2010\Projects\TCP实现文件的传输\TCP实现文件的传输\obj\x86\Debug\TCP实现文件的传输.Properties.Resources.resources
+d:\我的文档\visual studio 2010\Projects\TCP实现文件的传输\TCP实现文件的传输\obj\x86\Debug\GenerateResource.read.1.tlog
+d:\我的文档\visual studio 2010\Projects\TCP实现文件的传输\TCP实现文件的传输\obj\x86\Debug\GenerateResource.write.1.tlog
+d:\我的文档\visual studio 2010\Projects\TCP实现文件的传输\TCP实现文件的传输\obj\x86\Debug\TCP实现文件的传输.exe
+d:\我的文档\visual studio 2010\Projects\TCP实现文件的传输\TCP实现文件的传输\obj\x86\Debug\TCP实现文件的传输.pdb
+d:\我的文档\visual studio 2010\Projects\TCP实现文件的传输\TCP实现文件的传输\obj\x86\Debug\TCP实现文件的传输.Friends.resources
