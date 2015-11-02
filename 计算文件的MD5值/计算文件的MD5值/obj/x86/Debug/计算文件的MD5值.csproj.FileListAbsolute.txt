@@ -1,0 +1,8 @@
+C:\VS2012\Project\计算文件的MD5值\计算文件的MD5值\bin\Debug\计算文件的MD5值.exe
+C:\VS2012\Project\计算文件的MD5值\计算文件的MD5值\bin\Debug\计算文件的MD5值.pdb
+C:\VS2012\Project\计算文件的MD5值\计算文件的MD5值\obj\x86\Debug\计算文件的MD5值.Form1.resources
+C:\VS2012\Project\计算文件的MD5值\计算文件的MD5值\obj\x86\Debug\计算文件的MD5值.Properties.Resources.resources
+C:\VS2012\Project\计算文件的MD5值\计算文件的MD5值\obj\x86\Debug\计算文件的MD5值.csproj.GenerateResource.Cache
+C:\VS2012\Project\计算文件的MD5值\计算文件的MD5值\obj\x86\Debug\计算文件的MD5值.exe
+C:\VS2012\Project\计算文件的MD5值\计算文件的MD5值\obj\x86\Debug\计算文件的MD5值.pdb
+C:\VS2012\Project\计算文件的MD5值\计算文件的MD5值\obj\x86\Debug\计算文件的MD5值.csprojResolveAssemblyReference.cache
