@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace 串口调试助手_Tony
 {
@@ -15,6 +16,8 @@ namespace 串口调试助手_Tony
        Model_SerialPort.SerialPortMain CurrentPort = null;
        Extend[] extends = new Extend[50];
         string[] Ports = null;
+        Thread thread_always_send;
+        int delay=0;
         public Form1()
         {
             InitializeComponent();
@@ -201,12 +204,33 @@ namespace 串口调试助手_Tony
                 }
             }
         }
-
+        delegate void send_button_Click(object sender, EventArgs e);
+        void Send_button_Click(object sender, EventArgs e)
+        {
+            if (InvokeRequired)
+                this.Invoke(new send_button_Click(Send_button_Click), sender, e);
+            else
+                Extend_button_Send_Click(sender, e);
+        }
+        void always_send(object sender,EventArgs e)
+        {
+            for (int i = 0; i < extends.Length; i++)
+            {
+                if (i == extends.Length - 1)
+                    i = 0;
+                if (!extends[i].checkBox.Checked)
+                    continue;
+                Send_button_Click(extends[i].button_Send, e);
+                
+                System.Threading.Thread.Sleep(delay);
+            }
+        }
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            int delay;
             if (!this.checkBox1.Checked)
             {
+                if (thread_always_send != null && thread_always_send.ThreadState != ThreadState.Aborted)
+                    thread_always_send.Abort();
                 return;
             }
             this.label6.Visible = true;
@@ -215,15 +239,8 @@ namespace 串口调试助手_Tony
                 delay = 0;
             else
                 delay =int.Parse((this.comboBox_Delay.SelectedItem.ToString().Split('m')[0]));
-            for (int i = 0; i < extends.Length; i++)
-            {
-                if (!extends[i].checkBox.Checked)
-                    continue;
-                Extend_button_Send_Click(extends[i].button_Send, e);
-                if (i == extends.Length - 1)
-                    i = 0;
-                System.Threading.Thread.Sleep(delay);
-            }
+            thread_always_send = new Thread(() => { always_send(sender, e); });
+            thread_always_send.Start();
         }
     }
 }
