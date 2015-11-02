@@ -82,23 +82,27 @@ namespace Capture_LikeQQ
             const int WM_HOTKEY = 0X0312;
             if (m.Msg == WM_HOTKEY && m.WParam.ToString() == "100")
             {
-                if(d==null||d.IsDisposed)   
-                d = new Demo();
-                //开始截图(截取全屏幕)
-                int width = Screen.PrimaryScreen.Bounds.Width;
-                int height = Screen.PrimaryScreen.Bounds.Height;
-
-                Point p = new Point(0, 0);
-                Bitmap bmp = Capture_LikeQQ.Capture.GetImage(new Point(0, 0), new Size(width, height));
-                
-                d.BackgroundImage = bmp;
-                d.Show();
-                this.Hide();
+                StartCapture();
             }
 
             base.WndProc(ref m);
         }
+        void StartCapture()
+        {
+            this.Hide();
+            if (d == null || d.IsDisposed)
+                d = new Demo();
+            //开始截图(截取全屏幕)
+            int width = Screen.PrimaryScreen.Bounds.Width;
+            int height = Screen.PrimaryScreen.Bounds.Height;
 
+            Point p = new Point(0, 0);
+            Bitmap bmp = Capture_LikeQQ.Capture.GetImage(new Point(0, 0), new Size(width, height));
+
+            d.BackgroundImage = bmp;
+            d.Show();
+            
+        }
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             UnregisterHotKey(this.Handle, 100);
@@ -159,7 +163,7 @@ namespace Capture_LikeQQ
             if(isReady)
             notifyIcon1.ShowBalloonTip(5000, "提示", "按Ctrl+B可以开始截图", ToolTipIcon.Info);
             else
-             notifyIcon1.ShowBalloonTip(5000, "错误", "热键Ctrl+B与其他程序冲突，截图功能无法启用", ToolTipIcon.Error);
+            notifyIcon1.ShowBalloonTip(5000, "错误", "热键Ctrl+B与其他程序冲突，截图功能无法启用", ToolTipIcon.Error);
 
         }
 
@@ -174,6 +178,11 @@ namespace Capture_LikeQQ
                 SetAutoRun(Application.StartupPath + @"\Capture_LikeQQ.exe",true);
             else
                 SetAutoRun(Application.StartupPath + @"\Capture_LikeQQ.exe", false);
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            StartCapture();
         }
     }
 }
