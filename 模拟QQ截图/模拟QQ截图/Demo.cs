@@ -41,8 +41,6 @@ namespace Capture_LikeQQ
 
         private void Demo_MouseUp(object sender, MouseEventArgs e)
         {
-            
-            
             Capture_LikeQQ.Capture.GetCursorPos(ref downright);
             Size size = new System.Drawing.Size(Math.Abs(downright.X - upperleft.X), Math.Abs(downright.Y - upperleft.Y));
 
@@ -127,6 +125,27 @@ namespace Capture_LikeQQ
             if (e.KeyCode == Keys.Escape)
             {
                 this.Close();
+            }
+            else if (e.KeyCode == Keys.Enter)
+            {
+                timer1.Enabled = false;
+                Bitmap bmp = Capture_LikeQQ.Capture.GetImage(new Point(0, 0), new Size(this.Width, this.Height));
+                SaveFileDialog s = new SaveFileDialog();
+                s.Filter = "BMP|*.bmp";
+                if (s.ShowDialog() == DialogResult.OK)
+                {
+
+                    bmp.Save(s.FileName);
+                    this.Cursor = Cursors.Default;
+                    timer1.Enabled = false;
+
+                    this.Close();
+                }
+                else
+                {
+                    timer1.Enabled = true;//启动画面一直在前面
+                    this.Refresh();
+                }
             }
         }
 

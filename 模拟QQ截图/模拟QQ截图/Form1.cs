@@ -144,7 +144,7 @@ namespace Capture_LikeQQ
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            MessageBox.Show("Made by Tony!");
+            MessageBox.Show("Made by Tony\r\nAuthor's QQ:294388344!");
         }
 
         private void showToolStripMenuItem_Click(object sender, EventArgs e)
@@ -183,6 +183,11 @@ namespace Capture_LikeQQ
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             StartCapture();
+        }
+
+        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            MessageBox.Show("截图：Ctrl+B\r\n截取全图：在截图界面直接按Enter\r\n取消截图：在截图界面按ESC", "help", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
