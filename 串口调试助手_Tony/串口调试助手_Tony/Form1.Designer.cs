@@ -47,22 +47,20 @@
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.textBox1 = new Model_Message.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.extend1 = new 串口调试助手_Tony.Extend();
             this.panel1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(12, 176);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(434, 21);
+            this.textBox2.Size = new System.Drawing.Size(441, 21);
             this.textBox2.TabIndex = 1;
             // 
             // buttonSend
             // 
-            this.buttonSend.Location = new System.Drawing.Point(445, 174);
+            this.buttonSend.Location = new System.Drawing.Point(459, 174);
             this.buttonSend.Name = "buttonSend";
             this.buttonSend.Size = new System.Drawing.Size(97, 23);
             this.buttonSend.TabIndex = 2;
@@ -203,7 +201,7 @@
             this.toolStripStatusLabel1});
             this.statusStrip1.Location = new System.Drawing.Point(0, 376);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(542, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(556, 22);
             this.statusStrip1.TabIndex = 6;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -217,31 +215,24 @@
             this.textBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.textBox1.Location = new System.Drawing.Point(0, 0);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(542, 170);
+            this.textBox1.Size = new System.Drawing.Size(556, 170);
             this.textBox1.TabIndex = 0;
             // 
             // panel2
             // 
             this.panel2.AutoScroll = true;
-            this.panel2.Controls.Add(this.extend1);
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Location = new System.Drawing.Point(174, 203);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(368, 171);
+            this.panel2.Size = new System.Drawing.Size(382, 171);
             this.panel2.TabIndex = 7;
-            // 
-            // extend1
-            // 
-            this.extend1.Location = new System.Drawing.Point(7, 3);
-            this.extend1.Name = "extend1";
-            this.extend1.Size = new System.Drawing.Size(355, 26);
-            this.extend1.TabIndex = 0;
             // 
             // Form1
             // 
             this.AcceptButton = this.buttonSend;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(542, 398);
+            this.ClientSize = new System.Drawing.Size(556, 398);
             this.Controls.Add(this.buttonSend);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.statusStrip1);
@@ -255,7 +246,6 @@
             this.panel1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -282,7 +272,6 @@
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.Panel panel2;
-        private Extend extend1;
     }
 }
 

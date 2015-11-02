@@ -13,6 +13,7 @@ namespace 串口调试助手_Tony
     {
        List<Model_SerialPort.SerialPortMain> SerialPorts=new List<Model_SerialPort.SerialPortMain>();
        Model_SerialPort.SerialPortMain CurrentPort = null;
+       Extend[] extends = new Extend[50];
         string[] Ports = null;
         public Form1()
         {
@@ -42,7 +43,7 @@ namespace 串口调试助手_Tony
                 msgbox(DateTime.Now.ToString() + ":" + this.textBox2.Text, true, Color.Blue);
             }
             msgbox(DateTime.Now.ToString() + ":" + CurrentPort.ReadString(), true, Color.Green);
-            this.textBox2.Clear();
+            
             #region~处理拓展问题
             Panel temp_panel = new Panel();
             temp_panel.Size = new Size(this.panel2.Width, height);
@@ -55,6 +56,12 @@ namespace 串口调试助手_Tony
             
             Load_Event();
             GetSerialPorts();
+            LoadComBox();
+            LoadExtand();
+           
+        }
+        void LoadComBox()
+        {
             #region~加载combox的其他配置
             string[] BauRate = new string[] { "4800", "9600", "19200", "38400", "57600", "115200" };
             string[] Parity = new string[] {"NONE","ODD","EVEN","MARK","SPACE"};
@@ -72,7 +79,15 @@ namespace 串口调试助手_Tony
             
             #endregion
         }
-
+        void LoadExtand()
+        {
+            for (int i = 0; i < extends.Length; i++)
+            {
+                extends[i] = new Extend();
+                extends[i].Location = new Point(0, i * 30);
+                this.panel2.Controls.Add(extends[i]);
+            }
+        }
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -134,9 +149,10 @@ namespace 串口调试助手_Tony
                 msgbox("请选择COM口", true, Color.Red);
                 return;
             }
+            ConfigSerialPort(CurrentPort);
             if (button_Open.Text == "Open")
             {
-                ConfigSerialPort(CurrentPort);
+                
                 if (CurrentPort.Port_Open() == 0)
                 {
                     button_Open.Text = "Close";
