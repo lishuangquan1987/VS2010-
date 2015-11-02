@@ -1,20 +1,9 @@
-D:\我的文档\Visual Studio 2010\Projects\模拟QQ截图\模拟QQ截图\obj\Debug\ResolveAssemblyReference.cache
-D:\我的文档\Visual Studio 2010\Projects\模拟QQ截图\模拟QQ截图\obj\Debug\模拟QQ截图.Properties.Resources.resources
-D:\我的文档\Visual Studio 2010\Projects\模拟QQ截图\模拟QQ截图\obj\Debug\GenerateResource.read.1.tlog
-D:\我的文档\Visual Studio 2010\Projects\模拟QQ截图\模拟QQ截图\obj\Debug\GenerateResource.write.1.tlog
-D:\我的文档\Visual Studio 2010\Projects\模拟QQ截图\模拟QQ截图\obj\Debug\模拟QQ截图.pdb
-D:\我的文档\Visual Studio 2010\Projects\模拟QQ截图\模拟QQ截图\obj\Debug\Capture_LikeQQ.Demo.resources
-D:\我的文档\Visual Studio 2010\Projects\模拟QQ截图\模拟QQ截图\obj\Debug\Capture_LikeQQ.Form1.resources
-D:\我的文档\Visual Studio 2010\Projects\模拟QQ截图\模拟QQ截图\bin\Debug\模拟QQ截图.exe
-D:\我的文档\Visual Studio 2010\Projects\模拟QQ截图\模拟QQ截图\bin\Debug\模拟QQ截图.pdb
-D:\我的文档\Visual Studio 2010\Projects\模拟QQ截图\模拟QQ截图\obj\Debug\模拟QQ截图.exe
-C:\VS2012\Project\模拟QQ截图\模拟QQ截图\obj\Debug\模拟QQ截图.exe
-C:\VS2012\Project\模拟QQ截图\模拟QQ截图\obj\Debug\模拟QQ截图.pdb
-C:\VS2012\Project\模拟QQ截图\模拟QQ截图\bin\Debug\模拟QQ截图.exe
-C:\VS2012\Project\模拟QQ截图\模拟QQ截图\bin\Debug\模拟QQ截图.pdb
-C:\VS2012\Project\模拟QQ截图\模拟QQ截图\obj\Debug\ResolveAssemblyReference.cache
+C:\VS2012\Project\模拟QQ截图\模拟QQ截图\bin\Debug\Capture_LikeQQ.exe
+C:\VS2012\Project\模拟QQ截图\模拟QQ截图\bin\Debug\Capture_LikeQQ.pdb
 C:\VS2012\Project\模拟QQ截图\模拟QQ截图\obj\Debug\Capture_LikeQQ.Demo.resources
 C:\VS2012\Project\模拟QQ截图\模拟QQ截图\obj\Debug\Capture_LikeQQ.Form1.resources
-C:\VS2012\Project\模拟QQ截图\模拟QQ截图\obj\Debug\模拟QQ截图.Properties.Resources.resources
-C:\VS2012\Project\模拟QQ截图\模拟QQ截图\obj\Debug\GenerateResource.read.1.tlog
-C:\VS2012\Project\模拟QQ截图\模拟QQ截图\obj\Debug\GenerateResource.write.1.tlog
+C:\VS2012\Project\模拟QQ截图\模拟QQ截图\obj\Debug\Capture_LikeQQ.Properties.Resources.resources
+C:\VS2012\Project\模拟QQ截图\模拟QQ截图\obj\Debug\Capture.csproj.GenerateResource.Cache
+C:\VS2012\Project\模拟QQ截图\模拟QQ截图\obj\Debug\Capture_LikeQQ.exe
+C:\VS2012\Project\模拟QQ截图\模拟QQ截图\obj\Debug\Capture_LikeQQ.pdb
+C:\VS2012\Project\模拟QQ截图\模拟QQ截图\obj\Debug\Capture.csprojResolveAssemblyReference.cache

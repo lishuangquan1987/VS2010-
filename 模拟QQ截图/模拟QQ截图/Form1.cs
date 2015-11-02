@@ -36,15 +36,15 @@ namespace Capture_LikeQQ
             this.checkBox_AutoRun.Checked = true;
             this.Hide();
             
-            if (RegisterHotKey(this.Handle, 100, KeyModifiers.Alt | KeyModifiers.Ctrl, Keys.A))
+            if (RegisterHotKey(this.Handle, 100, KeyModifiers.Ctrl, Keys.B))
             {
                 label2.ForeColor = Color.Green;
-                label2.Text = "截图热键：Ctrl+Alt+A";
+                label2.Text = "截图热键：Ctrl+B";
             }
             else
             {
                 label2.ForeColor = Color.Red;
-                label2.Text = "热键：Ctrl+Alt+A冲突\r\n请检查其他程序是否占\r\n用此热键！";
+                label2.Text = "热键：Ctrl+B冲突\r\n请检查其他程序是否占\r\n用此热键！";
                 isReady = false;
             }
             
@@ -157,9 +157,9 @@ namespace Capture_LikeQQ
         {
             this.Hide();
             if(isReady)
-            notifyIcon1.ShowBalloonTip(2000, "提示", "按Ctrl+Alt+A可以开始截图", ToolTipIcon.Info);
+            notifyIcon1.ShowBalloonTip(5000, "提示", "按Ctrl+B可以开始截图", ToolTipIcon.Info);
             else
-             notifyIcon1.ShowBalloonTip(2000, "错误", "热键Ctrl+Alt+A与其他程序冲突，截图功能无法启用", ToolTipIcon.Error);
+             notifyIcon1.ShowBalloonTip(5000, "错误", "热键Ctrl+B与其他程序冲突，截图功能无法启用", ToolTipIcon.Error);
 
         }
 
