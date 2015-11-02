@@ -67,6 +67,7 @@
             this.Controls.Add(this.checkBox);
             this.Name = "Extend";
             this.Size = new System.Drawing.Size(355, 26);
+            this.Load += new System.EventHandler(this.Extend_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

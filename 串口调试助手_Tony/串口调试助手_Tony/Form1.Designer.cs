@@ -47,22 +47,27 @@
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.textBox1 = new Model_Message.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.comboBox_Delay = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(12, 176);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(441, 21);
+            this.textBox2.Size = new System.Drawing.Size(478, 21);
             this.textBox2.TabIndex = 1;
             // 
             // buttonSend
             // 
-            this.buttonSend.Location = new System.Drawing.Point(459, 174);
+            this.buttonSend.Location = new System.Drawing.Point(496, 174);
             this.buttonSend.Name = "buttonSend";
-            this.buttonSend.Size = new System.Drawing.Size(97, 23);
+            this.buttonSend.Size = new System.Drawing.Size(60, 23);
             this.buttonSend.TabIndex = 2;
             this.buttonSend.Text = "Send";
             this.buttonSend.UseVisualStyleBackColor = true;
@@ -83,7 +88,7 @@
             this.panel1.Controls.Add(this.comboBox_Baute);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.comboBox_COM);
-            this.panel1.Location = new System.Drawing.Point(12, 203);
+            this.panel1.Location = new System.Drawing.Point(12, 234);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(156, 171);
             this.panel1.TabIndex = 3;
@@ -199,7 +204,7 @@
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 376);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 408);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(556, 22);
             this.statusStrip1.TabIndex = 6;
@@ -222,17 +227,56 @@
             // 
             this.panel2.AutoScroll = true;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Location = new System.Drawing.Point(174, 203);
+            this.panel2.Location = new System.Drawing.Point(174, 234);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(382, 171);
             this.panel2.TabIndex = 7;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.comboBox_Delay);
+            this.panel3.Controls.Add(this.label6);
+            this.panel3.Controls.Add(this.checkBox1);
+            this.panel3.Location = new System.Drawing.Point(13, 204);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(477, 24);
+            this.panel3.TabIndex = 8;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(7, 4);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(96, 16);
+            this.checkBox1.TabIndex = 0;
+            this.checkBox1.Text = "自动循环发送";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // comboBox_Delay
+            // 
+            this.comboBox_Delay.FormattingEnabled = true;
+            this.comboBox_Delay.Location = new System.Drawing.Point(196, 2);
+            this.comboBox_Delay.Name = "comboBox_Delay";
+            this.comboBox_Delay.Size = new System.Drawing.Size(75, 20);
+            this.comboBox_Delay.TabIndex = 1;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(140, 6);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(59, 12);
+            this.label6.TabIndex = 2;
+            this.label6.Text = "间隔延迟:";
             // 
             // Form1
             // 
             this.AcceptButton = this.buttonSend;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(556, 398);
+            this.ClientSize = new System.Drawing.Size(556, 430);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.buttonSend);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.statusStrip1);
@@ -246,6 +290,8 @@
             this.panel1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -272,6 +318,10 @@
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.ComboBox comboBox_Delay;
+        private System.Windows.Forms.Label label6;
     }
 }
 

@@ -33,9 +33,9 @@ namespace 串口调试助手_Tony
                 msgbox("发送消息不能为空！", true, Color.Red);
                 return;
             }
-            if (!CurrentPort.IsOpen)
+            if (CurrentPort==null||!CurrentPort.IsOpen)
             {
-                msgbox("请先打开串口！", true, Color.Red);
+                msgbox("请先选择一个串口并打开！", true, Color.Red);
                 return;
             }
             if (CurrentPort.WriteString(this.textBox2.Text) == 0)
@@ -76,7 +76,7 @@ namespace 串口调试助手_Tony
             this.comboBox_Parity.SelectedIndex = 0;//默认为NONE;
             this.comboBox_DataBits.SelectedIndex = 2;//默认为8；
             this.comboBox_StopBits.SelectedIndex = 1;
-            
+
             #endregion
         }
         void LoadExtand()
@@ -85,8 +85,19 @@ namespace 串口调试助手_Tony
             {
                 extends[i] = new Extend();
                 extends[i].Location = new Point(0, i * 30);
+                extends[i].button_Send.Text = (i + 1).ToString();
+                extends[i].button_Send.Click += Extend_button_Send_Click;
                 this.panel2.Controls.Add(extends[i]);
             }
+
+            string[] Delay = new string[] { "20ms", "100ms", "500ms", "1000ms", "2000ms", "5000ms", "10000ms" };
+            this.comboBox_Delay.Items.AddRange(Delay);
+        }
+        void Extend_button_Send_Click(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+            this.textBox2.Text = ((TextBox)button.Tag).Text;
+            buttonSend_Click(sender, e);
         }
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -191,9 +202,28 @@ namespace 串口调试助手_Tony
             }
         }
 
-        private void button_extend_Click(object sender, EventArgs e)
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            
+            int delay;
+            if (!this.checkBox1.Checked)
+            {
+                return;
+            }
+            this.label6.Visible = true;
+            this.comboBox_Delay.Visible = true;
+            if (this.comboBox_Delay.SelectedIndex == -1)
+                delay = 0;
+            else
+                delay =int.Parse((this.comboBox_Delay.SelectedItem.ToString().Split('m')[0]));
+            for (int i = 0; i < extends.Length; i++)
+            {
+                if (!extends[i].checkBox.Checked)
+                    continue;
+                Extend_button_Send_Click(extends[i].button_Send, e);
+                if (i == extends.Length - 1)
+                    i = 0;
+                System.Threading.Thread.Sleep(delay);
+            }
         }
     }
 }

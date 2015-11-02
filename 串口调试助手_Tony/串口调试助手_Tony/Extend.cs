@@ -15,5 +15,10 @@ namespace 串口调试助手_Tony
         {
             InitializeComponent();
         }
+
+        private void Extend_Load(object sender, EventArgs e)
+        {
+            this.button_Send.Tag = this.textBox1;
+        }
     }
 }
