@@ -79,6 +79,8 @@ namespace Capture_LikeQQ
         {
             this.pictureBox1.Refresh();
             label1.Text = string.Format("选取的bmp大小{0}:{1}", Math.Abs(e.X - upperleft.X), Math.Abs(e.Y - upperleft.Y));
+            label1.ForeColor = Color.Green;
+            
             int x_max;
             int x_min;
             int y_max;
@@ -106,6 +108,7 @@ namespace Capture_LikeQQ
             int width = x_max - x_min;
             int height = y_max - y_min;
             g2.DrawRectangle(new Pen(new SolidBrush(Color.Blue)), new Rectangle(x_min, y_min, width, height));
+            Application.DoEvents();
         }
 
         private void Demo_MouseClick(object sender, MouseEventArgs e)
