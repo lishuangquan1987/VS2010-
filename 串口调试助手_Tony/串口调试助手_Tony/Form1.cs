@@ -163,10 +163,10 @@ namespace 串口调试助手_Tony
                 msgbox("请选择COM口", true, Color.Red);
                 return;
             }
-            ConfigSerialPort(CurrentPort);
+            
             if (button_Open.Text == "Open")
             {
-                
+                ConfigSerialPort(CurrentPort);   
                 if (CurrentPort.Port_Open() == 0)
                 {
                     button_Open.Text = "Close";

@@ -88,7 +88,7 @@
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "计算大文件的MD5值_Tony";
             this.ResumeLayout(false);
             this.PerformLayout();
 
