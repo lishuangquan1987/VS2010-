@@ -20,7 +20,7 @@ namespace TCP实现文件的传输
         {
             InitializeComponent();
         }
-        
+       
         bool RunningFlag = true;
         string localIP = System.Net.Dns.GetHostByName(System.Net.Dns.GetHostName()).AddressList[0].ToString();
         List<TcpClient> TcpClinets_host = new List<TcpClient>();
@@ -34,12 +34,14 @@ namespace TCP实现文件的传输
         
         
         bool IsSlave = true;
+        /// <summary>
+        /// 聊天：8888端口
+        /// 传文件：4444端口
+        /// </summary>
         int portNum=8888;
         
         private void Form1_Load(object sender, EventArgs e)
         {
-            
-            
             udpclient = new UdpClient(new IPEndPoint(IPAddress.Parse(localIP), 4444));
             this.radioButton_Slave.Checked = true;
             UDP_ReceiveFile_thread = new Thread(new ThreadStart(UDP_ReceiveFile));
@@ -47,15 +49,18 @@ namespace TCP实现文件的传输
             
 
         }
+        /// <summary>
+        /// 一直监听4444端口
+        /// </summary>
         void UDP_ReceiveFile()
         {
             List<byte> data_temp;
-            
+            byte[] data;
             while (RunningFlag)
             {
                 if (udpclient.Client.Available < 1)
                     continue;
-                byte[] data = new byte[1024000];
+                data = new byte[1024*1024*1000];
                 data_temp = new List<byte>();
                 
                 EndPoint endpoint = new IPEndPoint(new IPAddress(0), 0);
