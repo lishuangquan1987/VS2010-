@@ -1,0 +1,8 @@
+C:\VS2012\Project\TCP实现QQ聊天\聊天1\bin\Debug\聊天1.exe
+C:\VS2012\Project\TCP实现QQ聊天\聊天1\bin\Debug\聊天1.pdb
+C:\VS2012\Project\TCP实现QQ聊天\聊天1\obj\Debug\聊天1.Form1.resources
+C:\VS2012\Project\TCP实现QQ聊天\聊天1\obj\Debug\聊天1.Properties.Resources.resources
+C:\VS2012\Project\TCP实现QQ聊天\聊天1\obj\Debug\聊天1.csproj.GenerateResource.Cache
+C:\VS2012\Project\TCP实现QQ聊天\聊天1\obj\Debug\聊天1.exe
+C:\VS2012\Project\TCP实现QQ聊天\聊天1\obj\Debug\聊天1.pdb
+C:\VS2012\Project\TCP实现QQ聊天\聊天1\obj\Debug\聊天1.csprojResolveAssemblyReference.cache
