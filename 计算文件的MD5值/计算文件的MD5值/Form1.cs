@@ -27,6 +27,7 @@ namespace 计算文件的MD5值
             if (op.ShowDialog() != System.Windows.Forms.DialogResult.OK)
                 return;
             this.textBox1.Text = op.FileName;
+            Thread.Sleep(1);
             new Thread(() => { ReadFileAndCalculateMD5(op.FileName, 1024 * 1024 * 10); }).Start();//10M
           //ReadFileAndCalculateMD5(op.FileName,1024*1024*10)
             
@@ -78,10 +79,11 @@ namespace 计算文件的MD5值
             FileStream fl_read = new FileStream(FileName, FileMode.Open, FileAccess.Read);
             //FileStream fl_output;
             updateTextBox("文件大小:" + (((decimal)fl_read.Length / 1024) / 1024).ToString()+"M", Color.Blue, true);
-            if(fl_read.Length<ReadSize)
+            if(fl_read.Length<ReadSize)//文件过小时，直接一步读取
             {
                 string result = CalculateMD5(fl_read);
                 updateTextBox("MD5:" + result, Color.Green, true);
+                Thread.Sleep(1);
                 updateProcessBar(100);
                 if (fl_read != null)
                     fl_read.Close();
