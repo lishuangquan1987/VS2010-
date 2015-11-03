@@ -31,21 +31,59 @@ namespace 计算文件的MD5值
             
         }
         MD5 md5 = new MD5CryptoServiceProvider();
-        FileStream fl_read;
-        byte[] result;
-        string s = "";
-        string CalculateMD5(string FileName)
+        string CalculateMD5(Stream stream)
         {
-            s = "";
-            fl_read = new FileStream(FileName, FileMode.Open, FileAccess.Read);
-            result = md5.ComputeHash(fl_read);
-            if(fl_read!=null)
-            fl_read.Close();
-            foreach (byte i in result)
+            string s = "";
+            byte[] resultdata = md5.ComputeHash(stream);
+            foreach (byte i in resultdata)
             {
                 s += i.ToString("X2");
             }
             return s;
         }
+        delegate void UpdateProcessBar(int value);
+        void updateProcessBar(int value)
+        {
+            if (this.InvokeRequired)
+                this.Invoke(new UpdateProcessBar(updateProcessBar), value);
+            else
+            {
+                this.progressBar1.Value = value;
+                this.label1.Text = string.Format("当前进度：{0}%", value);
+            }
+        }
+        delegate void UpdateTextBox(string msg, Color color, bool nextline);
+        void updateTextBox(string msg, Color color, bool nextline)
+        {
+            if (this.InvokeRequired)
+                this.Invoke(new UpdateTextBox(updateTextBox), msg, nextline);
+            else
+            {
+                this.richTextBox1.SelectionColor = color;
+                this.richTextBox1.AppendText(msg);
+                if (nextline)
+                    this.richTextBox1.AppendText("\r\n");
+                this.richTextBox1.Focus();
+            }
+        }
+        void ReadFileAndCalculateMD5(string FileName,long ReadSize)
+        {
+            FileStream fl_read = new FileStream(FileName, FileMode.Open, FileAccess.Read);
+            FileStream fl_output;
+            if(fl_read.Length<ReadSize)
+            {
+                string result = CalculateMD5(fl_read);
+                updateTextBox("MD5:" + result, Color.Green, true);
+                updateProcessBar(100);
+                if (fl_read != null)
+                    fl_read.Close();
+                return;
+            }
+
+        }
+        
+    
+        
+    
     }
 }

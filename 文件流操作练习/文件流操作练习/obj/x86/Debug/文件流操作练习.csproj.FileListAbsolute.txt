@@ -1,0 +1,7 @@
+C:\VS2012\Project\文件流操作练习\文件流操作练习\bin\Debug\文件流操作练习.exe
+C:\VS2012\Project\文件流操作练习\文件流操作练习\bin\Debug\文件流操作练习.pdb
+C:\VS2012\Project\文件流操作练习\文件流操作练习\obj\x86\Debug\文件流操作练习.Form1.resources
+C:\VS2012\Project\文件流操作练习\文件流操作练习\obj\x86\Debug\文件流操作练习.Properties.Resources.resources
+C:\VS2012\Project\文件流操作练习\文件流操作练习\obj\x86\Debug\文件流操作练习.csproj.GenerateResource.Cache
+C:\VS2012\Project\文件流操作练习\文件流操作练习\obj\x86\Debug\文件流操作练习.exe
+C:\VS2012\Project\文件流操作练习\文件流操作练习\obj\x86\Debug\文件流操作练习.pdb
