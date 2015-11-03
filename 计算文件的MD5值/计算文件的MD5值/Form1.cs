@@ -103,8 +103,9 @@ namespace 计算文件的MD5值
             {
                 fl_read.Close();
             }
+            string _result = BitConverter.ToString(md5.Hash);
             md5.Clear();
-            string _result=BitConverter.ToString(md5byte);
+           
             updateTextBox("MD5:" + _result, Color.Green, true);
         }
         

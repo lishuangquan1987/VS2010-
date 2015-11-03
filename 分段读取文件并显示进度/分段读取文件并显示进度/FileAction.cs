@@ -7,17 +7,17 @@ using System.Windows.Forms;
 
 namespace 分段读取文件并显示进度
 {
-   public class FileAction:UserControl
+    public class FileAction : UserControl
     {
-       public int transmitSize;
-       public int leftSize;
-       public int transmitTime;
-       public ProgressBar progressBar1;
-      
-       public FileStream fl_read;
+        public int transmitSize;
+        public int leftSize;
+        public int transmitTime;
+        public ProgressBar progressBar1;
 
-       private void InitializeComponent()
-       {
+        public FileStream fl_read;
+
+        private void InitializeComponent()
+        {
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.SuspendLayout();
             // 
@@ -36,15 +36,35 @@ namespace 分段读取文件并显示进度
             this.Size = new System.Drawing.Size(595, 31);
             this.ResumeLayout(false);
 
-       }
-       delegate void UpdateProcessBar(int value);
+        }
+        delegate void UpdateProcessBar(int value);
 
-       void updateProcessBar(int value)
+       public void updateProcessBar(int value)
+        {
+            if (this.progressBar1.InvokeRequired)
+                this.progressBar1.Invoke(new UpdateProcessBar(updateProcessBar), value);
+            else
+                this.progressBar1.Value = value / (this.progressBar1.Maximum - this.progressBar1.Minimum);
+        }
+
+
+       public void ReadFile(string FileName)
        {
-           if(this.progressBar1.InvokeRequired)
-               this.progressBar1.Invoke(new UpdateProcessBar(updateProcessBar),value);
+           fl_read = new FileStream(FileName, FileMode.Open, FileAccess.Read);
+           int totoalSize =(int)fl_read.Length;
+           int temp = totoalSize % transmitSize;
+           if (temp != 0)
+               transmitTime = (totoalSize - temp) / transmitSize + 1;
            else
-               this.progressBar1.Value=(this.progressBar1.Maximum-this.progressBar1.Minimum);
+               transmitSize = totoalSize / transmitSize;
+           leftSize = totoalSize;
+           while (leftSize>transmitSize)
+           {
+               byte[] transmitbyte = new byte[transmitSize];
+               fl_read.Read(transmitbyte,)
+
+           }
+
        }
-     
+    }
 }
