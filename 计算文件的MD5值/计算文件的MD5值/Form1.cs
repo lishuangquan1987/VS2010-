@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using System.Security.Policy;
 using System.Security.Cryptography;
 using System.IO;
+using System.Threading;
 
 namespace 计算文件的MD5值
 {
@@ -25,22 +26,24 @@ namespace 计算文件的MD5值
             op.Multiselect = false;
             if (op.ShowDialog() != System.Windows.Forms.DialogResult.OK)
                 return;
-           string _result= CalculateMD5(op.FileName);
-           
-            MessageBox.Show(_result);
+            new Thread(() => { ReadFileAndCalculateMD5(op.FileName, 1024 * 1024 * 10); }).Start();//10M
+          //ReadFileAndCalculateMD5(op.FileName,1024*1024*10)
             
         }
         MD5 md5 = new MD5CryptoServiceProvider();
         string CalculateMD5(Stream stream)
         {
             string s = "";
+            
             byte[] resultdata = md5.ComputeHash(stream);
             foreach (byte i in resultdata)
             {
                 s += i.ToString("X2");
             }
+            md5.Clear();
             return s;
         }
+        
         delegate void UpdateProcessBar(int value);
         void updateProcessBar(int value)
         {
@@ -56,7 +59,7 @@ namespace 计算文件的MD5值
         void updateTextBox(string msg, Color color, bool nextline)
         {
             if (this.InvokeRequired)
-                this.Invoke(new UpdateTextBox(updateTextBox), msg, nextline);
+                this.Invoke(new UpdateTextBox(updateTextBox), msg,color,nextline);
             else
             {
                 this.richTextBox1.SelectionColor = color;
@@ -68,8 +71,10 @@ namespace 计算文件的MD5值
         }
         void ReadFileAndCalculateMD5(string FileName,long ReadSize)
         {
+            md5 = new MD5CryptoServiceProvider();
+            updateTextBox(FileName, Color.Blue, true);
             FileStream fl_read = new FileStream(FileName, FileMode.Open, FileAccess.Read);
-            FileStream fl_output;
+            //FileStream fl_output;
             if(fl_read.Length<ReadSize)
             {
                 string result = CalculateMD5(fl_read);
@@ -79,7 +84,28 @@ namespace 计算文件的MD5值
                     fl_read.Close();
                 return;
             }
-
+            int ReadTimes;
+            int s =(int)(fl_read.Length % ReadSize);
+            ReadTimes=(int)((fl_read.Length-s)/ReadSize);
+            byte[] temp_buffer = new byte[ReadSize];
+            byte[] output_buffer=new byte[ReadSize];
+            for (int i = 1; i <= ReadTimes; i++)
+            {
+                temp_buffer=new byte[ReadSize];
+                int n=fl_read.Read(temp_buffer, 0, (int)ReadSize);
+               int readbyte= md5.TransformBlock(temp_buffer, 0, n, output_buffer, 0);
+               int value = (int)(((decimal)i / ReadTimes) * 100);
+               updateProcessBar(value);
+            }
+            int left = fl_read.Read(temp_buffer, 0, (int)ReadSize);
+            byte[] md5byte= md5.TransformFinalBlock(temp_buffer, 0, left);
+            if (fl_read != null)
+            {
+                fl_read.Close();
+            }
+            md5.Clear();
+            string _result=BitConverter.ToString(md5byte);
+            updateTextBox("MD5:" + _result, Color.Green, true);
         }
         
     
