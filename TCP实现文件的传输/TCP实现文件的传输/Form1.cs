@@ -11,6 +11,7 @@ using System.Net.Sockets;
 using System.Threading;
 using System.IO;
 using System.Diagnostics;
+using System.Net.NetworkInformation;
 
 namespace TCP实现文件的传输
 {
@@ -38,19 +39,38 @@ namespace TCP实现文件的传输
         /// 聊天：8888端口
         /// 传文件：4444端口
         /// </summary>
-        int portNum=8888;
-        
+        int portNum = 8888;
+        public int portnum//tcp
+        {
+            get {
+                while (PortInUse(portNum,"tcp"))
+                {
+                    portNum -= 1;
+                }
+                return portNum;
+            }
+        }
+        int UDPport = 4444;
+        public int udpport//udp
+        {
+            get {
+                    while (PortInUse(UDPport,"udp"))
+                    {
+                        UDPport -= 1;
+                    }
+                    return UDPport;
+            }
+        }
+       
         private void Form1_Load(object sender, EventArgs e)
         {
-            udpclient = new UdpClient(new IPEndPoint(IPAddress.Parse(localIP), 4444));
+            udpclient = new UdpClient(new IPEndPoint(IPAddress.Parse(localIP), udpport));
             this.radioButton_Slave.Checked = true;
             UDP_ReceiveFile_thread = new Thread(new ThreadStart(UDP_ReceiveFile));
             UDP_ReceiveFile_thread.Start();
-            
-
         }
         /// <summary>
-        /// 一直监听4444端口
+        /// 一直监听4444端口，接受文件
         /// </summary>
         void UDP_ReceiveFile()
         {
@@ -77,16 +97,18 @@ namespace TCP实现文件的传输
 
             }
         }
+        TcpListener tcp_listener;
         void listenAndReceive()
         {
-            TcpListener tcp_listener = new TcpListener(portNum);
+            if(tcp_listener==null)
+            tcp_listener = new TcpListener(portnum);
             tcp_listener.Start();
             Thread.Sleep(1);
             //if (listen_thread != null && listen_thread.ThreadState !=System.Threading.ThreadState.Aborted)
             //    listen_thread.Abort();
             listen_thread = new Thread(() =>
             {
-                while (RunningFlag&&!IsSlave)
+                while (RunningFlag&&!IsSlave)//为主机
                 {
                     TcpClient tcp = tcp_listener.AcceptTcpClient();
                     
@@ -120,8 +142,9 @@ namespace TCP实现文件的传输
                     }
                 }
             });
-            listen_thread.Start();
-            receive_thread.Start();
+            
+            listen_thread.Start();//监控是否有好友加入
+            receive_thread.Start();//监控是否有好友发送消息
         }
         delegate void AddFriend(TcpClient tcp);
         void addFriend(TcpClient tcp)
@@ -200,10 +223,10 @@ namespace TCP实现文件的传输
                 textBox_host.Enabled = true;
                 textBox_adr_host.Enabled = true;
 
-                
+                listenAndReceive();
                 textBox_adr_host.Text = localIP;
                 textBox_host.Text = portNum.ToString();
-                listenAndReceive();
+                
             }
             
         }
@@ -325,6 +348,32 @@ namespace TCP实现文件的传输
             IPEndPoint RemotePoint = new IPEndPoint(IPAddress.Parse(this.friends1.SelectText.Split(':')[0]), 4444);
             UdpClient UDP = new UdpClient(new IPEndPoint(IPAddress.Any, 0));
             int k= UDP.Client.SendTo(data, RemotePoint);
+        }
+        public static bool PortInUse(int port,string TcpOrUdp)
+        {
+            bool inUse = false;
+
+            IPGlobalProperties ipProperties = IPGlobalProperties.GetIPGlobalProperties();
+            IPEndPoint[] ipEndPoints;
+            if (TcpOrUdp.ToLower() == "tcp")
+            {
+                ipEndPoints = ipProperties.GetActiveTcpListeners();
+            }
+            else
+            {
+                ipEndPoints = ipProperties.GetActiveUdpListeners();
+            }
+
+            foreach (IPEndPoint endPoint in ipEndPoints)
+            {
+                if (endPoint.Port == port)
+                {
+                    inUse = true;
+                    break;
+                }
+            }
+
+            return inUse;
         }
     }
 }
