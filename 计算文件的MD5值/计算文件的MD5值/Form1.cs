@@ -117,7 +117,7 @@ namespace 计算文件的MD5值
                 byte[] md5byte = md5.TransformFinalBlock(temp_buffer, 0, left);
                 string _result = BitConverter.ToString(md5.Hash);
                 md5.Clear();
-
+                _result = _result.Replace("-", "");
                 if (type.ToLower() == "md5")
                     updateTextBox("MD5:" + _result, Color.Green, true);
                 else if (type.ToLower() == "sha1")
@@ -150,6 +150,19 @@ namespace 计算文件的MD5值
             int endTime = System.Environment.TickCount;
             decimal useTime=(decimal)(endTime-startTime)/1000;
             updateStatusLable("计算完成，本次用时:"+useTime.ToString()+"s");
+
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            if (MessageBox.Show("Made By Tony\r\nAuthor's QQ:294388344\r\nDo you want to go to Author's QQ Space?", "Author's Information", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == System.Windows.Forms.DialogResult.OK)
+            {
+                System.Diagnostics.Process.Start("http://294388344.qzone.qq.com", "explorer.exe");
+            }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
 
         }
         
