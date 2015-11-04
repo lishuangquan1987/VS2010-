@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="二维码解析">
+</Property><Property Name="Solution File" Value="C:\SogouDownLoad\二维码解析\二维码解析.sln">
+</Property><Property Name="Date" Value="2015年11月4日">
+</Property><Property Name="Time" Value="20:13">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="二维码解析.sln" Description="File successfully backed up as C:\SogouDownLoad\二维码解析\Backup\二维码解析.sln">
+</Event><Event ErrorLevel="0" Project="二维码解析" Source="二维码解析\二维码解析.csproj" Description="Project file successfully backed up as C:\SogouDownLoad\二维码解析\Backup\二维码解析\二维码解析.csproj">
+</Event><Event ErrorLevel="0" Project="二维码解析" Source="二维码解析\Form1.cs" Description="File successfully backed up as C:\SogouDownLoad\二维码解析\Backup\二维码解析\Form1.cs">
+</Event><Event ErrorLevel="0" Project="二维码解析" Source="二维码解析\Form1.Designer.cs" Description="File successfully backed up as C:\SogouDownLoad\二维码解析\Backup\二维码解析\Form1.Designer.cs">
+</Event><Event ErrorLevel="0" Project="二维码解析" Source="二维码解析\Program.cs" Description="File successfully backed up as C:\SogouDownLoad\二维码解析\Backup\二维码解析\Program.cs">
+</Event><Event ErrorLevel="0" Project="二维码解析" Source="二维码解析\Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\SogouDownLoad\二维码解析\Backup\二维码解析\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="二维码解析" Source="二维码解析\Properties\Resources.Designer.cs" Description="File successfully backed up as C:\SogouDownLoad\二维码解析\Backup\二维码解析\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="二维码解析" Source="二维码解析\Properties\Settings.Designer.cs" Description="File successfully backed up as C:\SogouDownLoad\二维码解析\Backup\二维码解析\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="二维码解析" Source="二维码解析\Properties\Settings.settings" Description="File successfully backed up as C:\SogouDownLoad\二维码解析\Backup\二维码解析\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="二维码解析" Source="二维码解析\Form1.resx" Description="File successfully backed up as C:\SogouDownLoad\二维码解析\Backup\二维码解析\Form1.resx">
+</Event><Event ErrorLevel="0" Project="二维码解析" Source="二维码解析\Properties\Resources.resx" Description="File successfully backed up as C:\SogouDownLoad\二维码解析\Backup\二维码解析\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="二维码解析" Source="二维码解析\二维码解析.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="二维码解析" Source="二维码解析\二维码解析.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="" Source="二维码解析.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="二维码解析.sln" Description="Converted">
+</Event></UpgradeLog>

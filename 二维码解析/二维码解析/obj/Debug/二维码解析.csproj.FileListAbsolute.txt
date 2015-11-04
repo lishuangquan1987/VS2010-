@@ -1,0 +1,16 @@
+F:\c# program\Projects\二维码解析\二维码解析\bin\Debug\二维码解析.exe
+F:\c# program\Projects\二维码解析\二维码解析\bin\Debug\二维码解析.pdb
+F:\c# program\Projects\二维码解析\二维码解析\bin\Debug\ThoughtWorks.QRCode.dll
+F:\c# program\Projects\二维码解析\二维码解析\obj\Debug\二维码解析.Form1.resources
+F:\c# program\Projects\二维码解析\二维码解析\obj\Debug\二维码解析.Properties.Resources.resources
+F:\c# program\Projects\二维码解析\二维码解析\obj\Debug\二维码解析.csproj.GenerateResource.Cache
+F:\c# program\Projects\二维码解析\二维码解析\obj\Debug\二维码解析.exe
+F:\c# program\Projects\二维码解析\二维码解析\obj\Debug\二维码解析.pdb
+C:\SogouDownLoad\二维码解析\二维码解析\obj\Debug\二维码解析.exe
+C:\SogouDownLoad\二维码解析\二维码解析\obj\Debug\二维码解析.pdb
+C:\SogouDownLoad\二维码解析\二维码解析\bin\Debug\二维码解析.exe
+C:\SogouDownLoad\二维码解析\二维码解析\bin\Debug\二维码解析.pdb
+C:\SogouDownLoad\二维码解析\二维码解析\bin\Debug\ThoughtWorks.QRCode.dll
+C:\SogouDownLoad\二维码解析\二维码解析\obj\Debug\二维码解析.Form1.resources
+C:\SogouDownLoad\二维码解析\二维码解析\obj\Debug\二维码解析.Properties.Resources.resources
+C:\SogouDownLoad\二维码解析\二维码解析\obj\Debug\二维码解析.csproj.GenerateResource.Cache
