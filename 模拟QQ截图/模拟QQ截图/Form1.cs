@@ -8,6 +8,8 @@ using System.Text;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using Microsoft.Win32;
+using Sunisoft.IrisSkin;
+using System.IO;
 
 namespace Capture_LikeQQ
 {
@@ -24,7 +26,7 @@ namespace Capture_LikeQQ
         public const int SW_SHOWMINNOACTIVE = 7;
         public const int SW_SHOWNA = 8;
         public const int SW_RESTORE = 9;
-
+        Sunisoft.IrisSkin.SkinEngine skin;
 
         public Form1()
         {
@@ -33,21 +35,26 @@ namespace Capture_LikeQQ
         bool isReady = true;
         private void Form1_Load(object sender, EventArgs e)
         {
-            this.checkBox_AutoRun.Checked = true;
-            this.Hide();
             
+            this.checkBox_AutoRun.Checked = true;
+            //this.Hide();
+            
+
             if (RegisterHotKey(this.Handle, 100, KeyModifiers.Ctrl, Keys.B))
             {
-                label2.ForeColor = Color.Green;
+                label2.BackColor=Color.Green;
                 label2.Text = "截图热键：Ctrl+B";
             }
             else
             {
-                label2.ForeColor = Color.Red;
+                label2.BackColor = Color.Red;
                 label2.Text = "热键：Ctrl+B冲突\r\n请检查其他程序是否占\r\n用此热键！";
                 isReady = false;
             }
-            
+            skin = new Sunisoft.IrisSkin.SkinEngine((Component)this);
+            if (File.Exists("DeepGreen.ssk"))
+                skin.SkinFile = "DeepGreen.ssk";
+
         }
         [DllImport("user32.dll", SetLastError = true)]
         public static extern bool RegisterHotKey(
@@ -105,8 +112,14 @@ namespace Capture_LikeQQ
         }
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            UnregisterHotKey(this.Handle, 100);
-            this.notifyIcon1.Dispose();
+            if (isReady)
+                notifyIcon1.ShowBalloonTip(5000, "提示", "按Ctrl+B可以开始截图", ToolTipIcon.Info);
+            else
+                notifyIcon1.ShowBalloonTip(5000, "错误", "热键Ctrl+B与其他程序冲突，后台截图功能无法启用", ToolTipIcon.Error);
+            //UnregisterHotKey(this.Handle, 100);
+            //this.notifyIcon1.Dispose();
+            this.Hide();
+            e.Cancel = true;
         }
        
         /// <summary>
@@ -154,17 +167,8 @@ namespace Capture_LikeQQ
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Close();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            if(isReady)
-            notifyIcon1.ShowBalloonTip(5000, "提示", "按Ctrl+B可以开始截图", ToolTipIcon.Info);
-            else
-            notifyIcon1.ShowBalloonTip(5000, "错误", "热键Ctrl+B与其他程序冲突，截图功能无法启用", ToolTipIcon.Error);
-
+            //this.Close();
+            this.Dispose();
         }
 
         private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)

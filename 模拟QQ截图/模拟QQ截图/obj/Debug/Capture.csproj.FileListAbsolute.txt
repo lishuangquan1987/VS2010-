@@ -6,3 +6,4 @@ C:\VS2012\Project\模拟QQ截图\模拟QQ截图\obj\Debug\Capture_LikeQQ.Propert
 C:\VS2012\Project\模拟QQ截图\模拟QQ截图\obj\Debug\Capture.csproj.GenerateResource.Cache
 C:\VS2012\Project\模拟QQ截图\模拟QQ截图\obj\Debug\Capture_LikeQQ.exe
 C:\VS2012\Project\模拟QQ截图\模拟QQ截图\obj\Debug\Capture_LikeQQ.pdb
+C:\VS2012\Project\模拟QQ截图\模拟QQ截图\bin\Debug\IrisSkin4.dll

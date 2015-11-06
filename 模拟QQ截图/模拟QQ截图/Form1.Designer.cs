@@ -36,7 +36,6 @@
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.checkBox_AutoRun = new System.Windows.Forms.CheckBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
@@ -76,7 +75,7 @@
             // checkBox_AutoRun
             // 
             this.checkBox_AutoRun.AutoSize = true;
-            this.checkBox_AutoRun.Location = new System.Drawing.Point(74, 25);
+            this.checkBox_AutoRun.Location = new System.Drawing.Point(76, 9);
             this.checkBox_AutoRun.Name = "checkBox_AutoRun";
             this.checkBox_AutoRun.Size = new System.Drawing.Size(72, 16);
             this.checkBox_AutoRun.TabIndex = 0;
@@ -87,7 +86,7 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(170, 77);
+            this.linkLabel1.Location = new System.Drawing.Point(175, 92);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(35, 12);
             this.linkLabel1.TabIndex = 1;
@@ -95,31 +94,19 @@
             this.linkLabel1.Text = "About";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Red;
-            this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label1.Location = new System.Drawing.Point(200, 7);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(11, 12);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "X";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(49, 52);
+            this.label2.Location = new System.Drawing.Point(61, 42);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(125, 12);
+            this.label2.Size = new System.Drawing.Size(101, 12);
             this.label2.TabIndex = 4;
-            this.label2.Text = "截图热键：Ctrl+Alt+A";
+            this.label2.Text = "截图热键：Ctrl+B";
             // 
             // linkLabel2
             // 
             this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Location = new System.Drawing.Point(13, 77);
+            this.linkLabel2.Location = new System.Drawing.Point(18, 92);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(53, 12);
             this.linkLabel2.TabIndex = 5;
@@ -130,7 +117,7 @@
             // linkLabel3
             // 
             this.linkLabel3.AutoSize = true;
-            this.linkLabel3.Location = new System.Drawing.Point(94, 77);
+            this.linkLabel3.Location = new System.Drawing.Point(99, 92);
             this.linkLabel3.Name = "linkLabel3";
             this.linkLabel3.Size = new System.Drawing.Size(29, 12);
             this.linkLabel3.TabIndex = 6;
@@ -142,14 +129,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(217, 99);
+            this.ClientSize = new System.Drawing.Size(245, 120);
             this.Controls.Add(this.linkLabel3);
             this.Controls.Add(this.linkLabel2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.checkBox_AutoRun);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label2);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form1";
@@ -172,7 +159,6 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem showToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.LinkLabel linkLabel2;
         private System.Windows.Forms.LinkLabel linkLabel3;
