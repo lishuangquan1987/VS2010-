@@ -93,7 +93,7 @@ namespace 串口调试助手_Tony
                 this.panel2.Controls.Add(extends[i]);
             }
 
-            string[] Delay = new string[] { "20ms", "100ms", "500ms", "1000ms", "2000ms", "5000ms", "10000ms" };
+            string[] Delay = new string[] {"500ms", "1000ms", "2000ms", "5000ms", "10000ms" };
             this.comboBox_Delay.Items.AddRange(Delay);
         }
         void Extend_button_Send_Click(object sender, EventArgs e)
@@ -216,6 +216,8 @@ namespace 串口调试助手_Tony
         {
             for (int i = 0; i < extends.Length; i++)
             {
+                if (!this.checkBox1.Checked)
+                    break;
                 if (i == extends.Length - 1)
                     i = 0;
                 if (!extends[i].checkBox.Checked)
@@ -236,7 +238,7 @@ namespace 串口调试助手_Tony
             this.label6.Visible = true;
             this.comboBox_Delay.Visible = true;
             if (this.comboBox_Delay.SelectedIndex == -1)
-                delay = 0;
+                delay = 1000;
             else
                 delay =int.Parse((this.comboBox_Delay.SelectedItem.ToString().Split('m')[0]));
             thread_always_send = new Thread(() => { always_send(sender, e); });

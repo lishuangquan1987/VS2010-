@@ -12,3 +12,4 @@ C:\VS2012\Project\串口调试助手_Tony\Model_Message\obj\x86\Debug\Model_Mess
 C:\VS2012\Project\串口调试助手_Tony\Model_Message\obj\x86\Debug\Model_Message.csproj.GenerateResource.Cache
 C:\VS2012\Project\串口调试助手_Tony\Model_Message\obj\x86\Debug\Model_Message.dll
 C:\VS2012\Project\串口调试助手_Tony\Model_Message\obj\x86\Debug\Model_Message.pdb
+C:\VS2012\Project\串口调试助手_Tony\Model_Message\obj\x86\Debug\Model_Message.csprojResolveAssemblyReference.cache

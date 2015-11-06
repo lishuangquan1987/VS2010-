@@ -13,10 +13,11 @@ namespace Model_SerialPort
         public SerialPortMain()
         {
             this.DataReceived += new SerialDataReceivedEventHandler(SerialPortMain_DataReceived);
+            this.ReceivedBytesThreshold = 1;
             this.DtrEnable = true;
             this.RtsEnable = true;
         }
-        StringBuilder ReveiveString = null;
+        StringBuilder ReveiveString = new StringBuilder();
         void SerialPortMain_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
             SerialPort s = (SerialPort)sender;
