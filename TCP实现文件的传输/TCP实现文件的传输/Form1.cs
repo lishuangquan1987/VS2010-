@@ -25,7 +25,7 @@ namespace TCP实现文件的传输
         bool RunningFlag = true;
         string localIP = System.Net.Dns.GetHostByName(System.Net.Dns.GetHostName()).AddressList[0].ToString();
         List<TcpClient> TcpClinets_host = new List<TcpClient>();
-        List<TcpClient> TcpClinets_slave = new List<TcpClient>();
+        List<TcpClient> TcpClinets_slave = new List<TcpClient>();//在slave下的tcp对象，只存放一个
         int i = 0;
         Thread listen_thread;
         Thread receive_thread;
@@ -98,6 +98,9 @@ namespace TCP实现文件的传输
             }
         }
         TcpListener tcp_listener;
+        /// <summary>
+        /// host listen and receive from slave
+        /// </summary>
         void listenAndReceive()
         {
             if(tcp_listener==null)
@@ -110,8 +113,7 @@ namespace TCP实现文件的传输
             {
                 while (RunningFlag&&!IsSlave)//为主机
                 {
-                    TcpClient tcp = tcp_listener.AcceptTcpClient();
-                    
+                    TcpClient tcp = tcp_listener.AcceptTcpClient();//wait for the slave connect
                     TcpClinets_host.Add(tcp);
                     addFriend(tcp);
                    
@@ -125,18 +127,35 @@ namespace TCP实现文件的传输
                 {
                     if (TcpClinets_host.Count != 0)
                     {
-                       foreach(TcpClient tcp in TcpClinets_host)
-                       {
+                      for(int i=0;i<TcpClinets_host.Count;i++)
+                      {
+                          if (TcpClinets_host[i] == null)
+                              continue;
+                          if (!TcpClinets_host[i].Connected)
+                              continue;
+                          if (TcpClinets_host[i].Available == 0)
+                              continue;
                             byte[] data = new byte[1024];
-                            IPEndPoint ip_temp = (IPEndPoint)tcp.Client.RemoteEndPoint;
-                           
-                            int k = tcp.Client.Receive(data);
+                            IPEndPoint ip_temp = (IPEndPoint)TcpClinets_host[i].Client.RemoteEndPoint;
+
+                            int k = TcpClinets_host[i].Client.Receive(data);
                             string msg = Encoding.Default.GetString(data, 0, k);
-                            string Head=ip_temp.Address+":"+ip_temp.Port+"--"+DateTime.Now;
-                                if (msg != "" && msg != null && msg.Trim() != "")
+                             string Head=ip_temp.Address+":"+ip_temp.Port+"--"+DateTime.Now;
+                             if (msg != "" && msg != null && msg.Trim() != "")
                                 {
-                                    updatetext(Head, Color.Red, true);
-                                    updatetext(msg, Color.Black, true);
+                                    if (msg == "close")
+                                    {
+                                        TcpClient tcp_temp = TcpClinets_host[i];
+                                        TcpClinets_host.Remove(tcp_temp);
+                                        removeFriend(tcp_temp);
+                                        tcp_temp.Close();
+                                        break;
+                                    }
+                                    else
+                                    {
+                                        updatetext(Head, Color.Red, true);
+                                        updatetext(msg, Color.Black, true);
+                                    }
                                 }
                         }
                     }
@@ -159,7 +178,26 @@ namespace TCP实现文件的传输
                 this.friends1.listBox1.SelectedIndex = 0;
             }
         }
-
+        void removeFriend(TcpClient tcp)
+        {
+            IPEndPoint ip_temp;
+            if (this.friends1.listBox1.InvokeRequired)
+                this.friends1.listBox1.Invoke(new AddFriend(removeFriend), tcp);
+            else
+            {
+                ip_temp = (IPEndPoint)tcp.Client.RemoteEndPoint;
+                string longIP=ip_temp.Address.ToString() + ":" + ip_temp.Port.ToString();
+                foreach (object item in this.friends1.listBox1.Items)
+                {
+                    if (item.ToString() == longIP)
+                    {
+                        this.friends1.listBox1.Items.Remove(item);
+                        this.button_test_slave.Enabled = true;
+                        break;
+                    }
+                }
+            }
+        }
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             RunningFlag = false;
@@ -169,22 +207,30 @@ namespace TCP实现文件的传输
                 receive_thread.Abort();
             if (slave_receive_thread != null && slave_receive_thread.ThreadState != System.Threading.ThreadState.Aborted)
                 slave_receive_thread.Abort();
-
-            foreach (TcpClient tcp in TcpClinets_host)
+            if (!IsSlave)//host
             {
-                if (tcp.Connected)
+                foreach (TcpClient tcp in TcpClinets_host)
                 {
-                    tcp.Client.Disconnect(false);
-                    tcp.Close();
+                    if (tcp.Connected)
+                    {
+                        SendString(tcp, "close", false);
+                        tcp.Client.Disconnect(true);
+                        tcp.Close();
+                    }
                 }
             }
-            foreach (TcpClient tcp in TcpClinets_slave)
+            else//slave
             {
-                if (tcp.Connected)
+
+                foreach (TcpClient tcp in TcpClinets_slave)
                 {
-                    tcp.Client.Disconnect(false);
-                    tcp.Close();
-                    
+                    if (tcp.Connected)
+                    {
+                        SendString(tcp, "close", false);
+                        tcp.Client.Disconnect(true);
+                        tcp.Close();
+
+                    }
                 }
             }
             System.Diagnostics.Process.GetCurrentProcess().Kill();
@@ -252,8 +298,10 @@ namespace TCP实现文件的传输
         {
             while (RunningFlag&&IsSlave)
             {
-                foreach (TcpClient tcp in TcpClinets_slave)
-                {
+                
+                    TcpClient tcp = TcpClinets_slave.ToArray()[0];
+                    if (!tcp.Connected)
+                        return;
                     byte[] data = new byte[1024];
                     IPEndPoint ip_temp = (IPEndPoint)tcp.Client.RemoteEndPoint;
                         int k = tcp.Client.Receive(data);
@@ -261,10 +309,21 @@ namespace TCP实现文件的传输
                         string Head=ip_temp.Address.ToString()+":"+ip_temp.Port.ToString()+"--"+DateTime.Now;
                         if (msg != "" && msg != null && msg.Trim() != "")
                         {
-                            updatetext(Head, Color.Red, true);
-                            updatetext(msg, Color.Black, true);
+                            if (msg == "close")
+                            {
+                                TcpClient tcp_temp = tcp;
+                                TcpClinets_slave.Remove(tcp_temp);
+                                removeFriend(tcp_temp);
+                                tcp_temp.Close();
+                                break;
+                            }
+                            else
+                            {
+                                updatetext(Head, Color.Red, true);
+                                updatetext(msg, Color.Black, true);
+                            }
                         }                    
-                }
+               
             }
         }
         delegate void UpdateText(string msg, Color color, bool nextline);
@@ -282,7 +341,34 @@ namespace TCP实现文件的传输
                 this.richTextBox_chat.Focus();
             }
         }
+        void slave_SendString(TcpClient tcp, string msg)
+        {
+            byte[] data = Encoding.Default.GetBytes(msg);
+            tcp.Client.Send(data);
+            if (msg.ToLower() != "close")
+            {
+                IPEndPoint ip_temp = (IPEndPoint)tcp.Client.LocalEndPoint;
+                string Head = string.Format("我（{0}:{1}--{2}）", ip_temp.Address.ToString(), ip_temp.Port.ToString(), DateTime.Now.ToString());
+                updatetext(Head, Color.Green, true);
+                updatetext(msg, Color.Black, true);
+            }
 
+        }
+        void SendString(TcpClient tcp, string msg,bool isSlave)
+        {
+            byte[] data = Encoding.Default.GetBytes(msg);
+            tcp.Client.Send(data);
+            if (msg.ToLower() != "close")
+            {
+                string Head = "";
+                IPEndPoint ip_temp;
+                ip_temp = (IPEndPoint)tcp.Client.LocalEndPoint;
+                Head = string.Format("我（{0}:{1}--{2}）", ip_temp.Address.ToString(), ip_temp.Port.ToString(), DateTime.Now.ToString());
+                updatetext(Head, Color.Green, true);
+                updatetext(msg, Color.Black, true);
+            }
+
+        }
         private void button2_Click(object sender, EventArgs e)
         {
             if (richTextBox_prechat.Text == "" || richTextBox_prechat.Text == null)
@@ -291,7 +377,7 @@ namespace TCP实现文件的传输
                 return;
             }
             
-            if (IsSlave)
+            if (IsSlave)//slave
             {
                 if (TcpClinets_slave.Count < 1)
                 {
@@ -299,16 +385,9 @@ namespace TCP实现文件的传输
                     return;
                 }
                 TcpClient tcp = TcpClinets_slave.ToArray()[0];
-                byte[] data;
-                IPEndPoint ip_temp =(IPEndPoint)tcp.Client.LocalEndPoint;
-                
-                data = Encoding.Default.GetBytes(richTextBox_prechat.Text);
-                tcp.Client.Send(data);
-                string Head = string.Format("我（{0}:{1}--{2}）", ip_temp.Address.ToString(), ip_temp.Port.ToString(), DateTime.Now.ToString());
-                updatetext(Head, Color.Green, true);
-                updatetext(richTextBox_prechat.Text, Color.Black, true);
+                SendString(tcp, richTextBox_prechat.Text, IsSlave);
             }
-            else
+            else//host
             {
                 if (TcpClinets_host.Count < 1)
                 {
@@ -317,15 +396,17 @@ namespace TCP实现文件的传输
                 foreach (TcpClient tcp in TcpClinets_host)
                 {
                     IPEndPoint ip_temp =(IPEndPoint)tcp.Client.RemoteEndPoint;
-                    if (ip_temp.Address.ToString() == this.friends1.SelectText.Split(':')[0])
+                    if ((ip_temp.Address.ToString()+":"+ip_temp.Port.ToString()) == this.friends1.SelectText)
                     {
-                        byte[] data;
-                        data = Encoding.Default.GetBytes(richTextBox_prechat.Text);
-                        tcp.Client.Send(data);
-                        IPEndPoint _ip_temp = (IPEndPoint)tcp.Client.LocalEndPoint;
-                        string Head = string.Format("我（{0}:{1}--{2}）", _ip_temp.Address.ToString(), _ip_temp.Port.ToString(), DateTime.Now.ToString());
-                        updatetext(Head, Color.Green, true);
-                        updatetext(richTextBox_prechat.Text, Color.Black, true);
+                        SendString(tcp, richTextBox_prechat.Text,IsSlave);
+                        break;
+                        //byte[] data;
+                        //data = Encoding.Default.GetBytes(richTextBox_prechat.Text);
+                        //tcp.Client.Send(data);
+                        //IPEndPoint _ip_temp = (IPEndPoint)tcp.Client.LocalEndPoint;
+                        //string Head = string.Format("我（{0}:{1}--{2}）", _ip_temp.Address.ToString(), _ip_temp.Port.ToString(), DateTime.Now.ToString());
+                        //updatetext(Head, Color.Green, true);
+                        //updatetext(richTextBox_prechat.Text, Color.Black, true);
                     }
                 }
             }

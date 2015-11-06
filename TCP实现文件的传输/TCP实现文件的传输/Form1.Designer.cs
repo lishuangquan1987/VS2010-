@@ -46,8 +46,8 @@
             this.richTextBox_prechat = new System.Windows.Forms.RichTextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.richTextBox_chat = new System.Windows.Forms.RichTextBox();
-            this.friends1 = new TCP实现文件的传输.Friends();
             this.button1 = new System.Windows.Forms.Button();
+            this.friends1 = new TCP实现文件的传输.Friends();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -215,13 +215,6 @@
             this.richTextBox_chat.TabIndex = 15;
             this.richTextBox_chat.Text = "";
             // 
-            // friends1
-            // 
-            this.friends1.Location = new System.Drawing.Point(529, 11);
-            this.friends1.Name = "friends1";
-            this.friends1.Size = new System.Drawing.Size(118, 347);
-            this.friends1.TabIndex = 26;
-            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(266, 322);
@@ -232,11 +225,19 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // friends1
+            // 
+            this.friends1.Location = new System.Drawing.Point(515, 11);
+            this.friends1.Name = "friends1";
+            this.friends1.Size = new System.Drawing.Size(150, 361);
+            this.friends1.TabIndex = 26;
+            // 
             // Form1
             // 
+            this.AcceptButton = this.button2;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(669, 370);
+            this.ClientSize = new System.Drawing.Size(677, 377);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.groupBox2);
@@ -256,7 +257,7 @@
             this.Controls.Add(this.button_test_slave);
             this.Controls.Add(this.label2_slave);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Let\'s Chat";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox2.ResumeLayout(false);

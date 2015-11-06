@@ -1,0 +1,9 @@
+C:\VS2012\Project\TCP_Client_Server\TCP_Client_Server\bin\Debug\TCP_Client_Server.exe.config
+C:\VS2012\Project\TCP_Client_Server\TCP_Client_Server\bin\Debug\TCP_Client_Server.exe
+C:\VS2012\Project\TCP_Client_Server\TCP_Client_Server\bin\Debug\TCP_Client_Server.pdb
+C:\VS2012\Project\TCP_Client_Server\TCP_Client_Server\obj\Debug\TCP_Client_Server.csprojResolveAssemblyReference.cache
+C:\VS2012\Project\TCP_Client_Server\TCP_Client_Server\obj\Debug\TCP_Client_Server.Form1.resources
+C:\VS2012\Project\TCP_Client_Server\TCP_Client_Server\obj\Debug\TCP_Client_Server.Properties.Resources.resources
+C:\VS2012\Project\TCP_Client_Server\TCP_Client_Server\obj\Debug\TCP_Client_Server.csproj.GenerateResource.Cache
+C:\VS2012\Project\TCP_Client_Server\TCP_Client_Server\obj\Debug\TCP_Client_Server.exe
+C:\VS2012\Project\TCP_Client_Server\TCP_Client_Server\obj\Debug\TCP_Client_Server.pdb
