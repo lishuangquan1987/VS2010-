@@ -55,15 +55,23 @@ namespace Capture_LikeQQ
                 bmp = Capture_LikeQQ.Capture.GetImage(new Point(downright.X, upperleft.Y), size);
             
             this.pictureBox1.MouseMove -= new System.Windows.Forms.MouseEventHandler(this.Demo_MouseMove);
+            Clipboard.SetDataObject(bmp);
             SaveFileDialog s = new SaveFileDialog();
-            s.Filter = "BMP|*.bmp";
+            s.Filter = "BMP|*.bmp;|PNG|*.png|GIF|*.gif|JPEG|*.jpeg";
             if (s.ShowDialog() == DialogResult.OK)
             {
-
+                switch (s.FilterIndex)
+                {
+                    case 0: bmp.Save(s.FileName); break;
+                    case 1: bmp.Save(s.FileName, System.Drawing.Imaging.ImageFormat.Png); break;
+                    case 2: bmp.Save(s.FileName, System.Drawing.Imaging.ImageFormat.Gif); break;
+                    case 3: bmp.Save(s.FileName, System.Drawing.Imaging.ImageFormat.Jpeg); break;
+                }
+                
                 bmp.Save(s.FileName);
                 this.Cursor = Cursors.Default;
                 timer1.Enabled = false;
-                
+
                 this.Close();
             }
             else
@@ -133,11 +141,19 @@ namespace Capture_LikeQQ
             {
                 timer1.Enabled = false;
                 Bitmap bmp = Capture_LikeQQ.Capture.GetImage(new Point(0, 0), new Size(this.Width, this.Height));
+                Clipboard.SetDataObject(bmp);
                 SaveFileDialog s = new SaveFileDialog();
-                s.Filter = "BMP|*.bmp";
+                s.Filter = "BMP|*.bmp;|PNG|*.png|GIF|*.gif|JPEG|*.jpeg";
                 if (s.ShowDialog() == DialogResult.OK)
                 {
-
+                    switch (s.FilterIndex)
+                    {
+                        case 0: bmp.Save(s.FileName); break;
+                        case 1: bmp.Save(s.FileName, System.Drawing.Imaging.ImageFormat.Png); break;
+                        case 2: bmp.Save(s.FileName, System.Drawing.Imaging.ImageFormat.Gif); break;
+                        case 3: bmp.Save(s.FileName, System.Drawing.Imaging.ImageFormat.Jpeg); break;
+                    }
+                    
                     bmp.Save(s.FileName);
                     this.Cursor = Cursors.Default;
                     timer1.Enabled = false;
