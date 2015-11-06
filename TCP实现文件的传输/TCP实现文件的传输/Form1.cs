@@ -476,5 +476,16 @@ namespace TCP实现文件的传输
                 skin.AddForm(this);
             }
         }
+        Help help_form;
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            if (help_form != null && !help_form.IsDisposed)
+                help_form.Show();
+            else
+            {
+                help_form = new Help();
+                help_form.Show();
+            }
+        }
     }
 }
