@@ -154,7 +154,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(83, 14);
+            this.label1.Location = new System.Drawing.Point(16, 14);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(41, 12);
             this.label1.TabIndex = 27;
@@ -162,7 +162,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(118, 11);
+            this.textBox1.Location = new System.Drawing.Point(51, 11);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 21);
             this.textBox1.TabIndex = 28;
@@ -229,7 +229,7 @@
             // 
             this.friends1.Location = new System.Drawing.Point(515, 11);
             this.friends1.Name = "friends1";
-            this.friends1.Size = new System.Drawing.Size(150, 361);
+            this.friends1.Size = new System.Drawing.Size(150, 165);
             this.friends1.TabIndex = 26;
             // 
             // Form1
@@ -256,10 +256,13 @@
             this.Controls.Add(this.textBox2_slave);
             this.Controls.Add(this.button_test_slave);
             this.Controls.Add(this.label2_slave);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.KeyPreview = true;
             this.Name = "Form1";
             this.Text = "Let\'s Chat";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);

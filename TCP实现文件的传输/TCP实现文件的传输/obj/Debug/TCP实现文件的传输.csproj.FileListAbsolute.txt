@@ -10,11 +10,12 @@ d:\我的文档\visual studio 2010\Projects\TCP实现文件的传输\TCP实现�
 d:\我的文档\visual studio 2010\Projects\TCP实现文件的传输\TCP实现文件的传输\obj\Debug\TCP实现文件的传输.exe
 d:\我的文档\visual studio 2010\Projects\TCP实现文件的传输\TCP实现文件的传输\obj\Debug\TCP实现文件的传输.pdb
 C:\VS2012\Project\TCP实现文件的传输\TCP实现文件的传输\bin\Debug\TCP实现文件的传输.exe.config
-C:\VS2012\Project\TCP实现文件的传输\TCP实现文件的传输\obj\Debug\TCP实现文件的传输.exe
-C:\VS2012\Project\TCP实现文件的传输\TCP实现文件的传输\obj\Debug\TCP实现文件的传输.pdb
 C:\VS2012\Project\TCP实现文件的传输\TCP实现文件的传输\bin\Debug\TCP实现文件的传输.exe
 C:\VS2012\Project\TCP实现文件的传输\TCP实现文件的传输\bin\Debug\TCP实现文件的传输.pdb
 C:\VS2012\Project\TCP实现文件的传输\TCP实现文件的传输\obj\Debug\TCP实现文件的传输.Form1.resources
 C:\VS2012\Project\TCP实现文件的传输\TCP实现文件的传输\obj\Debug\TCP实现文件的传输.Friends.resources
 C:\VS2012\Project\TCP实现文件的传输\TCP实现文件的传输\obj\Debug\TCP实现文件的传输.Properties.Resources.resources
 C:\VS2012\Project\TCP实现文件的传输\TCP实现文件的传输\obj\Debug\TCP实现文件的传输.csproj.GenerateResource.Cache
+C:\VS2012\Project\TCP实现文件的传输\TCP实现文件的传输\obj\Debug\TCP实现文件的传输.exe
+C:\VS2012\Project\TCP实现文件的传输\TCP实现文件的传输\obj\Debug\TCP实现文件的传输.pdb
+C:\VS2012\Project\TCP实现文件的传输\TCP实现文件的传输\bin\Debug\IrisSkin2.dll

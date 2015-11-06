@@ -12,6 +12,7 @@ using System.Threading;
 using System.IO;
 using System.Diagnostics;
 using System.Net.NetworkInformation;
+using Sunisoft;
 
 namespace TCP实现文件的传输
 {
@@ -20,6 +21,8 @@ namespace TCP实现文件的传输
         public Form1()
         {
             InitializeComponent();
+            
+            
         }
        
         bool RunningFlag = true;
@@ -32,7 +35,7 @@ namespace TCP实现文件的传输
         Thread slave_receive_thread;
         Thread UDP_ReceiveFile_thread;
         UdpClient udpclient;
-        
+        Sunisoft.IrisSkin.SkinEngine skin;
         
         bool IsSlave = true;
         /// <summary>
@@ -64,10 +67,14 @@ namespace TCP实现文件的传输
        
         private void Form1_Load(object sender, EventArgs e)
         {
+            skin = new Sunisoft.IrisSkin.SkinEngine();
+            skin.SkinFile = "MacOS.ssk";
             udpclient = new UdpClient(new IPEndPoint(IPAddress.Parse(localIP), udpport));
             this.radioButton_Slave.Checked = true;
             UDP_ReceiveFile_thread = new Thread(new ThreadStart(UDP_ReceiveFile));
             UDP_ReceiveFile_thread.Start();
+
+           
         }
         /// <summary>
         /// 一直监听4444端口，接受文件
@@ -455,6 +462,19 @@ namespace TCP实现文件的传输
             }
 
             return inUse;
+        }
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F5)
+            {
+                OpenFileDialog op = new OpenFileDialog();
+                op.Filter = "SSK文件|*.ssk";
+                if (op.ShowDialog() != System.Windows.Forms.DialogResult.OK)
+                    return;
+                skin.SkinFile = op.FileName;
+                skin.AddForm(this);
+            }
         }
     }
 }
