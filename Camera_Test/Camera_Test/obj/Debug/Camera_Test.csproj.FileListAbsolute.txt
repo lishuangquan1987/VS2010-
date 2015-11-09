@@ -18,4 +18,3 @@ C:\VS2012\Project\Camera_Test\Camera_Test\bin\Debug\AForge.Neuro.dll
 C:\VS2012\Project\Camera_Test\Camera_Test\bin\Debug\AForge.Robotics.Lego.dll
 C:\VS2012\Project\Camera_Test\Camera_Test\bin\Debug\AForge.Video.VFW.dll
 C:\VS2012\Project\Camera_Test\Camera_Test\bin\Debug\AForge.Vision.dll
-C:\VS2012\Project\Camera_Test\Camera_Test\obj\Debug\Camera_Test.csprojResolveAssemblyReference.cache

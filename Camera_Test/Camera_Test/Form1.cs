@@ -31,13 +31,19 @@ namespace Camera_Test
         }
         public FilterInfoCollection GetDevices()
         {
+            this.comboBox1.Items.Clear();
             try
             {
                 videoDevies = new FilterInfoCollection(FilterCategory.VideoInputDevice);
                 if (videoDevies.Count != 0)
                 {
-                    MessageBox.Show(videoDevies[0].Name);
-                    return videoDevies;
+                    //MessageBox.Show(videoDevies[0].Name);
+                    for (int i = 0; i < videoDevies.Count; i++)
+                    {
+                        this.comboBox1.Items.Add(videoDevies[i].Name);
+                        this.comboBox1.SelectedIndex = 0;
+                    }
+                        return videoDevies;
                 }
                 else
                     return null;
@@ -49,11 +55,16 @@ namespace Camera_Test
                 return null;
             }
         }
-        public VideoCaptureDevice ConnectVideo(int deviceIndex=0, int resolutionIndex = 0)
+        public VideoCaptureDevice ConnectVideo()
         {
             if (videoDevies.Count <= 0)
                 return null;
-            selectedDeviceIndex = deviceIndex;
+            if (this.comboBox1.SelectedIndex == -1)
+            {
+                MessageBox.Show("请选择一个设备！","错误提示",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                return null;
+            }
+            int deviceIndex = this.comboBox1.SelectedIndex;
             videoSource = new VideoCaptureDevice(videoDevies[deviceIndex].MonikerString);
             videoSource.DesiredFrameRate = 1;
             videoSource.DesiredFrameSize = new System.Drawing.Size(this.pictureBox1.Width, this.pictureBox1.Height);
@@ -70,9 +81,10 @@ namespace Camera_Test
         }
         void videoSource_NewFrame(object sender, AForge.Video.NewFrameEventArgs e)
         {
-            System.Threading.Thread.Sleep(500);
-            Bitmap bmp = (Bitmap)e.Frame.Clone();
+            //System.Threading.Thread.Sleep(500);
+            bmp = (Bitmap)e.Frame.Clone();
             this.pictureBox1.BackgroundImage = bmp;
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
