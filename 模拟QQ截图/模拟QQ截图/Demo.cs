@@ -55,6 +55,7 @@ namespace Capture_LikeQQ
                 bmp = Capture_LikeQQ.Capture.GetImage(new Point(downright.X, upperleft.Y), size);
             
             this.pictureBox1.MouseMove -= new System.Windows.Forms.MouseEventHandler(this.Demo_MouseMove);
+            if(bmp!=null)
             Clipboard.SetDataObject(bmp);
             SaveFileDialog s = new SaveFileDialog();
             s.Filter = "BMP|*.bmp;|PNG|*.png|GIF|*.gif|JPEG|*.jpeg";
@@ -141,6 +142,7 @@ namespace Capture_LikeQQ
             {
                 timer1.Enabled = false;
                 Bitmap bmp = Capture_LikeQQ.Capture.GetImage(new Point(0, 0), new Size(this.Width, this.Height));
+                if (bmp != null)
                 Clipboard.SetDataObject(bmp);
                 SaveFileDialog s = new SaveFileDialog();
                 s.Filter = "BMP|*.bmp;|PNG|*.png|GIF|*.gif|JPEG|*.jpeg";

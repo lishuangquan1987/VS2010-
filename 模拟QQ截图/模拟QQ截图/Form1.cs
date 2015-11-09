@@ -51,9 +51,9 @@ namespace Capture_LikeQQ
                 label2.Text = "热键：Ctrl+B冲突\r\n请检查其他程序是否占\r\n用此热键！";
                 isReady = false;
             }
-            //skin = new Sunisoft.IrisSkin.SkinEngine((Component)this);
-            //if (File.Exists("DeepGreen.ssk"))
-            //    skin.SkinFile = "DeepGreen.ssk";
+            skin = new Sunisoft.IrisSkin.SkinEngine((Component)this);
+            if (File.Exists("DeepGreen.ssk"))
+               skin.SkinFile = "DeepGreen.ssk";
 
         }
         [DllImport("user32.dll", SetLastError = true)]
