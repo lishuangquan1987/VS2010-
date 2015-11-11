@@ -9,11 +9,16 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using AForge.Video;
 using AForge.Video.DirectShow;
+using ThoughtWorks;
+using ThoughtWorks.QRCode.Codec;
+using ThoughtWorks.QRCode.Codec.Data;
+using System.Threading;
 
 namespace Camera_MySelf
 {
     public partial class Form1 : Form
     {
+        bool IsRunning = true;
         PictureBox pixtureBox;
         public Form1()
         {
@@ -44,6 +49,10 @@ namespace Camera_MySelf
 
             string[] speed = new string[] { "1", "10", "20", "50", "100", "500" };
             this.comboBox2.Items.AddRange(speed);
+
+            button3.Enabled = false;
+            button2.Enabled = false;
+            button4.Enabled = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -69,6 +78,11 @@ namespace Camera_MySelf
             currentVideoSource.NewFrame += videosource_NewFrame;
             Camera.openDevice(currentVideoSource);
 
+            button1.Enabled = false;
+            button2.Enabled = true;
+            button3.Enabled = true;
+            button4.Enabled = true;
+
 
         }
         Bitmap bmp;
@@ -81,6 +95,8 @@ namespace Camera_MySelf
 
         private void button3_Click(object sender, EventArgs e)
         {
+            IsRunning = false;
+            //有问题，需要改进。
             if (currentDevice != null)
             {
                 currentVideoSource.NewFrame -= videosource_NewFrame;
@@ -89,28 +105,64 @@ namespace Camera_MySelf
                 bmp = null;
             }
             this.Size = new Size(261, 415);
+
+            button2.Enabled = false;
+            button4.Enabled = false;
+            button1.Enabled = true;
                 
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            button1_Click(sender,e);
-            while (bmp == null)
-            {
-                System.Threading.Thread.Sleep(10);
-            }
+            
+            //currentVideoSource.Stop();
             currentVideoSource.NewFrame-=videosource_NewFrame;
             Bitmap bmp_temp =(Bitmap)this.pixtureBox.BackgroundImage;
             bmp_temp.Save(Application.StartupPath + "\\" + DateTime.Now.ToString("yyyyMMdd-hhmmss")+".bmp",System.Drawing.Imaging.ImageFormat.Bmp);
             MessageBox.Show("拍照成功！");
             currentVideoSource.NewFrame += videosource_NewFrame;
+            //currentVideoSource.Start();
+            button3.Enabled = true;
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            button3_Click(sender, e);
+            System.Diagnostics.Process.GetCurrentProcess().Kill();
+        }
+        public bool IsQRImage(Bitmap bmp, out string content)
+        {
+            bool result = true;
+            QRCodeDecoder qrd = new QRCodeDecoder();
+            try
+            {
+                content = qrd.decode(new ThoughtWorks.QRCode.Codec.Data.QRCodeBitmapImage(bmp));
+            }
+            catch (Exception e)
+            {
+                result = false;
+                content = null;
+                return result;
+            }
+
+            return result;
+        }
+        public void JudgeIsQRImage()
+        {
+            while (IsRunning)
+            {
+                string result;
+                if (IsQRImage(bmp, out result))
+                {
+                    MessageBox.Show(result);
+                }
+            }
         }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Thread t = new Thread(new ThreadStart(JudgeIsQRImage));
+            t.Start();
+        }
    
     }
 }
