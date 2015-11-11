@@ -1,0 +1,9 @@
+C:\VS2012\Project\HTTP请求_baidu\HTTP请求_baidu\bin\Debug\HTTP请求_baidu.exe.config
+C:\VS2012\Project\HTTP请求_baidu\HTTP请求_baidu\bin\Debug\HTTP请求_baidu.exe
+C:\VS2012\Project\HTTP请求_baidu\HTTP请求_baidu\bin\Debug\HTTP请求_baidu.pdb
+C:\VS2012\Project\HTTP请求_baidu\HTTP请求_baidu\obj\Debug\HTTP请求_baidu.csprojResolveAssemblyReference.cache
+C:\VS2012\Project\HTTP请求_baidu\HTTP请求_baidu\obj\Debug\HTTP请求_baidu.Form1.resources
+C:\VS2012\Project\HTTP请求_baidu\HTTP请求_baidu\obj\Debug\HTTP请求_baidu.Properties.Resources.resources
+C:\VS2012\Project\HTTP请求_baidu\HTTP请求_baidu\obj\Debug\HTTP请求_baidu.csproj.GenerateResource.Cache
+C:\VS2012\Project\HTTP请求_baidu\HTTP请求_baidu\obj\Debug\HTTP请求_baidu.exe
+C:\VS2012\Project\HTTP请求_baidu\HTTP请求_baidu\obj\Debug\HTTP请求_baidu.pdb
