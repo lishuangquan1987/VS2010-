@@ -14,3 +14,12 @@ C:\SogouDownLoad\二维码解析\二维码解析\bin\Debug\ThoughtWorks.QRCode.d
 C:\SogouDownLoad\二维码解析\二维码解析\obj\Debug\二维码解析.Form1.resources
 C:\SogouDownLoad\二维码解析\二维码解析\obj\Debug\二维码解析.Properties.Resources.resources
 C:\SogouDownLoad\二维码解析\二维码解析\obj\Debug\二维码解析.csproj.GenerateResource.Cache
+C:\VS2012\Project\二维码解析\二维码解析\obj\Debug\二维码解析.exe
+C:\VS2012\Project\二维码解析\二维码解析\obj\Debug\二维码解析.pdb
+C:\VS2012\Project\二维码解析\二维码解析\bin\Debug\二维码解析.exe
+C:\VS2012\Project\二维码解析\二维码解析\bin\Debug\二维码解析.pdb
+C:\VS2012\Project\二维码解析\二维码解析\bin\Debug\ThoughtWorks.QRCode.dll
+C:\VS2012\Project\二维码解析\二维码解析\obj\Debug\二维码解析.csprojResolveAssemblyReference.cache
+C:\VS2012\Project\二维码解析\二维码解析\obj\Debug\二维码解析.Form1.resources
+C:\VS2012\Project\二维码解析\二维码解析\obj\Debug\二维码解析.Properties.Resources.resources
+C:\VS2012\Project\二维码解析\二维码解析\obj\Debug\二维码解析.csproj.GenerateResource.Cache

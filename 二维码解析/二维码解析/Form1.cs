@@ -93,5 +93,43 @@ namespace 二维码解析
             QRCodeDecoder qrd = new QRCodeDecoder();
             label1.Text = qrd.decode(new QRCodeBitmapImage(new Bitmap(this.pictureBox1.Image)));
         }
+        public static bool IsUnicode(byte[] byteData)//unicode（中文）与ASCII码的区别
+        {
+            //string value1 = FromASCIIByteArray(byteData);
+            //string value2 = FromUnicodeByteArray(byteData);
+            //byte[] ascii = AsciiStringToByteArray(value1);
+            //byte[] unicode = UnicodeStringToByteArray(value2);
+            //if (ascii[0] != unicode[0])
+            //    return true;
+            //return false;
+            bool isUnicode = false;
+            foreach (byte value in byteData)
+            {
+                if (value > 128)
+                {
+                    isUnicode = true;
+                    break;
+                }
+
+            }
+            return isUnicode;//返回是不是Unicode编码
+        }
+        public bool IsQRImage(Bitmap bmp,out string content)
+        {
+            bool result = true;
+            QRCodeDecoder qrd = new QRCodeDecoder();
+                try
+                {
+                   content= qrd.decode(new QRCodeBitmapImage(bmp));
+                }
+                catch(Exception e)
+                {
+                    result=false;
+                    content = null;
+                    return result;
+                }
+            
+            return result;
+        }
     }
 }

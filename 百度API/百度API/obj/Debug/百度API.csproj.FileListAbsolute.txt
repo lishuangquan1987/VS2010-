@@ -1,0 +1,9 @@
+C:\VS2012\Project\百度API\百度API\bin\Debug\百度API.exe.config
+C:\VS2012\Project\百度API\百度API\bin\Debug\百度API.exe
+C:\VS2012\Project\百度API\百度API\bin\Debug\百度API.pdb
+C:\VS2012\Project\百度API\百度API\obj\Debug\百度API.csprojResolveAssemblyReference.cache
+C:\VS2012\Project\百度API\百度API\obj\Debug\百度API.Form1.resources
+C:\VS2012\Project\百度API\百度API\obj\Debug\百度API.Properties.Resources.resources
+C:\VS2012\Project\百度API\百度API\obj\Debug\百度API.csproj.GenerateResource.Cache
+C:\VS2012\Project\百度API\百度API\obj\Debug\百度API.exe
+C:\VS2012\Project\百度API\百度API\obj\Debug\百度API.pdb

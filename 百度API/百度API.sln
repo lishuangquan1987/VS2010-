@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "百度API", "百度API\百度API.csproj", "{3569EDF1-2C60-4867-A2C6-675A43BE67EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3569EDF1-2C60-4867-A2C6-675A43BE67EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3569EDF1-2C60-4867-A2C6-675A43BE67EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3569EDF1-2C60-4867-A2C6-675A43BE67EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3569EDF1-2C60-4867-A2C6-675A43BE67EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
