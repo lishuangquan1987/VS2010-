@@ -1,0 +1,10 @@
+C:\VS2012\Project\SFC_TEST_LuxShare\SFC_TEST_LuxShare\bin\Debug\SFC_TEST_LuxShare.exe.config
+C:\VS2012\Project\SFC_TEST_LuxShare\SFC_TEST_LuxShare\bin\Debug\SFC_TEST_LuxShare.exe
+C:\VS2012\Project\SFC_TEST_LuxShare\SFC_TEST_LuxShare\bin\Debug\SFC_TEST_LuxShare.pdb
+C:\VS2012\Project\SFC_TEST_LuxShare\SFC_TEST_LuxShare\bin\Debug\Checkroute.dll
+C:\VS2012\Project\SFC_TEST_LuxShare\SFC_TEST_LuxShare\obj\Debug\SFC_TEST_LuxShare.csprojResolveAssemblyReference.cache
+C:\VS2012\Project\SFC_TEST_LuxShare\SFC_TEST_LuxShare\obj\Debug\SFC_TEST_LuxShare.Form1.resources
+C:\VS2012\Project\SFC_TEST_LuxShare\SFC_TEST_LuxShare\obj\Debug\SFC_TEST_LuxShare.Properties.Resources.resources
+C:\VS2012\Project\SFC_TEST_LuxShare\SFC_TEST_LuxShare\obj\Debug\SFC_TEST_LuxShare.csproj.GenerateResource.Cache
+C:\VS2012\Project\SFC_TEST_LuxShare\SFC_TEST_LuxShare\obj\Debug\SFC_TEST_LuxShare.exe
+C:\VS2012\Project\SFC_TEST_LuxShare\SFC_TEST_LuxShare\obj\Debug\SFC_TEST_LuxShare.pdb

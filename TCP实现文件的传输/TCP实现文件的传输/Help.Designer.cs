@@ -47,6 +47,7 @@
             this.ClientSize = new System.Drawing.Size(421, 257);
             this.Controls.Add(this.richTextBox1);
             this.Name = "Help";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Help";
             this.Load += new System.EventHandler(this.Help_Load);
             this.ResumeLayout(false);

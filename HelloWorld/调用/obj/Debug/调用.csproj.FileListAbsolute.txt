@@ -1,0 +1,6 @@
+C:\VS2012\Project\HelloWorld\调用\bin\Debug\调用.exe.config
+C:\VS2012\Project\HelloWorld\调用\bin\Debug\调用.exe
+C:\VS2012\Project\HelloWorld\调用\bin\Debug\调用.pdb
+C:\VS2012\Project\HelloWorld\调用\obj\Debug\调用.csprojResolveAssemblyReference.cache
+C:\VS2012\Project\HelloWorld\调用\obj\Debug\调用.exe
+C:\VS2012\Project\HelloWorld\调用\obj\Debug\调用.pdb

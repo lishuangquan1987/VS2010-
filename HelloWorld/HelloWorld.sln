@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld", "HelloWorld\HelloWorld.csproj", "{DDD90331-3B30-4026-9FB6-2F9A0ACBE3D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "调用", "调用\调用.csproj", "{16585082-F9A6-4A15-8EBB-CE07F50E4AA1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DDD90331-3B30-4026-9FB6-2F9A0ACBE3D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDD90331-3B30-4026-9FB6-2F9A0ACBE3D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDD90331-3B30-4026-9FB6-2F9A0ACBE3D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDD90331-3B30-4026-9FB6-2F9A0ACBE3D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16585082-F9A6-4A15-8EBB-CE07F50E4AA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16585082-F9A6-4A15-8EBB-CE07F50E4AA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16585082-F9A6-4A15-8EBB-CE07F50E4AA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16585082-F9A6-4A15-8EBB-CE07F50E4AA1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
