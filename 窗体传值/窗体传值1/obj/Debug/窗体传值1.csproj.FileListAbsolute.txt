@@ -1,0 +1,9 @@
+C:\VS2012\Project\窗体传值\窗体传值1\bin\Debug\窗体传值1.exe.config
+C:\VS2012\Project\窗体传值\窗体传值1\bin\Debug\窗体传值1.exe
+C:\VS2012\Project\窗体传值\窗体传值1\bin\Debug\窗体传值1.pdb
+C:\VS2012\Project\窗体传值\窗体传值1\obj\Debug\窗体传值1.Form1.resources
+C:\VS2012\Project\窗体传值\窗体传值1\obj\Debug\窗体传值1.Form2.resources
+C:\VS2012\Project\窗体传值\窗体传值1\obj\Debug\窗体传值1.Properties.Resources.resources
+C:\VS2012\Project\窗体传值\窗体传值1\obj\Debug\窗体传值1.csproj.GenerateResource.Cache
+C:\VS2012\Project\窗体传值\窗体传值1\obj\Debug\窗体传值1.exe
+C:\VS2012\Project\窗体传值\窗体传值1\obj\Debug\窗体传值1.pdb
