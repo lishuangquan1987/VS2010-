@@ -194,5 +194,30 @@ namespace Capture_LikeQQ
         {
             MessageBox.Show("截图：Ctrl+B\r\n截取全图：在截图界面直接按Enter\r\n取消截图：在截图界面按ESC", "help", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+        Point this_orignalLocation;
+        Point this_nowLocation;
+        Point Curse_orignalPosition=new Point(0,0);
+        Point Curse_nowLocation=new Point(0,0);
+        int diff_x, diff_y;
+        private void Form1_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.MouseMove += Form1_MouseMove;
+            this_orignalLocation = this.Location;
+            Capture_LikeQQ.Capture.GetCursorPos(ref Curse_orignalPosition);
+        }
+
+        void Form1_MouseMove(object sender, MouseEventArgs e)
+        {
+            Capture_LikeQQ.Capture.GetCursorPos(ref Curse_nowLocation);
+            diff_x = Curse_nowLocation.X - Curse_orignalPosition.X;
+            diff_y = Curse_nowLocation.Y - Curse_orignalPosition.Y;
+            this.this_nowLocation = new Point(this.this_orignalLocation.X + diff_x, this.this_orignalLocation.Y + diff_y);
+            this.Location = this_nowLocation;
+        }
+
+        private void Form1_MouseUp(object sender, MouseEventArgs e)
+        {
+            this.MouseMove -= Form1_MouseMove;
+        }
     }
 }
