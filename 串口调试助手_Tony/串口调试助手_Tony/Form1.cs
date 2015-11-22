@@ -115,9 +115,10 @@ namespace 串口调试助手_Tony
         void GetSerialPorts()
         {
             Ports = Model_SerialPort.SerialPortMain.GetPortNames();
+            this.comboBox_COM.Items.Clear();
             if (Ports.Length != 0)
             {
-                this.comboBox_COM.Items.Clear();
+                
                 this.comboBox_COM.Items.AddRange(Ports);
                 
                 Model_SerialPort.SerialPortMain[] temp_ports = new Model_SerialPort.SerialPortMain[Ports.Length];

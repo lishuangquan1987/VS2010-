@@ -12,19 +12,26 @@ namespace Model_SerialPort
         
         public SerialPortMain()
         {
-            this.DataReceived += new SerialDataReceivedEventHandler(SerialPortMain_DataReceived);
-            this.ReceivedBytesThreshold = 1;
-            this.DtrEnable = true;
-            this.RtsEnable = true;
+            //this.DataReceived += new SerialDataReceivedEventHandler(SerialPortMain_DataReceived);
+            //this.ReceivedBytesThreshold = 1;
+            this.Encoding = Encoding.Default;
+           //this.DtrEnable = true;
+           // this.RtsEnable = true;
         }
-        StringBuilder ReveiveString = new StringBuilder();
+        //StringBuilder ReveiveString = new StringBuilder();
         void SerialPortMain_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
             SerialPort s = (SerialPort)sender;
-
-            if (s.BytesToRead > 0)
+            //while (s.BytesToRead != 0)
+            //{
+            //    ReveiveString.Append(s.ReadLine());
+            //}
+            while (s.BytesToRead > 0)
             {
-                ReveiveString.Append(s.ReadExisting());
+               
+                byte[] bytes = new byte[s.BytesToRead];
+                s.Read(bytes, 0, bytes.Length);
+                //ReveiveString.Append(Encoding.Default.GetString(bytes,0,bytes.Length));
             }
         }
         public int Port_Open()
@@ -62,9 +69,8 @@ namespace Model_SerialPort
         
         public int WriteString(string msg)
         {
-            this.DiscardInBuffer();
-            this.DiscardOutBuffer();
-            ReveiveString = new StringBuilder();
+           
+            //ReveiveString = new StringBuilder();
             if (!this.IsOpen)
             {
                 if (Port_Open() == -1)
@@ -73,6 +79,8 @@ namespace Model_SerialPort
                     return -1;
                 }
             }
+            this.DiscardInBuffer();
+            this.DiscardOutBuffer();
             try
             {
                 this.Write(msg);
@@ -90,13 +98,14 @@ namespace Model_SerialPort
         }
         public string ReadString()
         {
-           
+            string result = "";
+            System.Threading.Thread.Sleep(30);
             while (this.BytesToRead != 0)
             {
-               
+                result += Convert.ToChar(this.ReadChar());
                 System.Threading.Thread.Sleep(10);
             }
-            return ReveiveString.ToString();
+            return result;
         }
     }
 }

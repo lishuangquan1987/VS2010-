@@ -174,11 +174,11 @@ namespace Log_Analysizer
                 MessageBox.Show("csv第四行开头应该不是以条码开头", "错误提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            if (!First_content[5].StartsWith("C"))
-            {
-                MessageBox.Show("csv第五行开头应该是以条码开头", "错误提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
+            //if (!First_content[5].StartsWith("C"))
+            //{
+            //    MessageBox.Show("csv第五行开头应该是以条码开头", "错误提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //    return;
+            //}
             #endregion
             #region~进度条20%
             UpdateProgresser(20);
@@ -400,13 +400,13 @@ namespace Log_Analysizer
                 updateLable("分析失败！");
                 return;
             }
-            if (!First_content[5].StartsWith("C"))
-            {
-                MessageBox.Show("csv第五行开头应该是以条码开头", "错误提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                button_status_change(this.button_result, true);
-                updateLable("分析失败！");
-                return;
-            }
+            //if (!First_content[5].StartsWith("C"))
+            //{
+            //    MessageBox.Show("csv第五行开头应该是以条码开头", "错误提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //    button_status_change(this.button_result, true);
+            //    updateLable("分析失败！");
+            //    return;
+            //}
             #endregion
             #region~进度条20%
             UpdateProgresser(20);
@@ -426,7 +426,7 @@ namespace Log_Analysizer
                     else
                         temp = First_content[i].Split(';');
                     //当SN为空时过滤掉
-                    if (temp[0] == "" || temp[0] == null||!temp[0].Trim().StartsWith("C"))
+                    if (temp[0] == "" || temp[0] == null)
                         continue;
                     temp_fct = new MLB_FCT();
                     temp_fct.SerialNumber = temp[0].Trim();

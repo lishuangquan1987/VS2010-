@@ -7,3 +7,4 @@ C:\VS2012\Project\串口调试助手_Tony\Model_SerialPort\bin\Debug\Model_Seria
 C:\VS2012\Project\串口调试助手_Tony\Model_SerialPort\bin\Debug\Model_SerialPort.pdb
 C:\VS2012\Project\串口调试助手_Tony\Model_SerialPort\obj\Debug\Model_SerialPort.dll
 C:\VS2012\Project\串口调试助手_Tony\Model_SerialPort\obj\Debug\Model_SerialPort.pdb
+C:\VS2012\Project\串口调试助手_Tony\Model_SerialPort\obj\Debug\Model_SerialPort.csprojResolveAssemblyReference.cache
