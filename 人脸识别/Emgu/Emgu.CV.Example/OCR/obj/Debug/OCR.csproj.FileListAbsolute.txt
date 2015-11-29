@@ -1,0 +1,6 @@
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\bin\Example.OCR.exe
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\bin\Example.OCR.pdb
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\Emgu.CV.Example\OCR\obj\Debug\Example.OCR.exe
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\Emgu.CV.Example\OCR\obj\Debug\Example.OCR.pdb
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\Emgu.CV.Example\OCR\obj\Debug\OCR.OCRForm.resources
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\Emgu.CV.Example\OCR\obj\Debug\OCR.csproj.GenerateResource.Cache

@@ -1,0 +1,32 @@
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\bin\Emgu.CV.License.txt
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\bin\tessdata\eng.cube.bigrams
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\bin\tessdata\eng.cube.fold
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\bin\tessdata\eng.cube.lm
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\bin\tessdata\eng.cube.nn
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\bin\tessdata\eng.cube.params
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\bin\tessdata\eng.cube.size
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\bin\tessdata\eng.cube.word-freq
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\bin\tessdata\eng.tesseract_cube.nn
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\bin\tessdata\eng.traineddata
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\bin\Emgu.CV.OCR.XML
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\bin\Emgu.CV.OCR.dll
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\bin\Emgu.CV.OCR.pdb
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\Emgu.CV.OCR\obj\Debug\Emgu.CV.OCR.csprojResolveAssemblyReference.cache
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\Emgu.CV.OCR\obj\Debug\Emgu.CV.OCR.dll
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\Emgu.CV.OCR\obj\Debug\Emgu.CV.OCR.pdb
+C:\VS2012\Project\人脸识别\Emgu\Emgu.CV.OCR\obj\Debug\Emgu.CV.OCR.csprojResolveAssemblyReference.cache
+C:\VS2012\Project\人脸识别\Emgu\Emgu.CV.OCR\obj\Debug\Emgu.CV.OCR.dll
+C:\VS2012\Project\人脸识别\Emgu\Emgu.CV.OCR\obj\Debug\Emgu.CV.OCR.pdb
+C:\VS2012\Project\人脸识别\Emgu\bin\Emgu.CV.License.txt
+C:\VS2012\Project\人脸识别\Emgu\bin\tessdata\eng.cube.bigrams
+C:\VS2012\Project\人脸识别\Emgu\bin\tessdata\eng.cube.fold
+C:\VS2012\Project\人脸识别\Emgu\bin\tessdata\eng.cube.lm
+C:\VS2012\Project\人脸识别\Emgu\bin\tessdata\eng.cube.nn
+C:\VS2012\Project\人脸识别\Emgu\bin\tessdata\eng.cube.params
+C:\VS2012\Project\人脸识别\Emgu\bin\tessdata\eng.cube.size
+C:\VS2012\Project\人脸识别\Emgu\bin\tessdata\eng.cube.word-freq
+C:\VS2012\Project\人脸识别\Emgu\bin\tessdata\eng.tesseract_cube.nn
+C:\VS2012\Project\人脸识别\Emgu\bin\tessdata\eng.traineddata
+C:\VS2012\Project\人脸识别\Emgu\bin\Emgu.CV.OCR.XML
+C:\VS2012\Project\人脸识别\Emgu\bin\Emgu.CV.OCR.dll
+C:\VS2012\Project\人脸识别\Emgu\bin\Emgu.CV.OCR.pdb

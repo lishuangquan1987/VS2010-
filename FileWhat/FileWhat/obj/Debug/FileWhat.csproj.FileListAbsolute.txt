@@ -1,0 +1,8 @@
+C:\VS2012\Project\FileWhat\FileWhat\bin\Debug\FileWhat.exe
+C:\VS2012\Project\FileWhat\FileWhat\bin\Debug\FileWhat.pdb
+C:\VS2012\Project\FileWhat\FileWhat\obj\Debug\FileWhat.csprojResolveAssemblyReference.cache
+C:\VS2012\Project\FileWhat\FileWhat\obj\Debug\FileWhat.Form1.resources
+C:\VS2012\Project\FileWhat\FileWhat\obj\Debug\FileWhat.Properties.Resources.resources
+C:\VS2012\Project\FileWhat\FileWhat\obj\Debug\FileWhat.csproj.GenerateResource.Cache
+C:\VS2012\Project\FileWhat\FileWhat\obj\Debug\FileWhat.exe
+C:\VS2012\Project\FileWhat\FileWhat\obj\Debug\FileWhat.pdb

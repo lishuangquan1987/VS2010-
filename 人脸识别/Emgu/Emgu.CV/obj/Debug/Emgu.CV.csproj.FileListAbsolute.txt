@@ -1,0 +1,18 @@
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\bin\Emgu.CV.License.txt
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\bin\Emgu.CV.XML
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\bin\Emgu.CV.dll
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\bin\Emgu.CV.pdb
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\Emgu.CV\obj\Debug\Emgu.CV.csprojResolveAssemblyReference.cache
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\Emgu.CV\obj\Debug\Emgu.CV.Properties.StringTable.resources
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\Emgu.CV\obj\Debug\Emgu.CV.csproj.GenerateResource.Cache
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\Emgu.CV\obj\Debug\Emgu.CV.dll
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\Emgu.CV\obj\Debug\Emgu.CV.pdb
+C:\VS2012\Project\人脸识别\Emgu\Emgu.CV\obj\Debug\Emgu.CV.csprojResolveAssemblyReference.cache
+C:\VS2012\Project\人脸识别\Emgu\Emgu.CV\obj\Debug\Emgu.CV.Properties.StringTable.resources
+C:\VS2012\Project\人脸识别\Emgu\Emgu.CV\obj\Debug\Emgu.CV.csproj.GenerateResource.Cache
+C:\VS2012\Project\人脸识别\Emgu\Emgu.CV\obj\Debug\Emgu.CV.dll
+C:\VS2012\Project\人脸识别\Emgu\Emgu.CV\obj\Debug\Emgu.CV.pdb
+C:\VS2012\Project\人脸识别\Emgu\bin\Emgu.CV.License.txt
+C:\VS2012\Project\人脸识别\Emgu\bin\Emgu.CV.XML
+C:\VS2012\Project\人脸识别\Emgu\bin\Emgu.CV.dll
+C:\VS2012\Project\人脸识别\Emgu\bin\Emgu.CV.pdb

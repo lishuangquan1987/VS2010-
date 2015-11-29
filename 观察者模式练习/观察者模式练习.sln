@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "观察者模式练习", "观察者模式练习\观察者模式练习.csproj", "{CAA20959-5240-4E5C-A160-32C6923F00F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "观察者模式.Net实现", "观察者模式.Net实现\观察者模式.Net实现.csproj", "{5713F36A-E128-41A6-8CB1-4D3B2D408C04}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CAA20959-5240-4E5C-A160-32C6923F00F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAA20959-5240-4E5C-A160-32C6923F00F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAA20959-5240-4E5C-A160-32C6923F00F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAA20959-5240-4E5C-A160-32C6923F00F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5713F36A-E128-41A6-8CB1-4D3B2D408C04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5713F36A-E128-41A6-8CB1-4D3B2D408C04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5713F36A-E128-41A6-8CB1-4D3B2D408C04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5713F36A-E128-41A6-8CB1-4D3B2D408C04}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

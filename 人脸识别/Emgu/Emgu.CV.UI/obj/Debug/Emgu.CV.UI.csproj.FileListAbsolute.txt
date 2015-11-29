@@ -1,0 +1,60 @@
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\bin\Emgu.CV.License.txt
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\bin\Emgu.CV.UI.XML
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\bin\Emgu.CV.UI.dll
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\bin\Emgu.CV.UI.pdb
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\bin\zh-CN\Emgu.CV.UI.resources.dll
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\Emgu.CV.UI\obj\Debug\Emgu.CV.UI.csprojResolveAssemblyReference.cache
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\Emgu.CV.UI\obj\Debug\Emgu.CV.UI.HistogramBox.resources
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\Emgu.CV.UI\obj\Debug\Emgu.CV.UI.HistogramViewer.resources
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\Emgu.CV.UI\obj\Debug\Emgu.CV.UI.ImageBox.resources
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\Emgu.CV.UI\obj\Debug\Emgu.CV.UI.ImageProperty.resources
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\Emgu.CV.UI\obj\Debug\Emgu.CV.UI.ImageViewer.resources
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\Emgu.CV.UI\obj\Debug\Emgu.CV.UI.MatrixBox.resources
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\Emgu.CV.UI\obj\Debug\Emgu.CV.UI.MatrixViewer.resources
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\Emgu.CV.UI\obj\Debug\Emgu.CV.UI.OperationsView.resources
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\Emgu.CV.UI\obj\Debug\Emgu.CV.UI.PanAndZoomPictureBox.resources
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\Emgu.CV.UI\obj\Debug\Emgu.CV.UI.ParameterInputDialog.resources
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\Emgu.CV.UI\obj\Debug\Emgu.CV.UI.Properties.StringTable.resources
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\Emgu.CV.UI\obj\Debug\Emgu.CV.UI.ImagePropertyDialog.resources
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\Emgu.CV.UI\obj\Debug\Emgu.CV.UI.HistogramViewer.zh-CN.resources
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\Emgu.CV.UI\obj\Debug\Emgu.CV.UI.ImageProperty.zh-CN.resources
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\Emgu.CV.UI\obj\Debug\Emgu.CV.UI.ImageViewer.zh-CN.resources
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\Emgu.CV.UI\obj\Debug\Emgu.CV.UI.MatrixBox.zh-CN.resources
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\Emgu.CV.UI\obj\Debug\Emgu.CV.UI.MatrixViewer.zh-CN.resources
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\Emgu.CV.UI\obj\Debug\Emgu.CV.UI.ParameterInputDialog.zh-CN.resources
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\Emgu.CV.UI\obj\Debug\Emgu.CV.UI.Properties.StringTable.zh-CN.resources
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\Emgu.CV.UI\obj\Debug\Emgu.CV.UI.ImagePropertyDialog.zh-CN.resources
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\Emgu.CV.UI\obj\Debug\Emgu.CV.UI.csproj.GenerateResource.Cache
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\Emgu.CV.UI\obj\Debug\zh-CN\Emgu.CV.UI.resources.dll
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\Emgu.CV.UI\obj\Debug\Emgu.CV.UI.dll
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\Emgu.CV.UI\obj\Debug\Emgu.CV.UI.pdb
+C:\VS2012\Project\人脸识别\Emgu\Emgu.CV.UI\obj\Debug\Emgu.CV.UI.csprojResolveAssemblyReference.cache
+C:\VS2012\Project\人脸识别\Emgu\Emgu.CV.UI\obj\Debug\Emgu.CV.UI.HistogramBox.resources
+C:\VS2012\Project\人脸识别\Emgu\Emgu.CV.UI\obj\Debug\Emgu.CV.UI.HistogramViewer.resources
+C:\VS2012\Project\人脸识别\Emgu\Emgu.CV.UI\obj\Debug\Emgu.CV.UI.ImageBox.resources
+C:\VS2012\Project\人脸识别\Emgu\Emgu.CV.UI\obj\Debug\Emgu.CV.UI.ImageProperty.resources
+C:\VS2012\Project\人脸识别\Emgu\Emgu.CV.UI\obj\Debug\Emgu.CV.UI.ImageViewer.resources
+C:\VS2012\Project\人脸识别\Emgu\Emgu.CV.UI\obj\Debug\Emgu.CV.UI.MatrixBox.resources
+C:\VS2012\Project\人脸识别\Emgu\Emgu.CV.UI\obj\Debug\Emgu.CV.UI.MatrixViewer.resources
+C:\VS2012\Project\人脸识别\Emgu\Emgu.CV.UI\obj\Debug\Emgu.CV.UI.OperationsView.resources
+C:\VS2012\Project\人脸识别\Emgu\Emgu.CV.UI\obj\Debug\Emgu.CV.UI.PanAndZoomPictureBox.resources
+C:\VS2012\Project\人脸识别\Emgu\Emgu.CV.UI\obj\Debug\Emgu.CV.UI.ParameterInputDialog.resources
+C:\VS2012\Project\人脸识别\Emgu\Emgu.CV.UI\obj\Debug\Emgu.CV.UI.Properties.StringTable.resources
+C:\VS2012\Project\人脸识别\Emgu\Emgu.CV.UI\obj\Debug\Emgu.CV.UI.ImagePropertyDialog.resources
+C:\VS2012\Project\人脸识别\Emgu\Emgu.CV.UI\obj\Debug\Emgu.CV.UI.HistogramViewer.zh-CN.resources
+C:\VS2012\Project\人脸识别\Emgu\Emgu.CV.UI\obj\Debug\Emgu.CV.UI.ImageProperty.zh-CN.resources
+C:\VS2012\Project\人脸识别\Emgu\Emgu.CV.UI\obj\Debug\Emgu.CV.UI.ImageViewer.zh-CN.resources
+C:\VS2012\Project\人脸识别\Emgu\Emgu.CV.UI\obj\Debug\Emgu.CV.UI.MatrixBox.zh-CN.resources
+C:\VS2012\Project\人脸识别\Emgu\Emgu.CV.UI\obj\Debug\Emgu.CV.UI.MatrixViewer.zh-CN.resources
+C:\VS2012\Project\人脸识别\Emgu\Emgu.CV.UI\obj\Debug\Emgu.CV.UI.ParameterInputDialog.zh-CN.resources
+C:\VS2012\Project\人脸识别\Emgu\Emgu.CV.UI\obj\Debug\Emgu.CV.UI.Properties.StringTable.zh-CN.resources
+C:\VS2012\Project\人脸识别\Emgu\Emgu.CV.UI\obj\Debug\Emgu.CV.UI.ImagePropertyDialog.zh-CN.resources
+C:\VS2012\Project\人脸识别\Emgu\Emgu.CV.UI\obj\Debug\Emgu.CV.UI.csproj.GenerateResource.Cache
+C:\VS2012\Project\人脸识别\Emgu\Emgu.CV.UI\obj\Debug\Emgu.CV.UI.dll
+C:\VS2012\Project\人脸识别\Emgu\Emgu.CV.UI\obj\Debug\Emgu.CV.UI.pdb
+C:\VS2012\Project\人脸识别\Emgu\bin\Emgu.CV.License.txt
+C:\VS2012\Project\人脸识别\Emgu\bin\Emgu.CV.UI.XML
+C:\VS2012\Project\人脸识别\Emgu\bin\Emgu.CV.UI.dll
+C:\VS2012\Project\人脸识别\Emgu\bin\Emgu.CV.UI.pdb
+C:\VS2012\Project\人脸识别\Emgu\bin\zh-CN\Emgu.CV.UI.resources.dll
+C:\VS2012\Project\人脸识别\Emgu\Emgu.CV.UI\obj\Debug\zh-CN\Emgu.CV.UI.resources.dll

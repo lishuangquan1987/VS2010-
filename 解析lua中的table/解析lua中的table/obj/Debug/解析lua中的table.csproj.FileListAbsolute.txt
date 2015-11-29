@@ -1,0 +1,10 @@
+C:\VS2012\Project\解析lua中的table\解析lua中的table\bin\Debug\解析lua中的table.exe
+C:\VS2012\Project\解析lua中的table\解析lua中的table\bin\Debug\解析lua中的table.pdb
+C:\VS2012\Project\解析lua中的table\解析lua中的table\bin\Debug\lua51.dll
+C:\VS2012\Project\解析lua中的table\解析lua中的table\bin\Debug\LuaInterface.dll
+C:\VS2012\Project\解析lua中的table\解析lua中的table\obj\Debug\解析lua中的table.Form1.resources
+C:\VS2012\Project\解析lua中的table\解析lua中的table\obj\Debug\解析lua中的table.Properties.Resources.resources
+C:\VS2012\Project\解析lua中的table\解析lua中的table\obj\Debug\解析lua中的table.csproj.GenerateResource.Cache
+C:\VS2012\Project\解析lua中的table\解析lua中的table\obj\Debug\解析lua中的table.exe
+C:\VS2012\Project\解析lua中的table\解析lua中的table\obj\Debug\解析lua中的table.pdb
+C:\VS2012\Project\解析lua中的table\解析lua中的table\bin\Debug\解析lua中的table.exe.config

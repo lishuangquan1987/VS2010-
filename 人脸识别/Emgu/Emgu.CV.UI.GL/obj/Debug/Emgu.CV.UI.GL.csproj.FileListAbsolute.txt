@@ -1,0 +1,3 @@
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\Emgu.CV.UI.GL\obj\Debug\Emgu.CV.UI.GL.csprojResolveAssemblyReference.cache
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\Emgu.CV.UI.GL\obj\Debug\Emgu.CV.UI.GLView.GLImageViewer.resources
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\Emgu.CV.UI.GL\obj\Debug\Emgu.CV.UI.GL.csproj.GenerateResource.Cache

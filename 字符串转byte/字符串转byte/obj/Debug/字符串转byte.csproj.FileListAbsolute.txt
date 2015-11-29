@@ -1,0 +1,5 @@
+C:\VS2012\Project\字符串转byte\字符串转byte\bin\Debug\字符串转byte.exe
+C:\VS2012\Project\字符串转byte\字符串转byte\bin\Debug\字符串转byte.pdb
+C:\VS2012\Project\字符串转byte\字符串转byte\obj\Debug\字符串转byte.csprojResolveAssemblyReference.cache
+C:\VS2012\Project\字符串转byte\字符串转byte\obj\Debug\字符串转byte.exe
+C:\VS2012\Project\字符串转byte\字符串转byte\obj\Debug\字符串转byte.pdb

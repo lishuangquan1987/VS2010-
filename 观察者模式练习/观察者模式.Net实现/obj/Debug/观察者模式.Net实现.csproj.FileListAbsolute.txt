@@ -1,0 +1,5 @@
+C:\VS2012\Project\观察者模式练习\观察者模式.Net实现\bin\Debug\观察者模式.Net实现.exe
+C:\VS2012\Project\观察者模式练习\观察者模式.Net实现\bin\Debug\观察者模式.Net实现.pdb
+C:\VS2012\Project\观察者模式练习\观察者模式.Net实现\obj\Debug\观察者模式.Net实现.csprojResolveAssemblyReference.cache
+C:\VS2012\Project\观察者模式练习\观察者模式.Net实现\obj\Debug\观察者模式.Net实现.exe
+C:\VS2012\Project\观察者模式练习\观察者模式.Net实现\obj\Debug\观察者模式.Net实现.pdb

@@ -23,6 +23,7 @@ namespace Thread的应用
         public delegate void UpdateCheckBoxes(string value,int ID);
         public void updateCheckBoxes(string value,int ID)
         {
+            
             if (this.InvokeRequired)
                 this.Invoke(new UpdateCheckBoxes(updateCheckBoxes), value,ID);
             else
@@ -172,19 +173,27 @@ namespace Thread的应用
            else
                return Color.LightCyan;
        }
-
+       public void ShowMsg(int[] values)
+       {
+           foreach (int i in values)
+           {
+               MessageBox.Show(i.ToString());
+           }
+       }
        private void button3_Click(object sender, EventArgs e)
        {
-           
-           foreach (MethodInfo mInfo in this.GetType().GetMethods())
-           {
-               string name = mInfo.Name;
-               //foreach (Attribute attr in Attribute.GetCustomAttributes(mInfo))
-               //{
-               //    string LuaFunctionName =
-               //   // pLuaVM.RegisterFunction(LuaFunctionName, pLuaAPIClass, mInfo);
-               //}
-           }
+           Lua lua3 = new Lua();
+           lua3.DoFile("test3.lua");
+           LuaFunction l= lua3.RegisterFunction("AAA", this, this.GetType().GetMethod("AAA"));
+           object[] r= l.Call();
+           lua3.RegisterFunction("msgbox", this, this.GetType().GetMethod("msgbox"));
+           lua3.RegisterFunction("ShowMsg",this, this.GetType().GetMethod("ShowMsg"));
+           lua3.GetFunction("test").Call();
+           LuaTable i = lua3["str"] as LuaTable;
+           object j = i["er"];
+           MessageBox.Show(i["er"].GetType().ToString());
+           MessageBox.Show(i.ToString());
+
        }
     }
 }

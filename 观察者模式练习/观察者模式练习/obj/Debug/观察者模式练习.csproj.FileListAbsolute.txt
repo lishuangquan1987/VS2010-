@@ -1,0 +1,5 @@
+C:\VS2012\Project\观察者模式练习\观察者模式练习\bin\Debug\观察者模式练习.exe
+C:\VS2012\Project\观察者模式练习\观察者模式练习\bin\Debug\观察者模式练习.pdb
+C:\VS2012\Project\观察者模式练习\观察者模式练习\obj\Debug\观察者模式练习.csprojResolveAssemblyReference.cache
+C:\VS2012\Project\观察者模式练习\观察者模式练习\obj\Debug\观察者模式练习.exe
+C:\VS2012\Project\观察者模式练习\观察者模式练习\obj\Debug\观察者模式练习.pdb

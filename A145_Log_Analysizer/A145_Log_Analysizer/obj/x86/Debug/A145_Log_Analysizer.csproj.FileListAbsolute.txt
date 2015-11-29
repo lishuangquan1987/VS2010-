@@ -1,0 +1,19 @@
+d:\我的文档\visual studio 2010\Projects\A145_Log_Analysizer\A145_Log_Analysizer\bin\Debug\A145_Log_Analysizer.exe
+d:\我的文档\visual studio 2010\Projects\A145_Log_Analysizer\A145_Log_Analysizer\bin\Debug\A145_Log_Analysizer.pdb
+d:\我的文档\visual studio 2010\Projects\A145_Log_Analysizer\A145_Log_Analysizer\obj\x86\Debug\ResolveAssemblyReference.cache
+d:\我的文档\visual studio 2010\Projects\A145_Log_Analysizer\A145_Log_Analysizer\obj\x86\Debug\A145_Log_Analysizer.Form1.resources
+d:\我的文档\visual studio 2010\Projects\A145_Log_Analysizer\A145_Log_Analysizer\obj\x86\Debug\A145_Log_Analysizer.Properties.Resources.resources
+d:\我的文档\visual studio 2010\Projects\A145_Log_Analysizer\A145_Log_Analysizer\obj\x86\Debug\GenerateResource.read.1.tlog
+d:\我的文档\visual studio 2010\Projects\A145_Log_Analysizer\A145_Log_Analysizer\obj\x86\Debug\GenerateResource.write.1.tlog
+d:\我的文档\visual studio 2010\Projects\A145_Log_Analysizer\A145_Log_Analysizer\obj\x86\Debug\A145_Log_Analysizer.exe
+d:\我的文档\visual studio 2010\Projects\A145_Log_Analysizer\A145_Log_Analysizer\obj\x86\Debug\A145_Log_Analysizer.pdb
+d:\我的文档\visual studio 2010\Projects\A145_Log_Analysizer\A145_Log_Analysizer\bin\Debug\NPOI.dll
+C:\VS2012\Project\A145_Log_Analysizer\A145_Log_Analysizer\obj\x86\Debug\A145_Log_Analysizer.exe
+C:\VS2012\Project\A145_Log_Analysizer\A145_Log_Analysizer\obj\x86\Debug\A145_Log_Analysizer.pdb
+C:\VS2012\Project\A145_Log_Analysizer\A145_Log_Analysizer\bin\Debug\A145_Log_Analysizer.exe
+C:\VS2012\Project\A145_Log_Analysizer\A145_Log_Analysizer\bin\Debug\A145_Log_Analysizer.pdb
+C:\VS2012\Project\A145_Log_Analysizer\A145_Log_Analysizer\bin\Debug\NPOI.dll
+C:\VS2012\Project\A145_Log_Analysizer\A145_Log_Analysizer\obj\x86\Debug\A145_Log_Analysizer.Form1.resources
+C:\VS2012\Project\A145_Log_Analysizer\A145_Log_Analysizer\obj\x86\Debug\A145_Log_Analysizer.Properties.Resources.resources
+C:\VS2012\Project\A145_Log_Analysizer\A145_Log_Analysizer\obj\x86\Debug\A145_Log_Analysizer.csproj.GenerateResource.Cache
+C:\VS2012\Project\A145_Log_Analysizer\A145_Log_Analysizer\obj\x86\Debug\A145_Log_Analysizer.csprojResolveAssemblyReference.cache

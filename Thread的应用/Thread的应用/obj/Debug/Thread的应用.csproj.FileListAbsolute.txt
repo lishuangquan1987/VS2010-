@@ -8,3 +8,4 @@ C:\VS2012\Project\Thread的应用\Thread的应用\obj\Debug\Thread的应用.Prop
 C:\VS2012\Project\Thread的应用\Thread的应用\obj\Debug\Thread的应用.csproj.GenerateResource.Cache
 C:\VS2012\Project\Thread的应用\Thread的应用\obj\Debug\Thread的应用.exe
 C:\VS2012\Project\Thread的应用\Thread的应用\obj\Debug\Thread的应用.pdb
+C:\VS2012\Project\Thread的应用\Thread的应用\obj\Debug\Thread的应用.csprojResolveAssemblyReference.cache

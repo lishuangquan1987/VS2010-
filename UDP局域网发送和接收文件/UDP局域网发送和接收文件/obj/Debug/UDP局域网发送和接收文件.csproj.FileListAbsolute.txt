@@ -1,0 +1,8 @@
+C:\VS2012\Project\UDP局域网发送和接收文件\UDP局域网发送和接收文件\bin\Debug\UDP局域网发送和接收文件.exe
+C:\VS2012\Project\UDP局域网发送和接收文件\UDP局域网发送和接收文件\bin\Debug\UDP局域网发送和接收文件.pdb
+C:\VS2012\Project\UDP局域网发送和接收文件\UDP局域网发送和接收文件\obj\Debug\UDP局域网发送和接收文件.Form1.resources
+C:\VS2012\Project\UDP局域网发送和接收文件\UDP局域网发送和接收文件\obj\Debug\UDP局域网发送和接收文件.Properties.Resources.resources
+C:\VS2012\Project\UDP局域网发送和接收文件\UDP局域网发送和接收文件\obj\Debug\UDP局域网发送和接收文件.csproj.GenerateResource.Cache
+C:\VS2012\Project\UDP局域网发送和接收文件\UDP局域网发送和接收文件\obj\Debug\UDP局域网发送和接收文件.exe
+C:\VS2012\Project\UDP局域网发送和接收文件\UDP局域网发送和接收文件\obj\Debug\UDP局域网发送和接收文件.pdb
+C:\VS2012\Project\UDP局域网发送和接收文件\UDP局域网发送和接收文件\obj\Debug\UDP局域网发送和接收文件.csprojResolveAssemblyReference.cache

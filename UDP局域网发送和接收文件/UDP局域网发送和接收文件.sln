@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UDP局域网发送和接收文件", "UDP局域网发送和接收文件\UDP局域网发送和接收文件.csproj", "{CDE38CB7-0643-4981-8B94-EB52B81DDF93}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CDE38CB7-0643-4981-8B94-EB52B81DDF93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDE38CB7-0643-4981-8B94-EB52B81DDF93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDE38CB7-0643-4981-8B94-EB52B81DDF93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDE38CB7-0643-4981-8B94-EB52B81DDF93}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

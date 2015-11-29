@@ -1,0 +1,11 @@
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\bin\Emgu.Util.XML
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\bin\Emgu.Util.dll
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\bin\Emgu.Util.pdb
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\Emgu.Util\obj\Debug\Emgu.Util.dll
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\Emgu.Util\obj\Debug\Emgu.Util.pdb
+C:\VS2012\Project\人脸识别\Emgu\Emgu.Util\obj\Debug\Emgu.Util.dll
+C:\VS2012\Project\人脸识别\Emgu\Emgu.Util\obj\Debug\Emgu.Util.pdb
+C:\VS2012\Project\人脸识别\Emgu\bin\Emgu.Util.XML
+C:\VS2012\Project\人脸识别\Emgu\bin\Emgu.Util.dll
+C:\VS2012\Project\人脸识别\Emgu\bin\Emgu.Util.pdb
+C:\VS2012\Project\人脸识别\Emgu\Emgu.Util\obj\Debug\Emgu.Util.csprojResolveAssemblyReference.cache

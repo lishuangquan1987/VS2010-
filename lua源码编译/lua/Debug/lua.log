@@ -1,0 +1,62 @@
+﻿生成启动时间为 2015/11/29 17:07:52。
+     1>项目“C:\VS2012\Project\lua源码编译\lua\lua.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         C:\VS2012\VS2012安装目录\VC\bin\CL.exe /c /I"C:\VS2012\Project\lua源码编译\lua" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt lapi.c lauxlib.c lbaselib.c lcode.c ldblib.c ldebug.c ldo.c ldump.c lfunc.c lgc.c linit.c liolib.c llex.c lmathlib.c lmem.c loadlib.c lobject.c lopcodes.c loslib.c lparser.c lstate.c lstring.c lstrlib.c ltable.c ltablib.c ltm.c lua.c luac.c lundump.c lvm.c lzio.c print.c
+         print.c
+         lzio.c
+         lvm.c
+     1>c:\vs2012\project\lua源码编译\lua\lvm.c(53): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\vs2012\vs2012安装目录\vc\include\stdio.h(357) : 参见“sprintf”的声明
+         lundump.c
+         luac.c
+     1>c:\vs2012\project\lua源码编译\lua\luac.c(44): error C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\vs2012\vs2012安装目录\vc\include\string.h(164) : 参见“strerror”的声明
+         lua.c
+     1>c:\vs2012\project\lua源码编译\lua\lua.c(322): error C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\vs2012\vs2012安装目录\vc\include\stdlib.h(449) : 参见“getenv”的声明
+         ltm.c
+         ltablib.c
+         ltable.c
+         lstrlib.c
+     1>c:\vs2012\project\lua源码编译\lua\lstrlib.c(741): error C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\vs2012\vs2012安装目录\vc\include\string.h(191) : 参见“strncpy”的声明
+         lstring.c
+         lstate.c
+         lparser.c
+         loslib.c
+     1>c:\vs2012\project\lua源码编译\lua\loslib.c(31): error C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\vs2012\vs2012安装目录\vc\include\string.h(164) : 参见“strerror”的声明
+         lopcodes.c
+         lobject.c
+     1>c:\vs2012\project\lua源码编译\lua\lobject.c(145): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\vs2012\vs2012安装目录\vc\include\stdio.h(357) : 参见“sprintf”的声明
+         loadlib.c
+     1>c:\vs2012\project\lua源码编译\lua\loadlib.c(333): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\vs2012\vs2012安装目录\vc\include\stdio.h(218) : 参见“fopen”的声明
+         lmem.c
+         lmathlib.c
+         llex.c
+         正在生成代码...
+         正在编译...
+         liolib.c
+     1>c:\vs2012\project\lua源码编译\lua\liolib.c(39): error C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\vs2012\vs2012安装目录\vc\include\string.h(164) : 参见“strerror”的声明
+         linit.c
+         lgc.c
+         lfunc.c
+         ldump.c
+         ldo.c
+         ldebug.c
+         ldblib.c
+         lcode.c
+         lbaselib.c
+         lauxlib.c
+     1>c:\vs2012\project\lua源码编译\lua\lauxlib.c(546): error C4996: 'strerror': This function or variable may be unsafe. Consider using strerror_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\vs2012\vs2012安装目录\vc\include\string.h(164) : 参见“strerror”的声明
+         lapi.c
+         正在生成代码...
+     1>已完成生成项目“C:\VS2012\Project\lua源码编译\lua\lua.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:03.08
