@@ -7,6 +7,7 @@ namespace Register
 {
     public class ClassEvent:EventArgs
     {
-
+        public int a;
+        public int b;
     }
 }

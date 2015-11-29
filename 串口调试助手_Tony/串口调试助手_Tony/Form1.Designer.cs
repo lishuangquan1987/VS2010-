@@ -45,12 +45,12 @@
             this.comboBox_COM = new System.Windows.Forms.ComboBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.textBox1 = new Model_Message.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.comboBox_Delay = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.textBox1 = new Model_Message.TextBox();
             this.panel1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -58,14 +58,14 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(12, 176);
+            this.textBox2.Location = new System.Drawing.Point(31, 198);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(478, 21);
             this.textBox2.TabIndex = 1;
             // 
             // buttonSend
             // 
-            this.buttonSend.Location = new System.Drawing.Point(496, 174);
+            this.buttonSend.Location = new System.Drawing.Point(515, 196);
             this.buttonSend.Name = "buttonSend";
             this.buttonSend.Size = new System.Drawing.Size(60, 23);
             this.buttonSend.TabIndex = 2;
@@ -88,7 +88,7 @@
             this.panel1.Controls.Add(this.comboBox_Baute);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.comboBox_COM);
-            this.panel1.Location = new System.Drawing.Point(12, 234);
+            this.panel1.Location = new System.Drawing.Point(31, 256);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(156, 171);
             this.panel1.TabIndex = 3;
@@ -181,6 +181,7 @@
             this.comboBox_Baute.Name = "comboBox_Baute";
             this.comboBox_Baute.Size = new System.Drawing.Size(85, 20);
             this.comboBox_Baute.TabIndex = 2;
+            this.comboBox_Baute.SelectedIndexChanged += new System.EventHandler(this.comboBox_Baute_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -204,9 +205,9 @@
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 408);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 433);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(556, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(612, 22);
             this.statusStrip1.TabIndex = 6;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -215,19 +216,11 @@
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 17);
             // 
-            // textBox1
-            // 
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBox1.Location = new System.Drawing.Point(0, 0);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(556, 170);
-            this.textBox1.TabIndex = 0;
-            // 
             // panel2
             // 
             this.panel2.AutoScroll = true;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Location = new System.Drawing.Point(174, 234);
+            this.panel2.Location = new System.Drawing.Point(193, 256);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(382, 171);
             this.panel2.TabIndex = 7;
@@ -237,7 +230,7 @@
             this.panel3.Controls.Add(this.comboBox_Delay);
             this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.checkBox1);
-            this.panel3.Location = new System.Drawing.Point(13, 204);
+            this.panel3.Location = new System.Drawing.Point(32, 226);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(477, 24);
             this.panel3.TabIndex = 8;
@@ -270,12 +263,20 @@
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
+            // textBox1
+            // 
+            this.textBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBox1.Location = new System.Drawing.Point(0, 0);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(612, 190);
+            this.textBox1.TabIndex = 0;
+            // 
             // Form1
             // 
             this.AcceptButton = this.buttonSend;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(556, 430);
+            this.ClientSize = new System.Drawing.Size(612, 455);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.buttonSend);
             this.Controls.Add(this.panel2);
@@ -286,6 +287,7 @@
             this.Name = "Form1";
             this.Text = "串口调试助手_Tony";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.Resize += new System.EventHandler(this.Form1_Resize);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);

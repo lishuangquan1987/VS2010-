@@ -18,6 +18,8 @@ namespace 串口调试助手_Tony
         string[] Ports = null;
         Thread thread_always_send;
         int delay=0;
+        int _width = 0;
+        int _height = 0;
         public Form1()
         {
             InitializeComponent();
@@ -56,17 +58,20 @@ namespace 串口调试助手_Tony
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            _width = this.Width;
+            _height = this.Height;
             Load_Event();
             GetSerialPorts();
             LoadComBox();
             LoadExtand();
+            //test _t=new test(){a=3,b=5};
+            //this.propertyGrid1.SelectedObject = _t;
            
         }
         void LoadComBox()
         {
             #region~加载combox的其他配置
-            string[] BauRate = new string[] { "4800", "9600", "19200", "38400", "57600", "115200" };
+            string[] BauRate = new string[] {"2400","4800", "9600", "19200", "38400", "57600", "115200" };
             string[] Parity = new string[] {"NONE","ODD","EVEN","MARK","SPACE"};
             string[] DataBits = new string[] {"6","7","8" };
             string[] StopBits = new string[] {"0","1","1.5","2" };
@@ -75,7 +80,7 @@ namespace 串口调试助手_Tony
             this.comboBox_DataBits.Items.AddRange(DataBits);
             this.comboBox_StopBits.Items.AddRange(StopBits);
 
-            this.comboBox_Baute.SelectedIndex = 5;//默认选择115200
+            this.comboBox_Baute.SelectedIndex = 6;//默认选择115200
             this.comboBox_Parity.SelectedIndex = 0;//默认为NONE;
             this.comboBox_DataBits.SelectedIndex = 2;//默认为8；
             this.comboBox_StopBits.SelectedIndex = 1;
@@ -116,6 +121,14 @@ namespace 串口调试助手_Tony
         {
             Ports = Model_SerialPort.SerialPortMain.GetPortNames();
             this.comboBox_COM.Items.Clear();
+            string Exist_Ports = "";//获取已经存在的portname
+            if(this.SerialPorts.Count!=0)
+            {
+                foreach (Model_SerialPort.SerialPortMain i in this.SerialPorts)
+                {
+                    Exist_Ports += i.PortName;
+                }
+            }
             if (Ports.Length != 0)
             {
                 
@@ -124,10 +137,12 @@ namespace 串口调试助手_Tony
                 Model_SerialPort.SerialPortMain[] temp_ports = new Model_SerialPort.SerialPortMain[Ports.Length];
                 for (int i = 0; i < temp_ports.Length; i++)
                 {
+                    if (Exist_Ports.Contains(Ports[i]))//如果以前的port还在，则不需要重新创建实例。
+                        continue;
                     temp_ports[i] = new Model_SerialPort.SerialPortMain();
                     temp_ports[i].PortName = Ports[i];
                     temp_ports[i].Event_Show += this.textBox1.Show;//装载事件
-                    this.SerialPorts.Add(temp_ports[i]);
+                    this.SerialPorts.Add(temp_ports[i]);//如果有新的port口，则添加进来
                 }
                 this.comboBox_COM.SelectedIndex = 0; 
             }
@@ -171,7 +186,7 @@ namespace 串口调试助手_Tony
                 if (CurrentPort.Port_Open() == 0)
                 {
                     button_Open.Text = "Close";
-                    this.toolStripStatusLabel1.Text = string.Format("端口：{0}  状态:打开", CurrentPort.PortName);
+                    this.toolStripStatusLabel1.Text = string.Format("端口：{0}  状态:打开  波特率：{1}", CurrentPort.PortName, CurrentPort.BaudRate.ToString());
                 }
             }
             else
@@ -195,7 +210,7 @@ namespace 串口调试助手_Tony
                     if (i.IsOpen)
                     {
                         this.button_Open.Text = "Close";
-                        this.toolStripStatusLabel1.Text = string.Format("端口：{0}  状态:打开", CurrentPort.PortName);
+                        this.toolStripStatusLabel1.Text = string.Format("端口：{0}  状态:打开  波特率：{1}", CurrentPort.PortName,CurrentPort.BaudRate.ToString());
                     }
                     else
                     {
@@ -245,5 +260,35 @@ namespace 串口调试助手_Tony
             thread_always_send = new Thread(() => { always_send(sender, e); });
             thread_always_send.Start();
         }
+
+        private void comboBox_Baute_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (this.comboBox_Baute.SelectedIndex != -1 && CurrentPort != null)               
+            CurrentPort.BaudRate = int.Parse(this.comboBox_Baute.SelectedItem.ToString());
+            if (CurrentPort != null&&CurrentPort.IsOpen)
+            this.toolStripStatusLabel1.Text = string.Format("端口：{0}  状态:打开  波特率：{1}", CurrentPort.PortName, CurrentPort.BaudRate.ToString());
+        }
+        void SizeChange()
+        {
+            int width_after = this.Width;
+            int height_after = this.Height;
+            int diff_width = width_after - _width;
+            int diff_height = height_after - _height;
+           // Point Location = this.panel2.Location;
+            Size newsize = new Size(this.panel2.Width + diff_width, this.panel2.Height + diff_height);
+            this.panel2.Size = newsize;
+            _width = width_after;
+            _height = height_after;
+
+        }
+        private void Form1_Resize(object sender, EventArgs e)
+        {
+            SizeChange();
+        }
+    }
+    public class test
+    {
+        public int a;
+        public int b;
     }
 }

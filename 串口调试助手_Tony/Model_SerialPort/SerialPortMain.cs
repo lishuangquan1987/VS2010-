@@ -12,11 +12,11 @@ namespace Model_SerialPort
         
         public SerialPortMain()
         {
-            //this.DataReceived += new SerialDataReceivedEventHandler(SerialPortMain_DataReceived);
-            //this.ReceivedBytesThreshold = 1;
+           // this.DataReceived += new SerialDataReceivedEventHandler(SerialPortMain_DataReceived);
+            this.ReceivedBytesThreshold = 1;
             this.Encoding = Encoding.Default;
-           //this.DtrEnable = true;
-           // this.RtsEnable = true;
+            this.DtrEnable = true;
+            this.RtsEnable = true;
         }
         //StringBuilder ReveiveString = new StringBuilder();
         void SerialPortMain_DataReceived(object sender, SerialDataReceivedEventArgs e)
@@ -99,11 +99,24 @@ namespace Model_SerialPort
         public string ReadString()
         {
             string result = "";
-            System.Threading.Thread.Sleep(30);
+            //超时不回复2000ms
+            for (int i = 0; i < 2000; i++)
+            {
+                if (this.BytesToRead == 0)
+                    System.Threading.Thread.Sleep(1);
+                else
+                    break;
+            }
+            if (this.BytesToRead == 0)
+            {
+                Show_MSG("超时2s未回复", true, Color.Red);
+                return null;
+            }
             while (this.BytesToRead != 0)
             {
-                result += Convert.ToChar(this.ReadChar());
+                
                 System.Threading.Thread.Sleep(10);
+                result += this.ReadExisting();
             }
             return result;
         }
