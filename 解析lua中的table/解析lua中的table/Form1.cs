@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using LuaInterface;
+using WeifenLuo.WinFormsUI.Docking;
 
 namespace 解析lua中的table
 {
@@ -17,8 +18,41 @@ namespace 解析lua中的table
             InitializeComponent();
         }
 
+        ListView listView1 = new ListView();
+        DockPanel dockPanel = new DockPanel();
+        Sunisoft.IrisSkin.SkinEngine skin;
         private void Form1_Load(object sender, EventArgs e)
         {
+            #region~显示窗体
+            
+
+            //this.Controls.Add(dockPanel);
+            //dockPanel.Dock = DockStyle.Fill;
+            //dockPanel.Size = new Size(this.Width - 150, this.Height);
+            this.dockPanel1.Size = new Size(this.Width - 140, this.Height);
+            this.panel1.Size = new Size(150, this.Height);
+            
+
+            DockContent f = new DockContent();
+            f.Text = "UUT";
+
+            f.CloseButtonVisible = false;
+            f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            
+            //f.IsMdiContainer = true;
+
+            
+            f.Size = dockPanel1.Size;
+            f.Show(dockPanel1);
+
+            f.Controls.Add(listView1);
+            listView1.Dock = DockStyle.Fill;
+            listView1.View = View.Details;
+            listView1.GridLines = true;
+            listView1.FullRowSelect = true;
+            //listView1.Size = dockPanel.Size;
+            
+            #endregion
             lua = new Lua();
             lua.DoFile("test.lua");
             ShowItem(lua);
@@ -38,6 +72,7 @@ namespace 解析lua中的table
                 listviewitems[i].SubItems.AddRange(new string[] { names.ToArray()[i], lower.ToArray()[i], upper.ToArray()[i] });
             }
             this.listView1.Items.AddRange(listviewitems);
+           
         }
         Lua lua;
         List<string> names = new List<string>();
@@ -72,6 +107,32 @@ namespace 解析lua中的table
                     //upper.Add((luatable3["upper"] as object).ToString());
                 }
             }
+        }
+
+        private void Form1_SizeChanged(object sender, EventArgs e)
+        {
+            this.dockPanel1.Size = new Size(this.Width - 140, this.Height);
+            this.panel1.Size = new Size(150, this.Height);
+
+        }
+
+        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+           
+        }
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode != Keys.F5)
+                return;
+            OpenFileDialog op = new OpenFileDialog();
+            op.Title = "请选择皮肤文件";
+            op.Filter = "SSK文件|*.ssk";
+            if (op.ShowDialog() != DialogResult.OK)
+                return;
+            skin = new Sunisoft.IrisSkin.SkinEngine(this,op.FileName);
+            skin.AddForm(this);
+            this.Refresh();
         }
     }
 }

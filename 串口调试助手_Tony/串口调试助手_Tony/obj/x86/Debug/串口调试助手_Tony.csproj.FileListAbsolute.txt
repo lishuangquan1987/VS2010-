@@ -27,3 +27,4 @@ C:\VS2012\Project\串口调试助手_Tony\串口调试助手_Tony\obj\x86\Debug\
 C:\VS2012\Project\串口调试助手_Tony\串口调试助手_Tony\obj\x86\Debug\串口调试助手_Tony.Form1.resources
 C:\VS2012\Project\串口调试助手_Tony\串口调试助手_Tony\obj\x86\Debug\串口调试助手_Tony.Properties.Resources.resources
 C:\VS2012\Project\串口调试助手_Tony\串口调试助手_Tony\obj\x86\Debug\串口调试助手_Tony.csproj.GenerateResource.Cache
+C:\VS2012\Project\串口调试助手_Tony\串口调试助手_Tony\bin\Debug\WeifenLuo.WinFormsUI.Docking.dll

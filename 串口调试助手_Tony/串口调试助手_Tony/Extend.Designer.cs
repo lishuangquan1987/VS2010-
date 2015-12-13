@@ -40,6 +40,7 @@
             this.checkBox.Name = "checkBox";
             this.checkBox.Size = new System.Drawing.Size(15, 14);
             this.checkBox.TabIndex = 0;
+            this.checkBox.TabStop = false;
             this.checkBox.UseVisualStyleBackColor = true;
             // 
             // textBox1
@@ -54,7 +55,8 @@
             this.button_Send.Location = new System.Drawing.Point(307, 1);
             this.button_Send.Name = "button_Send";
             this.button_Send.Size = new System.Drawing.Size(48, 23);
-            this.button_Send.TabIndex = 2;
+            this.button_Send.TabIndex = 0;
+            this.button_Send.TabStop = false;
             this.button_Send.Text = "send";
             this.button_Send.UseVisualStyleBackColor = true;
             // 
@@ -68,6 +70,7 @@
             this.Name = "Extend";
             this.Size = new System.Drawing.Size(355, 26);
             this.Load += new System.EventHandler(this.Extend_Load);
+            this.SizeChanged += new System.EventHandler(this.Extend_SizeChanged);
             this.ResumeLayout(false);
             this.PerformLayout();
 

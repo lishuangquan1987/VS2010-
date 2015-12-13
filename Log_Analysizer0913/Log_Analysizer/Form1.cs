@@ -148,6 +148,8 @@ namespace Log_Analysizer
             this.richTextBox2.ReadOnly = true;
             this.radioButton1.Checked = true;
             this.label_assembly.Text ="V"+ Assembly.GetEntryAssembly().GetName().Version.ToString();
+
+            this.radioButton_B22.Checked = true;//项目选择B22
         }
         delegate void Update(int value);
         public void UpdateProgresser(int value)
@@ -426,14 +428,25 @@ namespace Log_Analysizer
                     else
                         temp = First_content[i].Split(';');
                     //当SN为空时过滤掉
-                    if (temp[0] == "" || temp[0] == null)
+                    if (temp[0] == "" || temp[0] == null||temp[0]=="nil")
                         continue;
                     temp_fct = new MLB_FCT();
-                    temp_fct.SerialNumber = temp[0].Trim();
-                    temp_fct.Test_Pass_Fail_Status = temp[1];
-                    temp_fct.Error_Description = temp[3];
-                    temp_fct.LineID = temp[7];
-                    list_fcts.Add(temp_fct);
+                    if (radioButton_B22.Checked)
+                    {
+                        temp_fct.SerialNumber = temp[0].Trim();
+                        temp_fct.Test_Pass_Fail_Status = temp[1];
+                        temp_fct.Error_Description = temp[3];
+                        temp_fct.LineID = temp[7];
+                        list_fcts.Add(temp_fct);
+                    }
+                    else if (radioButton_A145.Checked)//for a145
+                    {
+                        temp_fct.SerialNumber = temp[0].Trim();
+                        temp_fct.Test_Pass_Fail_Status = temp[2];
+                        temp_fct.Error_Description = temp[4];
+                        temp_fct.LineID = temp[3];
+                        list_fcts.Add(temp_fct);
+                    }
 
 
 /*
@@ -769,10 +782,15 @@ namespace Log_Analysizer
         {
 
         }
-
+        private Instructions instruction = new Instructions();
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            new Instructions().ShowDialog();
+            new Instructions().Show();
+        }
+
+        private void statusStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }

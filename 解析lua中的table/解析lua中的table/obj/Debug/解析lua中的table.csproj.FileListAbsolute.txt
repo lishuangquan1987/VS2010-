@@ -8,3 +8,5 @@ C:\VS2012\Project\解析lua中的table\解析lua中的table\obj\Debug\解析lua�
 C:\VS2012\Project\解析lua中的table\解析lua中的table\obj\Debug\解析lua中的table.exe
 C:\VS2012\Project\解析lua中的table\解析lua中的table\obj\Debug\解析lua中的table.pdb
 C:\VS2012\Project\解析lua中的table\解析lua中的table\bin\Debug\解析lua中的table.exe.config
+C:\VS2012\Project\解析lua中的table\解析lua中的table\bin\Debug\WeifenLuo.WinFormsUI.Docking.dll
+C:\VS2012\Project\解析lua中的table\解析lua中的table\obj\Debug\解析lua中的table.csprojResolveAssemblyReference.cache

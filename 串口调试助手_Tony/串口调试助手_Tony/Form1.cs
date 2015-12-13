@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Threading;
+using WeifenLuo;
+using System.IO;
 
 namespace 串口调试助手_Tony
 {
@@ -20,6 +22,7 @@ namespace 串口调试助手_Tony
         int delay=0;
         int _width = 0;
         int _height = 0;
+        Dictionary<string, string> configContent = new Dictionary<string, string>();
         public Form1()
         {
             InitializeComponent();
@@ -43,11 +46,16 @@ namespace 串口调试助手_Tony
                 msgbox("请先选择一个串口并打开！", true, Color.Red);
                 return;
             }
-            if (CurrentPort.WriteString(this.textBox2.Text) == 0)
+            string CMD = "";
+            if (checkBox2.Checked)
+                CMD = this.textBox2.Text + "\r\n";
+            else
+                CMD = this.textBox2.Text;
+            if (CurrentPort.WriteString(CMD) == 0)
             {
                 msgbox(DateTime.Now.ToString() + ":" + this.textBox2.Text, true, Color.Blue);
             }
-            msgbox(DateTime.Now.ToString() + ":" + CurrentPort.ReadString(), true, Color.Green);
+            //msgbox(DateTime.Now.ToString() + ":" + CurrentPort.ReadString(), true, Color.Green);
             
             #region~处理拓展问题
             Panel temp_panel = new Panel();
@@ -60,13 +68,60 @@ namespace 串口调试助手_Tony
         {
             _width = this.Width;
             _height = this.Height;
+            this.checkBox2.Checked = true;
             Load_Event();
             GetSerialPorts();
             LoadComBox();
             LoadExtand();
             //test _t=new test(){a=3,b=5};
             //this.propertyGrid1.SelectedObject = _t;
+            LoadConfig();
            
+        }
+        void LoadConfig()
+        {
+            string[] config;
+            if (File.Exists("config.ini"))
+            {
+                config = File.ReadAllLines("config.ini");
+                //读取config值到字典
+                //先读取配置，若没有的则赋值为空
+                foreach (var item in config)
+                {
+                    string key = item.Split('#')[0];
+                    string value = item.Split('#')[1];
+                    if (configContent.ContainsKey(key))//若包含重复的键值，则取第一个
+                        continue;
+                    else
+                        configContent.Add(key,value);
+
+                }
+                
+
+                for (int i = 1; i <= 50; i++)
+                {                
+                    string key=i.ToString();
+                    if (configContent.ContainsKey(key))
+                        continue;
+                    else
+                        configContent.Add(i.ToString(), "");
+                }
+                //将字典值赋值给extends
+                for (int i = 0; i < 50; i++)
+                {
+                    extends[i].textBox1.Text = configContent[(i + 1).ToString()];
+                }
+
+            }
+            else
+            {
+                File.Create("config.ini");
+                for (int i = 1; i <= 50; i++)
+                {                 
+                    configContent.Add(i.ToString(), "");
+                }
+            }
+            
         }
         void LoadComBox()
         {
@@ -89,22 +144,32 @@ namespace 串口调试助手_Tony
         }
         void LoadExtand()
         {
+            int width = this.panel2.Size.Width;
+            int height = 30;
             for (int i = 0; i < extends.Length; i++)
             {
                 extends[i] = new Extend();
                 extends[i].Location = new Point(0, i * 30);
                 extends[i].button_Send.Text = (i + 1).ToString();
+                extends[i].Size = new System.Drawing.Size(width-20, height);
                 extends[i].button_Send.Click += Extend_button_Send_Click;
+                //extends[i].Dock = DockStyle.Top;
+                extends[i].textBox1.TextChanged += Extend_TextChangeHandle;
                 this.panel2.Controls.Add(extends[i]);
             }
 
             string[] Delay = new string[] {"500ms", "1000ms", "2000ms", "5000ms", "10000ms" };
             this.comboBox_Delay.Items.AddRange(Delay);
         }
+        void Extend_TextChangeHandle(object sender, EventArgs e)
+        {
+            TextBox textbox = (TextBox)sender;
+            configContent[textbox.Tag.ToString()] = textbox.Text;
+        }
         void Extend_button_Send_Click(object sender, EventArgs e)
         {
             Button button = (Button)sender;
-            this.textBox2.Text = ((TextBox)button.Tag).Text;
+            this.textBox2.Text = ((TextBox)button.Tag).Text;//sendButton的Tag为对应的textbox
             buttonSend_Click(sender, e);
         }
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -283,7 +348,26 @@ namespace 串口调试助手_Tony
         }
         private void Form1_Resize(object sender, EventArgs e)
         {
-            SizeChange();
+            //SizeChange();
+        }
+
+        private void panel2_SizeChanged(object sender, EventArgs e)
+        {
+            //Size size=this.panel2.Size;
+            //foreach(Extend i in this.extends)
+            //{
+            //    i.Size = size;
+            //}
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            string ConfigStr = "";
+            foreach (var item in configContent)
+            {
+                ConfigStr += item.Key + "#" + item.Value + "\r\n";
+            }
+            File.WriteAllText("config.ini", ConfigStr);
         }
     }
     public class test

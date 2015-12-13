@@ -48,12 +48,16 @@
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.resultBox1 = new Log_Analysizer.ResultBox();
             this.label_assembly = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.radioButton_A145 = new System.Windows.Forms.RadioButton();
+            this.radioButton_B22 = new System.Windows.Forms.RadioButton();
+            this.resultBox1 = new Log_Analysizer.ResultBox();
             this.contextMenuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -112,15 +116,16 @@
             // 
             // statusStrip1
             // 
-            this.statusStrip1.Location = new System.Drawing.Point(0, 363);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 402);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(716, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(740, 22);
             this.statusStrip1.TabIndex = 6;
             this.statusStrip1.Text = "statusStrip1";
+            this.statusStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.statusStrip1_ItemClicked);
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(4, 367);
+            this.progressBar1.Location = new System.Drawing.Point(0, 406);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(209, 15);
             this.progressBar1.TabIndex = 7;
@@ -150,19 +155,19 @@
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.clearToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(101, 26);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(107, 26);
             // 
             // clearToolStripMenuItem
             // 
             this.clearToolStripMenuItem.Name = "clearToolStripMenuItem";
-            this.clearToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
+            this.clearToolStripMenuItem.Size = new System.Drawing.Size(106, 22);
             this.clearToolStripMenuItem.Text = "Clear";
             this.clearToolStripMenuItem.Click += new System.EventHandler(this.clearToolStripMenuItem_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.ForeColor = System.Drawing.Color.Red;
             this.label1.Location = new System.Drawing.Point(12, 18);
             this.label1.Name = "label1";
@@ -173,7 +178,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(223, 367);
+            this.label2.Location = new System.Drawing.Point(217, 408);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(0, 12);
             this.label2.TabIndex = 12;
@@ -192,9 +197,9 @@
             // 
             this.groupBox1.Controls.Add(this.radioButton2);
             this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Location = new System.Drawing.Point(420, 198);
+            this.groupBox1.Location = new System.Drawing.Point(133, 228);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(82, 30);
+            this.groupBox1.Size = new System.Drawing.Size(92, 39);
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "CSV分隔符";
@@ -202,7 +207,7 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(45, 13);
+            this.radioButton2.Location = new System.Drawing.Point(44, 13);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(29, 16);
             this.radioButton2.TabIndex = 1;
@@ -231,20 +236,11 @@
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
             // 
-            // resultBox1
-            // 
-            this.resultBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.resultBox1.Location = new System.Drawing.Point(0, 234);
-            this.resultBox1.Name = "resultBox1";
-            this.resultBox1.Size = new System.Drawing.Size(716, 129);
-            this.resultBox1.TabIndex = 13;
-            this.resultBox1.Load += new System.EventHandler(this.resultBox1_Load);
-            // 
             // label_assembly
             // 
             this.label_assembly.AutoSize = true;
             this.label_assembly.BackColor = System.Drawing.Color.Lime;
-            this.label_assembly.Location = new System.Drawing.Point(630, 367);
+            this.label_assembly.Location = new System.Drawing.Point(633, 409);
             this.label_assembly.Name = "label_assembly";
             this.label_assembly.Size = new System.Drawing.Size(0, 12);
             this.label_assembly.TabIndex = 19;
@@ -252,7 +248,7 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(531, 211);
+            this.linkLabel1.Location = new System.Drawing.Point(244, 243);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(173, 12);
             this.linkLabel1.TabIndex = 20;
@@ -260,23 +256,66 @@
             this.linkLabel1.Text = "For change notice,click here";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.radioButton_A145);
+            this.groupBox2.Controls.Add(this.radioButton_B22);
+            this.groupBox2.Location = new System.Drawing.Point(5, 228);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(113, 39);
+            this.groupBox2.TabIndex = 21;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "项目选择";
+            // 
+            // radioButton_A145
+            // 
+            this.radioButton_A145.AutoSize = true;
+            this.radioButton_A145.Location = new System.Drawing.Point(54, 17);
+            this.radioButton_A145.Name = "radioButton_A145";
+            this.radioButton_A145.Size = new System.Drawing.Size(47, 16);
+            this.radioButton_A145.TabIndex = 1;
+            this.radioButton_A145.TabStop = true;
+            this.radioButton_A145.Text = "A145";
+            this.radioButton_A145.UseVisualStyleBackColor = true;
+            // 
+            // radioButton_B22
+            // 
+            this.radioButton_B22.AutoSize = true;
+            this.radioButton_B22.Location = new System.Drawing.Point(7, 17);
+            this.radioButton_B22.Name = "radioButton_B22";
+            this.radioButton_B22.Size = new System.Drawing.Size(41, 16);
+            this.radioButton_B22.TabIndex = 0;
+            this.radioButton_B22.TabStop = true;
+            this.radioButton_B22.Text = "B22";
+            this.radioButton_B22.UseVisualStyleBackColor = true;
+            // 
+            // resultBox1
+            // 
+            this.resultBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.resultBox1.Location = new System.Drawing.Point(0, 273);
+            this.resultBox1.Name = "resultBox1";
+            this.resultBox1.Size = new System.Drawing.Size(740, 129);
+            this.resultBox1.TabIndex = 13;
+            this.resultBox1.Load += new System.EventHandler(this.resultBox1_Load);
+            // 
             // Form1
             // 
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(716, 385);
+            this.ClientSize = new System.Drawing.Size(740, 424);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.resultBox1);
+            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label_assembly);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.resultBox1);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.button_result);
-            this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.radioButton_PCBA_P);
             this.Controls.Add(this.radioButton_PCBA_FFT);
@@ -298,6 +337,8 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -326,6 +367,9 @@
         private System.Windows.Forms.ToolStripMenuItem clearToolStripMenuItem;
         private System.Windows.Forms.Label label_assembly;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.RadioButton radioButton_A145;
+        private System.Windows.Forms.RadioButton radioButton_B22;
     }
 }
 

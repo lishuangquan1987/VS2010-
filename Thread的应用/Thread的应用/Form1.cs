@@ -20,9 +20,13 @@ namespace Thread的应用
             InitializeComponent();
         }
         //Lua lua;
+        public int[,] i0 = new int[10,6];
+       
+
         public delegate void UpdateCheckBoxes(string value,int ID);
         public void updateCheckBoxes(string value,int ID)
         {
+            
             
             if (this.InvokeRequired)
                 this.Invoke(new UpdateCheckBoxes(updateCheckBoxes), value,ID);
@@ -194,6 +198,28 @@ namespace Thread的应用
            MessageBox.Show(i["er"].GetType().ToString());
            MessageBox.Show(i.ToString());
 
+       }
+    }
+    public interface Do
+    {
+        void dosomething();
+    }
+    public struct Person:Do
+    {
+        public Person(int age,string name)
+        {
+            this.age = age;
+            this.name = name;
+        }
+       public int age;
+       public string name;
+       public void show()
+       {
+           MessageBox.Show(name);
+       }
+       public void dosomething()
+       {
+           MessageBox.Show("111");
        }
     }
 }
