@@ -1,0 +1,3 @@
+C:\Users\ia201135\Documents\A145_windowspro\TestManager\LuaInterface-2.0.4\Run\Release\LuaInterface.dll
+C:\Users\ia201135\Documents\A145_windowspro\TestManager\LuaInterface-2.0.4\Core\LuaInterface\obj\Release\LuaInterface.csprojResolveAssemblyReference.cache
+C:\Users\ia201135\Documents\A145_windowspro\TestManager\LuaInterface-2.0.4\Core\LuaInterface\obj\Release\LuaInterface.dll

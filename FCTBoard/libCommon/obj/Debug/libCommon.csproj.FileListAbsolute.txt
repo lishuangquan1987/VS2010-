@@ -1,0 +1,28 @@
+C:\Users\ia201135\Documents\A145_windowspro\TestManager\Output\bin\Debug\libCommon.dll
+C:\Users\ia201135\Documents\A145_windowspro\TestManager\Output\bin\Debug\libCommon.pdb
+C:\Users\ia201135\Documents\A145_windowspro\TestManager\libCommon\obj\Debug\libCommon.csprojResolveAssemblyReference.cache
+C:\Users\ia201135\Documents\A145_windowspro\TestManager\libCommon\obj\Debug\RyanStudio.Automation.TestManager.Common.Class.Driver.SerialPortEx.resources
+C:\Users\ia201135\Documents\A145_windowspro\TestManager\libCommon\obj\Debug\libCommon.csproj.GenerateResource.Cache
+C:\Users\ia201135\Documents\A145_windowspro\TestManager\libCommon\obj\Debug\libCommon.dll
+C:\Users\ia201135\Documents\A145_windowspro\TestManager\libCommon\obj\Debug\libCommon.pdb
+C:\Users\ia201135\Documents\A145_windowspro - 副本\TestManager\Output\bin\Debug\libCommon.dll
+C:\Users\ia201135\Documents\A145_windowspro - 副本\TestManager\Output\bin\Debug\libCommon.pdb
+C:\Users\ia201135\Documents\A145_windowspro - 副本\TestManager\libCommon\obj\Debug\libCommon.csprojResolveAssemblyReference.cache
+C:\Users\ia201135\Documents\A145_windowspro - 副本\TestManager\libCommon\obj\Debug\RyanStudio.Automation.TestManager.Common.Class.Driver.SerialPortEx.resources
+C:\Users\ia201135\Documents\A145_windowspro - 副本\TestManager\libCommon\obj\Debug\libCommon.csproj.GenerateResource.Cache
+C:\Users\ia201135\Documents\A145_windowspro - 副本\TestManager\libCommon\obj\Debug\libCommon.dll
+C:\Users\ia201135\Documents\A145_windowspro - 副本\TestManager\libCommon\obj\Debug\libCommon.pdb
+C:\MiTac\A145_windowspro - 副本\TestManager\Output\bin\Debug\libCommon.dll
+C:\MiTac\A145_windowspro - 副本\TestManager\Output\bin\Debug\libCommon.pdb
+C:\MiTac\A145_windowspro - 副本\TestManager\libCommon\obj\Debug\libCommon.csprojResolveAssemblyReference.cache
+C:\MiTac\A145_windowspro - 副本\TestManager\libCommon\obj\Debug\RyanStudio.Automation.TestManager.Common.Class.Driver.SerialPortEx.resources
+C:\MiTac\A145_windowspro - 副本\TestManager\libCommon\obj\Debug\libCommon.csproj.GenerateResource.Cache
+C:\MiTac\A145_windowspro - 副本\TestManager\libCommon\obj\Debug\libCommon.dll
+C:\MiTac\A145_windowspro - 副本\TestManager\libCommon\obj\Debug\libCommon.pdb
+C:\VS2012\Project\FCTBoard\libCommon\obj\Debug\RyanStudio.Automation.TestManager.Common.Class.Driver.SerialPortEx.resources
+C:\VS2012\Project\FCTBoard\libCommon\obj\Debug\libCommon.csproj.GenerateResource.Cache
+C:\VS2012\Project\FCTBoard\Output\bin\Debug\libCommon.dll
+C:\VS2012\Project\FCTBoard\Output\bin\Debug\libCommon.pdb
+C:\VS2012\Project\FCTBoard\libCommon\obj\Debug\libCommon.csprojResolveAssemblyReference.cache
+C:\VS2012\Project\FCTBoard\libCommon\obj\Debug\libCommon.dll
+C:\VS2012\Project\FCTBoard\libCommon\obj\Debug\libCommon.pdb

@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "观察者模式1", "观察者模式1\观察者模式1.csproj", "{20AC6964-F034-4740-A529-CACA89382179}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notification", "Notification\Notification.csproj", "{5A76E05B-499A-4DF0-B0C4-1B4E9C9E0D8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notice", "Notice\Notice.csproj", "{3D19F9BB-D767-48E8-8AAA-F5A2991F45DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20AC6964-F034-4740-A529-CACA89382179}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20AC6964-F034-4740-A529-CACA89382179}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20AC6964-F034-4740-A529-CACA89382179}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20AC6964-F034-4740-A529-CACA89382179}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A76E05B-499A-4DF0-B0C4-1B4E9C9E0D8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A76E05B-499A-4DF0-B0C4-1B4E9C9E0D8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A76E05B-499A-4DF0-B0C4-1B4E9C9E0D8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A76E05B-499A-4DF0-B0C4-1B4E9C9E0D8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D19F9BB-D767-48E8-8AAA-F5A2991F45DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D19F9BB-D767-48E8-8AAA-F5A2991F45DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D19F9BB-D767-48E8-8AAA-F5A2991F45DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D19F9BB-D767-48E8-8AAA-F5A2991F45DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

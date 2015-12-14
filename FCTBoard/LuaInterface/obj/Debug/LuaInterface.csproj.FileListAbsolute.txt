@@ -1,0 +1,22 @@
+C:\Users\ia201135\Documents\A145_windowspro\TestManager\Output\bin\Debug\LuaInterface.dll
+C:\Users\ia201135\Documents\A145_windowspro\TestManager\Output\bin\Debug\LuaInterface.pdb
+C:\Users\ia201135\Documents\A145_windowspro\TestManager\LuaInterface-2.0.4\Core\LuaInterface\obj\Debug\LuaInterface.csprojResolveAssemblyReference.cache
+C:\Users\ia201135\Documents\A145_windowspro\TestManager\LuaInterface-2.0.4\Core\LuaInterface\obj\Debug\LuaInterface.dll
+C:\Users\ia201135\Documents\A145_windowspro\TestManager\LuaInterface-2.0.4\Core\LuaInterface\obj\Debug\LuaInterface.pdb
+C:\Users\ia201135\Documents\A145_windowspro - 副本\TestManager\Output\bin\Debug\LuaInterface.dll
+C:\Users\ia201135\Documents\A145_windowspro - 副本\TestManager\Output\bin\Debug\LuaInterface.pdb
+C:\Users\ia201135\Documents\A145_windowspro - 副本\TestManager\LuaInterface-2.0.4\Core\LuaInterface\obj\Debug\LuaInterface.csprojResolveAssemblyReference.cache
+C:\Users\ia201135\Documents\A145_windowspro - 副本\TestManager\LuaInterface-2.0.4\Core\LuaInterface\obj\Debug\LuaInterface.dll
+C:\Users\ia201135\Documents\A145_windowspro - 副本\TestManager\LuaInterface-2.0.4\Core\LuaInterface\obj\Debug\LuaInterface.pdb
+C:\MiTac\A145_windowspro - 副本\TestManager\Output\bin\Debug\LuaInterface.dll
+C:\MiTac\A145_windowspro - 副本\TestManager\Output\bin\Debug\LuaInterface.pdb
+C:\MiTac\A145_windowspro - 副本\TestManager\LuaInterface-2.0.4\Core\LuaInterface\obj\Debug\LuaInterface.csprojResolveAssemblyReference.cache
+C:\MiTac\A145_windowspro - 副本\TestManager\LuaInterface-2.0.4\Core\LuaInterface\obj\Debug\LuaInterface.dll
+C:\MiTac\A145_windowspro - 副本\TestManager\LuaInterface-2.0.4\Core\LuaInterface\obj\Debug\LuaInterface.pdb
+C:\VS2012\Output\bin\Debug\LuaInterface.dll
+C:\VS2012\Output\bin\Debug\LuaInterface.pdb
+C:\VS2012\Project\FCTBoard\Output\bin\Debug\LuaInterface.dll
+C:\VS2012\Project\FCTBoard\Output\bin\Debug\LuaInterface.pdb
+C:\VS2012\Project\FCTBoard\LuaInterface\obj\Debug\LuaInterface.csprojResolveAssemblyReference.cache
+C:\VS2012\Project\FCTBoard\LuaInterface\obj\Debug\LuaInterface.dll
+C:\VS2012\Project\FCTBoard\LuaInterface\obj\Debug\LuaInterface.pdb

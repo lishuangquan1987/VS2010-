@@ -76,6 +76,11 @@ namespace 串口调试助手_Tony
             //test _t=new test(){a=3,b=5};
             //this.propertyGrid1.SelectedObject = _t;
             LoadConfig();
+
+            if (this.comboBox_COM.SelectedIndex != -1)
+            {
+                this.button_Open.BackColor = Color.FromArgb(50, 0, 0);
+            }
            
         }
         void LoadConfig()
@@ -253,6 +258,7 @@ namespace 串口调试助手_Tony
                     button_Open.Text = "Close";
                     this.toolStripStatusLabel1.Text = string.Format("端口：{0}  状态:打开  波特率：{1}", CurrentPort.PortName, CurrentPort.BaudRate.ToString());
                 }
+                this.button_Open.BackColor = Color.FromArgb(0,50, 0);
             }
             else
             {
@@ -261,6 +267,7 @@ namespace 串口调试助手_Tony
                     button_Open.Text = "Open";
                     this.toolStripStatusLabel1.Text = string.Format("端口：{0}  状态:关闭", CurrentPort.PortName);
                 }
+                this.button_Open.BackColor = Color.FromArgb(50, 0, 0);
             }
         }
 

@@ -1,0 +1,11 @@
+C:\VS2012\Project\串口调试助手_Tony_Supper\串口调试助手_Tony_Supper\obj\Debug\串口调试助手_Tony_Supper.csprojResolveAssemblyReference.cache
+C:\VS2012\Project\串口调试助手_Tony_Supper\串口调试助手_Tony_Supper\obj\Debug\串口调试助手_Tony_Supper.MainText.resources
+C:\VS2012\Project\串口调试助手_Tony_Supper\串口调试助手_Tony_Supper\obj\Debug\串口调试助手_Tony_Supper.Properties.Resources.resources
+C:\VS2012\Project\串口调试助手_Tony_Supper\串口调试助手_Tony_Supper\obj\Debug\串口调试助手_Tony_Supper.csproj.GenerateResource.Cache
+C:\VS2012\Project\串口调试助手_Tony_Supper\串口调试助手_Tony_Supper\bin\Debug\串口调试助手_Tony_Supper.exe
+C:\VS2012\Project\串口调试助手_Tony_Supper\串口调试助手_Tony_Supper\bin\Debug\串口调试助手_Tony_Supper.pdb
+C:\VS2012\Project\串口调试助手_Tony_Supper\串口调试助手_Tony_Supper\bin\Debug\EventCenter.dll
+C:\VS2012\Project\串口调试助手_Tony_Supper\串口调试助手_Tony_Supper\bin\Debug\EventCenter.pdb
+C:\VS2012\Project\串口调试助手_Tony_Supper\串口调试助手_Tony_Supper\obj\Debug\串口调试助手_Tony_Supper.Form1.resources
+C:\VS2012\Project\串口调试助手_Tony_Supper\串口调试助手_Tony_Supper\obj\Debug\串口调试助手_Tony_Supper.exe
+C:\VS2012\Project\串口调试助手_Tony_Supper\串口调试助手_Tony_Supper\obj\Debug\串口调试助手_Tony_Supper.pdb

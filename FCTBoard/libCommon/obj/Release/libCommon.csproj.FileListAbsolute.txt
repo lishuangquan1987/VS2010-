@@ -1,0 +1,7 @@
+C:\Users\ia201135\Documents\A145_windowspro\TestManager\Output\bin\Release\libCommon.dll
+C:\Users\ia201135\Documents\A145_windowspro\TestManager\Output\bin\Release\libCommon.pdb
+C:\Users\ia201135\Documents\A145_windowspro\TestManager\libCommon\obj\Release\libCommon.csprojResolveAssemblyReference.cache
+C:\Users\ia201135\Documents\A145_windowspro\TestManager\libCommon\obj\Release\RyanStudio.Automation.TestManager.Common.Class.Driver.SerialPortEx.resources
+C:\Users\ia201135\Documents\A145_windowspro\TestManager\libCommon\obj\Release\libCommon.csproj.GenerateResource.Cache
+C:\Users\ia201135\Documents\A145_windowspro\TestManager\libCommon\obj\Release\libCommon.dll
+C:\Users\ia201135\Documents\A145_windowspro\TestManager\libCommon\obj\Release\libCommon.pdb

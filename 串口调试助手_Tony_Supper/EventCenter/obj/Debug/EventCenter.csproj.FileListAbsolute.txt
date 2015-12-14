@@ -1,0 +1,5 @@
+C:\VS2012\Project\串口调试助手_Tony_Supper\EventCenter\bin\Debug\EventCenter.dll
+C:\VS2012\Project\串口调试助手_Tony_Supper\EventCenter\bin\Debug\EventCenter.pdb
+C:\VS2012\Project\串口调试助手_Tony_Supper\EventCenter\obj\Debug\EventCenter.dll
+C:\VS2012\Project\串口调试助手_Tony_Supper\EventCenter\obj\Debug\EventCenter.pdb
+C:\VS2012\Project\串口调试助手_Tony_Supper\EventCenter\obj\Debug\EventCenter.csprojResolveAssemblyReference.cache

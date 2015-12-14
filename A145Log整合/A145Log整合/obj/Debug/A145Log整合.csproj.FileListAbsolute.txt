@@ -1,0 +1,8 @@
+C:\VS2012\Project\A145Log整合\A145Log整合\bin\Debug\A145Log整合.exe
+C:\VS2012\Project\A145Log整合\A145Log整合\bin\Debug\A145Log整合.pdb
+C:\VS2012\Project\A145Log整合\A145Log整合\obj\Debug\A145Log整合.Form1.resources
+C:\VS2012\Project\A145Log整合\A145Log整合\obj\Debug\A145Log整合.Properties.Resources.resources
+C:\VS2012\Project\A145Log整合\A145Log整合\obj\Debug\A145Log整合.csproj.GenerateResource.Cache
+C:\VS2012\Project\A145Log整合\A145Log整合\obj\Debug\A145Log整合.exe
+C:\VS2012\Project\A145Log整合\A145Log整合\obj\Debug\A145Log整合.pdb
+C:\VS2012\Project\A145Log整合\A145Log整合\bin\Debug\A145Log整合.exe.config

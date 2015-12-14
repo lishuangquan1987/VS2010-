@@ -1,0 +1,13 @@
+C:\VS2012\Project\FCTBoard\FCTBoard\bin\Debug\FCTBoard.exe
+C:\VS2012\Project\FCTBoard\FCTBoard\bin\Debug\FCTBoard.pdb
+C:\VS2012\Project\FCTBoard\FCTBoard\bin\Debug\FCTBoard.exe.config
+C:\VS2012\Project\FCTBoard\FCTBoard\FCTBoard.exe.config
+C:\VS2012\Project\FCTBoard\FCTBoard\obj\Debug\FCTBoard.Properties.Resources.resources
+C:\VS2012\Project\FCTBoard\FCTBoard\obj\Debug\FCTBoard1.csproj.GenerateResource.Cache
+C:\VS2012\Project\FCTBoard\Output\bin\Debug\Script\FCTBroads.lua
+C:\VS2012\Project\FCTBoard\Output\bin\Debug\FCTBoard.exe.config
+C:\VS2012\Project\FCTBoard\Output\bin\Debug\FCTBoard.exe
+C:\VS2012\Project\FCTBoard\Output\bin\Debug\FCTBoard.pdb
+C:\VS2012\Project\FCTBoard\FCTBoard\obj\Debug\FCTBoard1.csprojResolveAssemblyReference.cache
+C:\VS2012\Project\FCTBoard\FCTBoard\obj\Debug\FCTBoard.exe
+C:\VS2012\Project\FCTBoard\FCTBoard\obj\Debug\FCTBoard.pdb

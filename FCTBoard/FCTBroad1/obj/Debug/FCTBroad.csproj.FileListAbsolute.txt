@@ -1,0 +1,32 @@
+C:\Users\ia201135\Documents\A145_windowspro\TestManager\Output\bin\Debug\Script\FCTBroads.lua
+C:\Users\ia201135\Documents\A145_windowspro\TestManager\Output\bin\Debug\FCTBroad.dll
+C:\Users\ia201135\Documents\A145_windowspro\TestManager\Output\bin\Debug\FCTBroad.pdb
+C:\Users\ia201135\Documents\A145_windowspro\TestManager\FCTBroad\obj\Debug\FCTBroad.csprojResolveAssemblyReference.cache
+C:\Users\ia201135\Documents\A145_windowspro\TestManager\FCTBroad\obj\Debug\FCTBroad.ConfigDlg.resources
+C:\Users\ia201135\Documents\A145_windowspro\TestManager\FCTBroad\obj\Debug\FCTBroad.csproj.GenerateResource.Cache
+C:\Users\ia201135\Documents\A145_windowspro\TestManager\FCTBroad\obj\Debug\FCTBroad.dll
+C:\Users\ia201135\Documents\A145_windowspro\TestManager\FCTBroad\obj\Debug\FCTBroad.pdb
+C:\Users\ia201135\Documents\A145_windowspro - 副本\TestManager\Output\bin\Debug\Script\FCTBroads.lua
+C:\Users\ia201135\Documents\A145_windowspro - 副本\TestManager\Output\bin\Debug\FCTBroad.dll
+C:\Users\ia201135\Documents\A145_windowspro - 副本\TestManager\Output\bin\Debug\FCTBroad.pdb
+C:\Users\ia201135\Documents\A145_windowspro - 副本\TestManager\FCTBroad\obj\Debug\FCTBroad.csprojResolveAssemblyReference.cache
+C:\Users\ia201135\Documents\A145_windowspro - 副本\TestManager\FCTBroad\obj\Debug\FCTBroad.ConfigDlg.resources
+C:\Users\ia201135\Documents\A145_windowspro - 副本\TestManager\FCTBroad\obj\Debug\FCTBroad.csproj.GenerateResource.Cache
+C:\Users\ia201135\Documents\A145_windowspro - 副本\TestManager\FCTBroad\obj\Debug\FCTBroad.dll
+C:\Users\ia201135\Documents\A145_windowspro - 副本\TestManager\FCTBroad\obj\Debug\FCTBroad.pdb
+C:\MiTac\A145_windowspro - 副本\TestManager\Output\bin\Debug\Script\FCTBroads.lua
+C:\MiTac\A145_windowspro - 副本\TestManager\Output\bin\Debug\FCTBroad.dll
+C:\MiTac\A145_windowspro - 副本\TestManager\Output\bin\Debug\FCTBroad.pdb
+C:\MiTac\A145_windowspro - 副本\TestManager\FCTBroad\obj\Debug\FCTBroad.ConfigDlg.resources
+C:\MiTac\A145_windowspro - 副本\TestManager\FCTBroad\obj\Debug\FCTBroad.csproj.GenerateResource.Cache
+C:\MiTac\A145_windowspro - 副本\TestManager\FCTBroad\obj\Debug\FCTBroad.dll
+C:\MiTac\A145_windowspro - 副本\TestManager\FCTBroad\obj\Debug\FCTBroad.pdb
+C:\MiTac\A145_windowspro - 副本\TestManager\FCTBroad\obj\Debug\FCTBroad.csprojResolveAssemblyReference.cache
+C:\VS2012\Project\FCTBoard\FCTBroad1\obj\Debug\FCTBroad.ConfigDlg.resources
+C:\VS2012\Project\FCTBoard\FCTBroad1\obj\Debug\FCTBroad.csproj.GenerateResource.Cache
+C:\VS2012\Project\FCTBoard\Output\bin\Debug\Script\FCTBroads.lua
+C:\VS2012\Project\FCTBoard\Output\bin\Debug\FCTBroad.dll
+C:\VS2012\Project\FCTBoard\Output\bin\Debug\FCTBroad.pdb
+C:\VS2012\Project\FCTBoard\FCTBroad1\obj\Debug\FCTBroad.csprojResolveAssemblyReference.cache
+C:\VS2012\Project\FCTBoard\FCTBroad1\obj\Debug\FCTBroad.dll
+C:\VS2012\Project\FCTBoard\FCTBroad1\obj\Debug\FCTBroad.pdb

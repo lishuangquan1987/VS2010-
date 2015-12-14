@@ -1,0 +1,2 @@
+C:\Users\ia201135\Documents\A145_windowspro\TestManager\LuaInterface-2.0.4\Run\Release\KopiLua.dll
+C:\Users\ia201135\Documents\A145_windowspro\TestManager\LuaInterface-2.0.4\Core\KopiLua\obj\Release\KopiLua.dll

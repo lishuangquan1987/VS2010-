@@ -1,0 +1,18 @@
+C:\Users\ia201135\Documents\A145_windowspro\TestManager\Output\bin\Debug\KopiLua.dll
+C:\Users\ia201135\Documents\A145_windowspro\TestManager\Output\bin\Debug\KopiLua.pdb
+C:\Users\ia201135\Documents\A145_windowspro\TestManager\LuaInterface-2.0.4\Core\KopiLua\obj\Debug\KopiLua.dll
+C:\Users\ia201135\Documents\A145_windowspro\TestManager\LuaInterface-2.0.4\Core\KopiLua\obj\Debug\KopiLua.pdb
+C:\Users\ia201135\Documents\A145_windowspro - 副本\TestManager\Output\bin\Debug\KopiLua.dll
+C:\Users\ia201135\Documents\A145_windowspro - 副本\TestManager\Output\bin\Debug\KopiLua.pdb
+C:\Users\ia201135\Documents\A145_windowspro - 副本\TestManager\LuaInterface-2.0.4\Core\KopiLua\obj\Debug\KopiLua.dll
+C:\Users\ia201135\Documents\A145_windowspro - 副本\TestManager\LuaInterface-2.0.4\Core\KopiLua\obj\Debug\KopiLua.pdb
+C:\MiTac\A145_windowspro - 副本\TestManager\Output\bin\Debug\KopiLua.dll
+C:\MiTac\A145_windowspro - 副本\TestManager\Output\bin\Debug\KopiLua.pdb
+C:\MiTac\A145_windowspro - 副本\TestManager\LuaInterface-2.0.4\Core\KopiLua\obj\Debug\KopiLua.dll
+C:\MiTac\A145_windowspro - 副本\TestManager\LuaInterface-2.0.4\Core\KopiLua\obj\Debug\KopiLua.pdb
+C:\VS2012\Output\bin\Debug\KopiLua.dll
+C:\VS2012\Output\bin\Debug\KopiLua.pdb
+C:\VS2012\Project\FCTBoard\Output\bin\Debug\KopiLua.dll
+C:\VS2012\Project\FCTBoard\Output\bin\Debug\KopiLua.pdb
+C:\VS2012\Project\FCTBoard\KopiLua\obj\Debug\KopiLua.dll
+C:\VS2012\Project\FCTBoard\KopiLua\obj\Debug\KopiLua.pdb

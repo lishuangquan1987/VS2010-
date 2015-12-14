@@ -1,0 +1,11 @@
+C:\VS2012\Project\Lua载入c_sharp对象\Lua载入c_sharp对象\bin\Debug\Lua载入c_sharp对象.exe
+C:\VS2012\Project\Lua载入c_sharp对象\Lua载入c_sharp对象\bin\Debug\Lua载入c_sharp对象.pdb
+C:\VS2012\Project\Lua载入c_sharp对象\Lua载入c_sharp对象\bin\Debug\lua51.dll
+C:\VS2012\Project\Lua载入c_sharp对象\Lua载入c_sharp对象\bin\Debug\LuaInterface.dll
+C:\VS2012\Project\Lua载入c_sharp对象\Lua载入c_sharp对象\obj\Debug\Lua载入c_sharp对象.csprojResolveAssemblyReference.cache
+C:\VS2012\Project\Lua载入c_sharp对象\Lua载入c_sharp对象\obj\Debug\Lua载入c_sharp对象.Form1.resources
+C:\VS2012\Project\Lua载入c_sharp对象\Lua载入c_sharp对象\obj\Debug\Lua载入c_sharp对象.Properties.Resources.resources
+C:\VS2012\Project\Lua载入c_sharp对象\Lua载入c_sharp对象\obj\Debug\Lua载入c_sharp对象.csproj.GenerateResource.Cache
+C:\VS2012\Project\Lua载入c_sharp对象\Lua载入c_sharp对象\obj\Debug\Lua载入c_sharp对象.exe
+C:\VS2012\Project\Lua载入c_sharp对象\Lua载入c_sharp对象\obj\Debug\Lua载入c_sharp对象.pdb
+C:\VS2012\Project\Lua载入c_sharp对象\Lua载入c_sharp对象\bin\Debug\Lua载入c_sharp对象.exe.config

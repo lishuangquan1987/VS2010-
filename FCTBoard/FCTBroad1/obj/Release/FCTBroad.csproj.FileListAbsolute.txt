@@ -1,0 +1,15 @@
+C:\Users\ia201135\Documents\A145_windowspro\TestManager\FCTBroad\bin\Release\Script\FCTBroads.lua
+C:\Users\ia201135\Documents\A145_windowspro\TestManager\FCTBroad\bin\Release\FCTBroad.dll
+C:\Users\ia201135\Documents\A145_windowspro\TestManager\FCTBroad\bin\Release\FCTBroad.pdb
+C:\Users\ia201135\Documents\A145_windowspro\TestManager\FCTBroad\bin\Release\libCommon.dll
+C:\Users\ia201135\Documents\A145_windowspro\TestManager\FCTBroad\bin\Release\LuaInterface.dll
+C:\Users\ia201135\Documents\A145_windowspro\TestManager\FCTBroad\bin\Release\KopiLua.dll
+C:\Users\ia201135\Documents\A145_windowspro\TestManager\FCTBroad\bin\Release\libCommon.pdb
+C:\Users\ia201135\Documents\A145_windowspro\TestManager\FCTBroad\obj\Release\FCTBroad.csprojResolveAssemblyReference.cache
+C:\Users\ia201135\Documents\A145_windowspro\TestManager\FCTBroad\obj\Release\FCTBroad.ConfigDlg.resources
+C:\Users\ia201135\Documents\A145_windowspro\TestManager\FCTBroad\obj\Release\FCTBroad.csproj.GenerateResource.Cache
+C:\Users\ia201135\Documents\A145_windowspro\TestManager\FCTBroad\obj\Release\FCTBroad.dll
+C:\Users\ia201135\Documents\A145_windowspro\TestManager\FCTBroad\obj\Release\FCTBroad.pdb
+C:\Users\ia201135\Documents\A145_windowspro\TestManager\Output\bin\Release\Script\FCTBroads.lua
+C:\Users\ia201135\Documents\A145_windowspro\TestManager\Output\bin\Release\FCTBroad.dll
+C:\Users\ia201135\Documents\A145_windowspro\TestManager\Output\bin\Release\FCTBroad.pdb
