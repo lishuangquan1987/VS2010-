@@ -77,10 +77,10 @@ namespace 串口调试助手_Tony
             //this.propertyGrid1.SelectedObject = _t;
             LoadConfig();
 
-            if (this.comboBox_COM.SelectedIndex != -1)
-            {
-                this.button_Open.BackColor = Color.FromArgb(50, 0, 0);
-            }
+            //if (this.comboBox_COM.SelectedIndex != -1)
+            //{
+            //    this.button_Open.BackColor = Color.FromArgb(50, 0, 0);
+            //}
            
         }
         void LoadConfig()
@@ -131,7 +131,7 @@ namespace 串口调试助手_Tony
         void LoadComBox()
         {
             #region~加载combox的其他配置
-            string[] BauRate = new string[] {"2400","4800", "9600", "19200", "38400", "57600", "115200" };
+            string[] BauRate = new string[] {"2400","4800", "9600", "19200", "38400", "57600", "115200","921600" };
             string[] Parity = new string[] {"NONE","ODD","EVEN","MARK","SPACE"};
             string[] DataBits = new string[] {"6","7","8" };
             string[] StopBits = new string[] {"0","1","1.5","2" };
@@ -258,7 +258,7 @@ namespace 串口调试助手_Tony
                     button_Open.Text = "Close";
                     this.toolStripStatusLabel1.Text = string.Format("端口：{0}  状态:打开  波特率：{1}", CurrentPort.PortName, CurrentPort.BaudRate.ToString());
                 }
-                this.button_Open.BackColor = Color.FromArgb(0,50, 0);
+                //this.button_Open.BackColor = Color.FromArgb(0,50, 0);
             }
             else
             {
@@ -267,7 +267,7 @@ namespace 串口调试助手_Tony
                     button_Open.Text = "Open";
                     this.toolStripStatusLabel1.Text = string.Format("端口：{0}  状态:关闭", CurrentPort.PortName);
                 }
-                this.button_Open.BackColor = Color.FromArgb(50, 0, 0);
+               // this.button_Open.BackColor = Color.FromArgb(50, 0, 0);
             }
         }
 

@@ -42,7 +42,8 @@ namespace Camera_MySelf
             comboBox1.SelectedIndex = 0;
 
             pixtureBox = new PictureBox();
-            pixtureBox.Size = new Size(372, 346);
+           // pixtureBox.Size = new Size(372, 346);
+            pixtureBox.Size = new Size(640, 480);
             pixtureBox.Location = new Point(259, 19);
             
             this.Controls.Add(pixtureBox);
@@ -89,6 +90,7 @@ namespace Camera_MySelf
         void videosource_NewFrame(object sender, NewFrameEventArgs eventArgs)
         {
              bmp=(Bitmap)eventArgs.Frame.Clone();
+            // this.pixtureBox.Size = bmp.Size;
              this.pixtureBox.BackgroundImage = bmp;
             
         }
@@ -162,6 +164,19 @@ namespace Camera_MySelf
         {
             Thread t = new Thread(new ThreadStart(JudgeIsQRImage));
             t.Start();
+        }
+        Wholewindow wh=new Wholewindow();
+        void videosource_NewFrame_WholeWindow(object sender, NewFrameEventArgs eventArgs)
+        {
+            bmp = (Bitmap)eventArgs.Frame.Clone();
+            wh.BackgroundImage = bmp;
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {           
+            wh.Show();
+            currentVideoSource.NewFrame += videosource_NewFrame_WholeWindow;   
         }
    
     }

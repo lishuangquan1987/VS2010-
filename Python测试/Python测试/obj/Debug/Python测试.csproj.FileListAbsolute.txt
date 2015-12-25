@@ -1,0 +1,5 @@
+C:\VS2012\Project\Python测试\Python测试\bin\Debug\Python测试.exe
+C:\VS2012\Project\Python测试\Python测试\bin\Debug\Python测试.pdb
+C:\VS2012\Project\Python测试\Python测试\obj\Debug\Python测试.csprojResolveAssemblyReference.cache
+C:\VS2012\Project\Python测试\Python测试\obj\Debug\Python测试.exe
+C:\VS2012\Project\Python测试\Python测试\obj\Debug\Python测试.pdb

@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPIB通讯", "GPIB通讯\GPIB通讯.csproj", "{44BE7B50-0D32-4E64-8C35-0B07F47D1782}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44BE7B50-0D32-4E64-8C35-0B07F47D1782}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44BE7B50-0D32-4E64-8C35-0B07F47D1782}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44BE7B50-0D32-4E64-8C35-0B07F47D1782}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44BE7B50-0D32-4E64-8C35-0B07F47D1782}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

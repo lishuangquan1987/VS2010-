@@ -8,3 +8,4 @@ C:\VS2012\Project\Camera_MySelf\Camera_MySelf\obj\Debug\Camera_MySelf.Properties
 C:\VS2012\Project\Camera_MySelf\Camera_MySelf\obj\Debug\Camera_MySelf.csproj.GenerateResource.Cache
 C:\VS2012\Project\Camera_MySelf\Camera_MySelf\obj\Debug\Camera_MySelf.exe
 C:\VS2012\Project\Camera_MySelf\Camera_MySelf\obj\Debug\Camera_MySelf.pdb
+C:\VS2012\Project\Camera_MySelf\Camera_MySelf\obj\Debug\Camera_MySelf.Wholewindow.resources

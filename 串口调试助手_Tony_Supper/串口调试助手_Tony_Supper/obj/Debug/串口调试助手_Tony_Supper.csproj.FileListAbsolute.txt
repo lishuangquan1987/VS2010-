@@ -9,3 +9,7 @@ C:\VS2012\Project\串口调试助手_Tony_Supper\串口调试助手_Tony_Supper\
 C:\VS2012\Project\串口调试助手_Tony_Supper\串口调试助手_Tony_Supper\obj\Debug\串口调试助手_Tony_Supper.Form1.resources
 C:\VS2012\Project\串口调试助手_Tony_Supper\串口调试助手_Tony_Supper\obj\Debug\串口调试助手_Tony_Supper.exe
 C:\VS2012\Project\串口调试助手_Tony_Supper\串口调试助手_Tony_Supper\obj\Debug\串口调试助手_Tony_Supper.pdb
+C:\VS2012\Project\串口调试助手_Tony_Supper\串口调试助手_Tony_Supper\obj\Debug\串口调试助手_Tony_Supper.ExtendForm.resources
+C:\VS2012\Project\串口调试助手_Tony_Supper\串口调试助手_Tony_Supper\bin\Debug\ExtendForm.resx
+C:\VS2012\Project\串口调试助手_Tony_Supper\串口调试助手_Tony_Supper\bin\Debug\ExtendForm.cs
+C:\VS2012\Project\串口调试助手_Tony_Supper\串口调试助手_Tony_Supper\bin\Debug\ExtendForm.Designer.cs

@@ -25,5 +25,6 @@ namespace 串口调试助手_Tony_Supper
             dic["nextline"]=true;
             EventCenter.GetInstance().PostNotification(EventName.UpdateUI,dic);
         }
+
     }
 }

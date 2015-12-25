@@ -1,0 +1,5 @@
+C:\VS2012\Project\1111\1111\bin\Debug\1111.exe
+C:\VS2012\Project\1111\1111\bin\Debug\1111.pdb
+C:\VS2012\Project\1111\1111\obj\Debug\1111.csprojResolveAssemblyReference.cache
+C:\VS2012\Project\1111\1111\obj\Debug\1111.exe
+C:\VS2012\Project\1111\1111\obj\Debug\1111.pdb

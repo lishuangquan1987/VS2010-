@@ -82,6 +82,8 @@ namespace N_EventCenter
     public class EventName
     {
         public static string UpdateUI = "str_updateUI";
+        public static string ConfigChange = "ConfigChange";
+
         #region~更新界面的参数
         public static string msg = "msg";
         public static string color = "color";

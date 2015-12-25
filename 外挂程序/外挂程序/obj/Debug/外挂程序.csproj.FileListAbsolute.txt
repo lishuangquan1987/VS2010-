@@ -1,0 +1,11 @@
+C:\VS2012\Project\外挂程序\外挂程序\bin\Debug\外挂程序.exe
+C:\VS2012\Project\外挂程序\外挂程序\bin\Debug\外挂程序.pdb
+C:\VS2012\Project\外挂程序\外挂程序\bin\Debug\lua51.dll
+C:\VS2012\Project\外挂程序\外挂程序\bin\Debug\LuaInterface.dll
+C:\VS2012\Project\外挂程序\外挂程序\obj\Debug\外挂程序.Form1.resources
+C:\VS2012\Project\外挂程序\外挂程序\obj\Debug\外挂程序.Properties.Resources.resources
+C:\VS2012\Project\外挂程序\外挂程序\obj\Debug\外挂程序.csproj.GenerateResource.Cache
+C:\VS2012\Project\外挂程序\外挂程序\obj\Debug\外挂程序.exe
+C:\VS2012\Project\外挂程序\外挂程序\obj\Debug\外挂程序.pdb
+C:\VS2012\Project\外挂程序\外挂程序\bin\Debug\外挂程序.exe.config
+C:\VS2012\Project\外挂程序\外挂程序\obj\Debug\外挂程序.csprojResolveAssemblyReference.cache

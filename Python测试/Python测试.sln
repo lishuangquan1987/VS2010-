@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Python测试", "Python测试\Python测试.csproj", "{0DB206F3-8788-4389-A1C1-02F2A3E02DBE}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PythonApplication2", "PythonApplication2\PythonApplication2.pyproj", "{1209EAFF-8EF4-4B5D-89CF-82FDC9DD77D7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0DB206F3-8788-4389-A1C1-02F2A3E02DBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DB206F3-8788-4389-A1C1-02F2A3E02DBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DB206F3-8788-4389-A1C1-02F2A3E02DBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DB206F3-8788-4389-A1C1-02F2A3E02DBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1209EAFF-8EF4-4B5D-89CF-82FDC9DD77D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1209EAFF-8EF4-4B5D-89CF-82FDC9DD77D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

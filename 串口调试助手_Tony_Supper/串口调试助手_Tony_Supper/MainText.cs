@@ -34,9 +34,9 @@ namespace 串口调试助手_Tony_Supper
         void Add_Updatetext(Par par)
         {
             Dic dic = par._context as Dic;
-            string msg = dic["msg"] as string;
-            Color color =(Color)dic["color"];
-            bool nextline =(bool)dic["nextline"];
+            string msg = dic[EventName.msg] as string;
+            Color color = (Color)dic[EventName.color];
+            bool nextline =(bool)dic[EventName.nextline];
             Updatetext(msg, color, nextline);
         }
     }

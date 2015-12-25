@@ -1,0 +1,1 @@
+C:\VS2012\Project\GPIB通讯\GPIB通讯\bin\Debug\GPIB通讯.exe.config
