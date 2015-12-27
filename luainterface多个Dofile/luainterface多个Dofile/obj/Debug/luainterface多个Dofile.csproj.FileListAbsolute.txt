@@ -1,0 +1,11 @@
+C:\VS2012\Project\luainterface多个Dofile\luainterface多个Dofile\bin\Debug\luainterface多个Dofile.exe.config
+C:\VS2012\Project\luainterface多个Dofile\luainterface多个Dofile\bin\Debug\luainterface多个Dofile.exe
+C:\VS2012\Project\luainterface多个Dofile\luainterface多个Dofile\bin\Debug\luainterface多个Dofile.pdb
+C:\VS2012\Project\luainterface多个Dofile\luainterface多个Dofile\bin\Debug\lua51.dll
+C:\VS2012\Project\luainterface多个Dofile\luainterface多个Dofile\bin\Debug\LuaInterface.dll
+C:\VS2012\Project\luainterface多个Dofile\luainterface多个Dofile\obj\Debug\luainterface多个Dofile.csprojResolveAssemblyReference.cache
+C:\VS2012\Project\luainterface多个Dofile\luainterface多个Dofile\obj\Debug\luainterface多个Dofile.Form1.resources
+C:\VS2012\Project\luainterface多个Dofile\luainterface多个Dofile\obj\Debug\luainterface多个Dofile.Properties.Resources.resources
+C:\VS2012\Project\luainterface多个Dofile\luainterface多个Dofile\obj\Debug\luainterface多个Dofile.csproj.GenerateResource.Cache
+C:\VS2012\Project\luainterface多个Dofile\luainterface多个Dofile\obj\Debug\luainterface多个Dofile.exe
+C:\VS2012\Project\luainterface多个Dofile\luainterface多个Dofile\obj\Debug\luainterface多个Dofile.pdb
