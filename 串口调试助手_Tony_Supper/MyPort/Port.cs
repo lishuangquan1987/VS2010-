@@ -19,6 +19,10 @@ namespace MyPort
         string[] DataBits = new string[] {"6","7","8"};
         public string portname;
         public object tag;//与外部ratioButton绑定
+        public bool Isopen
+        {
+            get { return serialport.IsOpen; }
+        }
         public Port(string portname)
         {
             
@@ -39,6 +43,7 @@ namespace MyPort
         {
             LoadInitConfig();
             EventCenter.GetInstance().AddObserver(EventName.ConfigChange+portname,I_ConfigChange);//注册，供别人使用
+            this.textBox_PortName.Text = portname;
         }
         void LoadInitConfig()
         {

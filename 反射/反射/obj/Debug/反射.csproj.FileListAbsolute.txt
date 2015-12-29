@@ -1,0 +1,8 @@
+C:\VS2012\Project\反射\反射\bin\Debug\反射.exe.config
+C:\VS2012\Project\反射\反射\bin\Debug\反射.exe
+C:\VS2012\Project\反射\反射\bin\Debug\反射.pdb
+C:\VS2012\Project\反射\反射\obj\Debug\反射.csprojResolveAssemblyReference.cache
+C:\VS2012\Project\反射\反射\obj\Debug\反射.Properties.Resources.resources
+C:\VS2012\Project\反射\反射\obj\Debug\反射.csproj.GenerateResource.Cache
+C:\VS2012\Project\反射\反射\obj\Debug\反射.exe
+C:\VS2012\Project\反射\反射\obj\Debug\反射.pdb

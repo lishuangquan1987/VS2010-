@@ -1,0 +1,11 @@
+C:\VS2012\Project\A2750控制\A2750控制\bin\Debug\A2750控制.exe.config
+C:\VS2012\Project\A2750控制\A2750控制\bin\Debug\A2750控制.exe
+C:\VS2012\Project\A2750控制\A2750控制\bin\Debug\A2750控制.pdb
+C:\VS2012\Project\A2750控制\A2750控制\bin\Debug\NationalInstruments.Common.Native.dll
+C:\VS2012\Project\A2750控制\A2750控制\obj\Debug\A2750控制.csprojResolveAssemblyReference.cache
+C:\VS2012\Project\A2750控制\A2750控制\obj\Debug\A2750控制.Extend.resources
+C:\VS2012\Project\A2750控制\A2750控制\obj\Debug\A2750控制.A2750Control.resources
+C:\VS2012\Project\A2750控制\A2750控制\obj\Debug\A2750控制.Properties.Resources.resources
+C:\VS2012\Project\A2750控制\A2750控制\obj\Debug\A2750控制.csproj.GenerateResource.Cache
+C:\VS2012\Project\A2750控制\A2750控制\obj\Debug\A2750控制.exe
+C:\VS2012\Project\A2750控制\A2750控制\obj\Debug\A2750控制.pdb

@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "调用烧录CMD程序", "调用烧录CMD程序\调用烧录CMD程序.csproj", "{F5600055-384A-4FF3-B7B6-C2A21F3669C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "调用烧录CMD程序1", "调用烧录CMD程序1\调用烧录CMD程序1.csproj", "{9B90CE30-8371-479D-A7E2-763827EBE43D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "调用CMD程序3", "调用CMD程序3\调用CMD程序3.csproj", "{3764AC22-4363-4918-9FE4-0888AE6FCE48}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5600055-384A-4FF3-B7B6-C2A21F3669C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5600055-384A-4FF3-B7B6-C2A21F3669C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5600055-384A-4FF3-B7B6-C2A21F3669C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5600055-384A-4FF3-B7B6-C2A21F3669C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B90CE30-8371-479D-A7E2-763827EBE43D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B90CE30-8371-479D-A7E2-763827EBE43D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B90CE30-8371-479D-A7E2-763827EBE43D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B90CE30-8371-479D-A7E2-763827EBE43D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3764AC22-4363-4918-9FE4-0888AE6FCE48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3764AC22-4363-4918-9FE4-0888AE6FCE48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3764AC22-4363-4918-9FE4-0888AE6FCE48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3764AC22-4363-4918-9FE4-0888AE6FCE48}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

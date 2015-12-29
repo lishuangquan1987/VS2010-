@@ -52,8 +52,8 @@ namespace Capture_LikeQQ
                 isReady = false;
             }
             skin = new Sunisoft.IrisSkin.SkinEngine((Component)this);
-            if (File.Exists("DeepGreen.ssk"))
-               skin.SkinFile = "DeepGreen.ssk";
+            if (File.Exists(Application.StartupPath+"\\DeepGreen.ssk"))
+               skin.SkinFile = Application.StartupPath+"\\DeepGreen.ssk";
 
         }
         [DllImport("user32.dll", SetLastError = true)]

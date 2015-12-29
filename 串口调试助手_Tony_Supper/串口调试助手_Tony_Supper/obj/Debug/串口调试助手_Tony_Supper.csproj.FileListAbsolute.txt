@@ -13,3 +13,5 @@ C:\VS2012\Project\串口调试助手_Tony_Supper\串口调试助手_Tony_Supper\
 C:\VS2012\Project\串口调试助手_Tony_Supper\串口调试助手_Tony_Supper\bin\Debug\ExtendForm.resx
 C:\VS2012\Project\串口调试助手_Tony_Supper\串口调试助手_Tony_Supper\bin\Debug\ExtendForm.cs
 C:\VS2012\Project\串口调试助手_Tony_Supper\串口调试助手_Tony_Supper\bin\Debug\ExtendForm.Designer.cs
+C:\VS2012\Project\串口调试助手_Tony_Supper\串口调试助手_Tony_Supper\bin\Debug\MyPort.dll
+C:\VS2012\Project\串口调试助手_Tony_Supper\串口调试助手_Tony_Supper\bin\Debug\MyPort.pdb

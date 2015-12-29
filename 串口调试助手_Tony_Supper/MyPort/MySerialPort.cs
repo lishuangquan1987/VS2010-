@@ -32,10 +32,7 @@ namespace MyPort
  
         }
         public void WriteString(string msg)
-        {
-            this.DiscardInBuffer();
-            this.DiscardOutBuffer();
-            receiveString = "";
+        {           
             this.WriteString(msg);
             while (this.BytesToWrite>0)
                 Thread.Sleep(1);
@@ -45,6 +42,8 @@ namespace MyPort
             while (this.BytesToRead > 0)
                 Thread.Sleep(1);
             string r = receiveString;
+            this.DiscardInBuffer();
+            this.DiscardOutBuffer();
             receiveString = "";
             return r;
         }

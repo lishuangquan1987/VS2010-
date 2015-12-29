@@ -43,7 +43,7 @@
             // 
             // btn_open
             // 
-            this.btn_open.Location = new System.Drawing.Point(622, 3);
+            this.btn_open.Location = new System.Drawing.Point(604, 4);
             this.btn_open.Name = "btn_open";
             this.btn_open.Size = new System.Drawing.Size(54, 23);
             this.btn_open.TabIndex = 0;
@@ -65,13 +65,13 @@
             this.textBox_PortName.Location = new System.Drawing.Point(59, 5);
             this.textBox_PortName.Name = "textBox_PortName";
             this.textBox_PortName.ReadOnly = true;
-            this.textBox_PortName.Size = new System.Drawing.Size(61, 21);
+            this.textBox_PortName.Size = new System.Drawing.Size(53, 21);
             this.textBox_PortName.TabIndex = 2;
             // 
             // label_BauteRate
             // 
             this.label_BauteRate.AutoSize = true;
-            this.label_BauteRate.Location = new System.Drawing.Point(127, 9);
+            this.label_BauteRate.Location = new System.Drawing.Point(114, 9);
             this.label_BauteRate.Name = "label_BauteRate";
             this.label_BauteRate.Size = new System.Drawing.Size(65, 12);
             this.label_BauteRate.TabIndex = 3;
@@ -88,7 +88,7 @@
             "9600",
             "4800",
             "2400"});
-            this.comboBox_BauteRate.Location = new System.Drawing.Point(188, 5);
+            this.comboBox_BauteRate.Location = new System.Drawing.Point(179, 5);
             this.comboBox_BauteRate.Name = "comboBox_BauteRate";
             this.comboBox_BauteRate.Size = new System.Drawing.Size(67, 20);
             this.comboBox_BauteRate.TabIndex = 4;
@@ -97,7 +97,7 @@
             // label_Parity
             // 
             this.label_Parity.AutoSize = true;
-            this.label_Parity.Location = new System.Drawing.Point(261, 9);
+            this.label_Parity.Location = new System.Drawing.Point(250, 9);
             this.label_Parity.Name = "label_Parity";
             this.label_Parity.Size = new System.Drawing.Size(47, 12);
             this.label_Parity.TabIndex = 5;
@@ -106,7 +106,7 @@
             // comboBox_Parity
             // 
             this.comboBox_Parity.FormattingEnabled = true;
-            this.comboBox_Parity.Location = new System.Drawing.Point(306, 5);
+            this.comboBox_Parity.Location = new System.Drawing.Point(296, 5);
             this.comboBox_Parity.Name = "comboBox_Parity";
             this.comboBox_Parity.Size = new System.Drawing.Size(63, 20);
             this.comboBox_Parity.TabIndex = 6;
@@ -115,7 +115,7 @@
             // comboBox_StopBit
             // 
             this.comboBox_StopBit.FormattingEnabled = true;
-            this.comboBox_StopBit.Location = new System.Drawing.Point(426, 5);
+            this.comboBox_StopBit.Location = new System.Drawing.Point(413, 5);
             this.comboBox_StopBit.Name = "comboBox_StopBit";
             this.comboBox_StopBit.Size = new System.Drawing.Size(63, 20);
             this.comboBox_StopBit.TabIndex = 8;
@@ -124,7 +124,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(377, 9);
+            this.label1.Location = new System.Drawing.Point(361, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(53, 12);
             this.label1.TabIndex = 7;
@@ -133,7 +133,7 @@
             // comboBox_DataBit
             // 
             this.comboBox_DataBit.FormattingEnabled = true;
-            this.comboBox_DataBit.Location = new System.Drawing.Point(553, 6);
+            this.comboBox_DataBit.Location = new System.Drawing.Point(538, 6);
             this.comboBox_DataBit.Name = "comboBox_DataBit";
             this.comboBox_DataBit.Size = new System.Drawing.Size(63, 20);
             this.comboBox_DataBit.TabIndex = 10;
@@ -142,7 +142,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(495, 8);
+            this.label2.Location = new System.Drawing.Point(479, 8);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(59, 12);
             this.label2.TabIndex = 9;
@@ -164,7 +164,7 @@
             this.Controls.Add(this.label_COMName);
             this.Controls.Add(this.btn_open);
             this.Name = "Port";
-            this.Size = new System.Drawing.Size(680, 30);
+            this.Size = new System.Drawing.Size(664, 28);
             this.Load += new System.EventHandler(this.Port_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -175,7 +175,6 @@
 
         private System.Windows.Forms.Button btn_open;
         private System.Windows.Forms.Label label_COMName;
-        private System.Windows.Forms.TextBox textBox_PortName;
         private System.Windows.Forms.Label label_BauteRate;
         private System.Windows.Forms.ComboBox comboBox_BauteRate;
         private System.Windows.Forms.Label label_Parity;
@@ -184,5 +183,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBox_DataBit;
         private System.Windows.Forms.Label label2;
+        public System.Windows.Forms.TextBox textBox_PortName;
     }
 }

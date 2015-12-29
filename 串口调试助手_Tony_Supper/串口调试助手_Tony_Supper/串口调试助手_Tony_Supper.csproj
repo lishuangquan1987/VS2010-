@@ -104,6 +104,10 @@
       <Project>{57a03e1f-854e-46ff-958e-7720517ab11d}</Project>
       <Name>EventCenter</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MyPort\MyPort.csproj">
+      <Project>{058dccbb-caf6-49fc-ac07-065842085562}</Project>
+      <Name>MyPort</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

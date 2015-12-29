@@ -1,0 +1,9 @@
+C:\VS2012\Project\调用烧录CMD程序\调用CMD程序3\bin\Debug\调用CMD程序3.exe.config
+C:\VS2012\Project\调用烧录CMD程序\调用CMD程序3\bin\Debug\调用CMD程序3.exe
+C:\VS2012\Project\调用烧录CMD程序\调用CMD程序3\bin\Debug\调用CMD程序3.pdb
+C:\VS2012\Project\调用烧录CMD程序\调用CMD程序3\obj\Debug\调用CMD程序3.csprojResolveAssemblyReference.cache
+C:\VS2012\Project\调用烧录CMD程序\调用CMD程序3\obj\Debug\调用CMD程序3.Form1.resources
+C:\VS2012\Project\调用烧录CMD程序\调用CMD程序3\obj\Debug\调用CMD程序3.Properties.Resources.resources
+C:\VS2012\Project\调用烧录CMD程序\调用CMD程序3\obj\Debug\调用CMD程序3.csproj.GenerateResource.Cache
+C:\VS2012\Project\调用烧录CMD程序\调用CMD程序3\obj\Debug\调用CMD程序3.exe
+C:\VS2012\Project\调用烧录CMD程序\调用CMD程序3\obj\Debug\调用CMD程序3.pdb
