@@ -41,9 +41,9 @@ namespace MyPort
         }
         private void Port_Load(object sender, EventArgs e)
         {
-            LoadInitConfig();
-            EventCenter.GetInstance().AddObserver(EventName.ConfigChange+portname,I_ConfigChange);//注册，供别人使用
+            LoadInitConfig();            
             this.textBox_PortName.Text = portname;
+            this.Enabled = false;
         }
         void LoadInitConfig()
         {
@@ -51,7 +51,7 @@ namespace MyPort
             this.comboBox_Parity.Items.AddRange(Parity);
             this.comboBox_StopBit.Items.AddRange(StopBits);
             this.comboBox_DataBit.Items.AddRange(DataBits);
-
+            EventCenter.GetInstance().AddObserver(EventName.ConfigChange + portname, I_ConfigChange);//注册，供别人使用
             this.comboBox_BauteRate.SelectedIndex = 0;//默认配置115200；
             this.comboBox_Parity.SelectedIndex = 0;//默认配置NONE
             this.comboBox_StopBit.SelectedIndex = 1;//默认配置1
@@ -59,24 +59,33 @@ namespace MyPort
         }
         void ConfigChange()
         {
-            
+            if(this.comboBox_BauteRate.SelectedIndex!=-1)
             this.serialport.BaudRate = int.Parse(this.comboBox_BauteRate.SelectedItem.ToString());
-            switch (this.comboBox_Parity.SelectedItem.ToString())
+            if (this.comboBox_Parity.SelectedIndex != -1)
             {
-                case "NONE": this.serialport.Parity = System.IO.Ports.Parity.None; break;
-                case "ODD": this.serialport.Parity = System.IO.Ports.Parity.Odd; break;
-                case "EVEN": this.serialport.Parity = System.IO.Ports.Parity.Even; break;
-                case "MARK": this.serialport.Parity = System.IO.Ports.Parity.Mark; break;
-                case "SPACE": this.serialport.Parity = System.IO.Ports.Parity.Space; break;
+                switch (this.comboBox_Parity.SelectedItem.ToString())
+                {
+                    case "NONE": this.serialport.Parity = System.IO.Ports.Parity.None; break;
+                    case "ODD": this.serialport.Parity = System.IO.Ports.Parity.Odd; break;
+                    case "EVEN": this.serialport.Parity = System.IO.Ports.Parity.Even; break;
+                    case "MARK": this.serialport.Parity = System.IO.Ports.Parity.Mark; break;
+                    case "SPACE": this.serialport.Parity = System.IO.Ports.Parity.Space; break;
+                }
             }
-            switch (this.comboBox_StopBit.SelectedItem.ToString())
+            if (this.comboBox_StopBit.SelectedIndex != -1)
             {
-                case "0": this.serialport.StopBits = System.IO.Ports.StopBits.None; break;
-                case "1": this.serialport.StopBits = System.IO.Ports.StopBits.One; break;
-                case "1.5": this.serialport.StopBits = System.IO.Ports.StopBits.OnePointFive; break;
-                case "2": this.serialport.StopBits = System.IO.Ports.StopBits.Two; break;
+                switch (this.comboBox_StopBit.SelectedItem.ToString())
+                {
+                    case "0": this.serialport.StopBits = System.IO.Ports.StopBits.None; break;
+                    case "1": this.serialport.StopBits = System.IO.Ports.StopBits.One; break;
+                    case "1.5": this.serialport.StopBits = System.IO.Ports.StopBits.OnePointFive; break;
+                    case "2": this.serialport.StopBits = System.IO.Ports.StopBits.Two; break;
+                }
             }
-            this.serialport.DataBits = int.Parse(this.comboBox_DataBit.SelectedItem.ToString());
+            if (this.comboBox_DataBit.SelectedIndex != -1)
+            {
+                this.serialport.DataBits = int.Parse(this.comboBox_DataBit.SelectedItem.ToString());
+            }
         }
         void I_ConfigChange(N_EventCenter.Par par)
         {
@@ -111,8 +120,20 @@ namespace MyPort
             if (btn_open.Text == "Open")
             {
                 if (!this.serialport.IsOpen)
-                    this.serialport.Open();
-                this.btn_open.Text = "Close";
+                    try
+                    {
+                        this.serialport.Open();
+                        this.btn_open.Text = "Close";
+                    }
+                    catch (Exception ee)
+                    {
+                        Dic dic = new Dic();
+                        dic[EventName.color] = Color.Red;
+                        dic[EventName.msg] = ee.Message;
+                        dic[EventName.nextline] = true;
+                        EventCenter.GetInstance().PostNotification(EventName.UpdateUI, dic);
+                    }                    
+                
             }
             else
             {

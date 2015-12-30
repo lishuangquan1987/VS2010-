@@ -21,30 +21,41 @@ namespace MyPort
         }
 
         void MySerialPort_DataReceived(object sender, SerialDataReceivedEventArgs e)
-        {   
-            int length = this.BytesToRead;
-            byte[] bytes = new byte[length];
-            this.Read(bytes, 0, bytes.Length);
-            receiveString = Encoding.Default.GetString(bytes);            
+        {
+            while (this.BytesToRead > 0)
+            {
+                int length = this.BytesToRead;
+                byte[] bytes = new byte[length];
+                this.Read(bytes, 0, bytes.Length);
+                receiveString += Encoding.Default.GetString(bytes);
+            }
         }
         public void Doconnect()
         {
  
         }
         public void WriteString(string msg)
-        {           
-            this.WriteString(msg);
-            while (this.BytesToWrite>0)
-                Thread.Sleep(1);
+        {
+            try
+            {
+                this.DiscardInBuffer();
+                this.DiscardOutBuffer();
+                receiveString = "";
+                this.Write(msg);
+                while (this.BytesToWrite > 0)
+                    Thread.Sleep(1);
+            }
+            catch (Exception e)
+            {
+                System.Windows.Forms.MessageBox.Show(e.Message);
+            }
+            
         }
         public string ReadString()
         {
             while (this.BytesToRead > 0)
                 Thread.Sleep(1);
-            string r = receiveString;
-            this.DiscardInBuffer();
-            this.DiscardOutBuffer();
-            receiveString = "";
+            string r = receiveString; 
             return r;
         }
 

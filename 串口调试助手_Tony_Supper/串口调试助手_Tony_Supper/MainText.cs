@@ -26,9 +26,10 @@ namespace 串口调试助手_Tony_Supper
             {
                 this.richTextBox1.SelectionColor = color;
                 if (nextline)
-                    this.richTextBox1.AppendText(msg + "\r\n");
+                    this.richTextBox1.AppendText(msg + "\r");
                 else
                     this.richTextBox1.AppendText(msg);
+                this.Focus();
             }
         }
         void Add_Updatetext(Par par)

@@ -18,5 +18,24 @@ namespace 串口调试助手_Tony_Supper
             this.DockAreas = DockAreas.DockLeft | DockAreas.DockRight | DockAreas.DockTop | DockAreas.DockBottom | DockAreas.Float;
             this.HideOnClose = true;
         }
+        public extend_Unit[] extend_units = new extend_Unit[50];
+        private void ExtendForm_Load(object sender, EventArgs e)
+        {
+            for (int i = 0; i < 50; i++)
+            {
+                extend_units[i] = new extend_Unit();
+                extend_units[i].Location = new Point(0, 30 * i);
+                extend_units[i].button.Text = (i+1).ToString();
+                extend_units[i].button.Tag = extend_units[i].textBox1;
+                this.Controls.Add(extend_units[i]);
+            }
+        }
+
+        private void ExtendForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.DockState = WeifenLuo.WinFormsUI.Docking.DockState.Hidden;
+            e.Cancel = true;
+        }
+
     }
 }

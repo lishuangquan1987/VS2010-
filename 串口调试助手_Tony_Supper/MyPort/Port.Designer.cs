@@ -43,7 +43,7 @@
             // 
             // btn_open
             // 
-            this.btn_open.Location = new System.Drawing.Point(604, 4);
+            this.btn_open.Location = new System.Drawing.Point(566, 3);
             this.btn_open.Name = "btn_open";
             this.btn_open.Size = new System.Drawing.Size(54, 23);
             this.btn_open.TabIndex = 0;
@@ -108,7 +108,7 @@
             this.comboBox_Parity.FormattingEnabled = true;
             this.comboBox_Parity.Location = new System.Drawing.Point(296, 5);
             this.comboBox_Parity.Name = "comboBox_Parity";
-            this.comboBox_Parity.Size = new System.Drawing.Size(63, 20);
+            this.comboBox_Parity.Size = new System.Drawing.Size(59, 20);
             this.comboBox_Parity.TabIndex = 6;
             this.comboBox_Parity.SelectedIndexChanged += new System.EventHandler(this.comboBox_Parity_SelectedIndexChanged);
             // 
@@ -117,7 +117,7 @@
             this.comboBox_StopBit.FormattingEnabled = true;
             this.comboBox_StopBit.Location = new System.Drawing.Point(413, 5);
             this.comboBox_StopBit.Name = "comboBox_StopBit";
-            this.comboBox_StopBit.Size = new System.Drawing.Size(63, 20);
+            this.comboBox_StopBit.Size = new System.Drawing.Size(44, 20);
             this.comboBox_StopBit.TabIndex = 8;
             this.comboBox_StopBit.SelectedIndexChanged += new System.EventHandler(this.comboBox_StopBit_SelectedIndexChanged);
             // 
@@ -133,16 +133,16 @@
             // comboBox_DataBit
             // 
             this.comboBox_DataBit.FormattingEnabled = true;
-            this.comboBox_DataBit.Location = new System.Drawing.Point(538, 6);
+            this.comboBox_DataBit.Location = new System.Drawing.Point(519, 6);
             this.comboBox_DataBit.Name = "comboBox_DataBit";
-            this.comboBox_DataBit.Size = new System.Drawing.Size(63, 20);
+            this.comboBox_DataBit.Size = new System.Drawing.Size(41, 20);
             this.comboBox_DataBit.TabIndex = 10;
             this.comboBox_DataBit.SelectedIndexChanged += new System.EventHandler(this.comboBox_DataBit_SelectedIndexChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(479, 8);
+            this.label2.Location = new System.Drawing.Point(460, 8);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(59, 12);
             this.label2.TabIndex = 9;
@@ -153,18 +153,18 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.comboBox_DataBit);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.comboBox_StopBit);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox_Parity);
-            this.Controls.Add(this.label_Parity);
             this.Controls.Add(this.comboBox_BauteRate);
-            this.Controls.Add(this.label_BauteRate);
             this.Controls.Add(this.textBox_PortName);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label_Parity);
+            this.Controls.Add(this.label_BauteRate);
             this.Controls.Add(this.label_COMName);
             this.Controls.Add(this.btn_open);
             this.Name = "Port";
-            this.Size = new System.Drawing.Size(664, 28);
+            this.Size = new System.Drawing.Size(624, 28);
             this.Load += new System.EventHandler(this.Port_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

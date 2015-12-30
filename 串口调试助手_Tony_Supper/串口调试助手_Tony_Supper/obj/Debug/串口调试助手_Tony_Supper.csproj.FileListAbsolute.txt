@@ -15,3 +15,7 @@ C:\VS2012\Project\串口调试助手_Tony_Supper\串口调试助手_Tony_Supper\
 C:\VS2012\Project\串口调试助手_Tony_Supper\串口调试助手_Tony_Supper\bin\Debug\ExtendForm.Designer.cs
 C:\VS2012\Project\串口调试助手_Tony_Supper\串口调试助手_Tony_Supper\bin\Debug\MyPort.dll
 C:\VS2012\Project\串口调试助手_Tony_Supper\串口调试助手_Tony_Supper\bin\Debug\MyPort.pdb
+C:\VS2012\Project\串口调试助手_Tony_Supper\串口调试助手_Tony_Supper\bin\Debug\WeifenLuo.WinFormsUI.Docking.dll
+C:\VS2012\Project\串口调试助手_Tony_Supper\串口调试助手_Tony_Supper\bin\Debug\串口调试助手_Tony_Supper.exe.config
+C:\VS2012\Project\串口调试助手_Tony_Supper\串口调试助手_Tony_Supper\obj\Debug\串口调试助手_Tony_Supper.extend_Unit.resources
+C:\VS2012\Project\串口调试助手_Tony_Supper\串口调试助手_Tony_Supper\obj\Debug\串口调试助手_Tony_Supper.MidForm.resources
