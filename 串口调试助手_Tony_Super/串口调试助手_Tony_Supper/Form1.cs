@@ -61,7 +61,12 @@ namespace 串口调试助手_Tony_Supper
                 }
             }
         }
-
+        void I_UpdateStatus(N_EventCenter.Par par)
+        {
+            Dic dic = par._context as Dic;
+            string status = dic[EventName.status] as string;
+            this.toolStripStatusLabel1.Text = status;
+        }
         void r_CheckedChanged(object sender, EventArgs e)
         {
             RadioButton r = (RadioButton)sender;
@@ -76,6 +81,17 @@ namespace 串口调试助手_Tony_Supper
                         currentPort = i;
                     }
                 }
+                #region~通知主界面
+                Dic dic = new Dic();
+                string status="";
+                if (currentPort.Isopen)
+                    status = "打开";
+                else
+                    status = "关闭";
+                dic[EventName.status] = string.Format("当前串口：{0} 波特率:{1} 状态:{2}",currentPort.portname, currentPort.baurate, status);
+                EventCenter.GetInstance().PostNotification(EventName.Update_com_status, dic);
+                #endregion
+
             }
             else
             {
@@ -143,6 +159,8 @@ namespace 串口调试助手_Tony_Supper
 
             this.AcceptButton = midForm.button_Send;
             ReScan();
+
+            N_EventCenter.EventCenter.GetInstance().AddObserver(EventName.Update_com_status, I_UpdateStatus);
             
         }
         void Extend_TextChangedHandle(object sender, EventArgs e)

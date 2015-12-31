@@ -32,6 +32,11 @@ namespace MyPort
             serialport = new MySerialPort(portname);
             //this.serialport.PortName = portname;
         }
+        public int baurate
+        {
+            get { return this.serialport.BaudRate; }
+        }
+        
         public void WriteString(string cmd)
         {
             this.serialport.WriteString(cmd);
@@ -87,6 +92,16 @@ namespace MyPort
             {
                 this.serialport.DataBits = int.Parse(this.comboBox_DataBit.SelectedItem.ToString());
             }
+            #region~通知主界面
+            Dic dic=new Dic();
+            string status="";
+            if(this.serialport.IsOpen)
+                status="打开";
+            else
+                status="关闭";
+            dic[EventName.status]=string.Format("当前串口：{0} 波特率:{1} 状态:{2}",this.serialport.PortName,this.serialport.BaudRate,status);
+            EventCenter.GetInstance().PostNotification(EventName.Update_com_status, dic);
+            #endregion
         }
         void I_ConfigChange(N_EventCenter.Par par)
         {
@@ -142,6 +157,15 @@ namespace MyPort
                     this.serialport.Close();
                 this.btn_open.Text = "Open";                
             }
+            Dic dic1 = new Dic();
+            string status = "";
+            if (this.serialport.IsOpen)
+                status = "打开";
+            else
+                status = "关闭";
+            dic1[EventName.status] = string.Format("当前串口：{0} 波特率:{1} 状态:{2}",this.portname, this.baurate, status);
+            EventCenter.GetInstance().PostNotification(EventName.Update_com_status, dic1);
+
         }
     }
 }

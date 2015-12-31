@@ -83,11 +83,14 @@ namespace N_EventCenter
     {
         public static string UpdateUI = "str_updateUI";
         public static string ConfigChange = "ConfigChange";
+        public static string Update_com_status = "UpdateComStatus";
 
         #region~更新界面的参数
         public static string msg = "msg";
         public static string color = "color";
         public static string nextline = "nextline";
+
+        public static string status = "status";
         #endregion
     }
 }
