@@ -37,11 +37,15 @@
   <PropertyGroup>
     <ApplicationIcon>moon.ico</ApplicationIcon>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>串口调试助手_Tony_Supper.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
   <ItemGroup>
     <Reference Include="IrisSkin4">
       <HintPath>..\..\有用的DLL档\皮肤\IrisSkin4.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.VisualC" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />

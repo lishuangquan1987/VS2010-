@@ -1,0 +1,9 @@
+C:\VS2012\Project\MyDLL\MyDLL\bin\Debug\LibCom.dll
+C:\VS2012\Project\MyDLL\MyDLL\bin\Debug\LibCom.pdb
+C:\VS2012\Project\MyDLL\MyDLL\obj\Debug\MyDLL.csprojResolveAssemblyReference.cache
+C:\VS2012\Project\MyDLL\MyDLL\bin\Debug\_MyDLL.dll
+C:\VS2012\Project\MyDLL\MyDLL\bin\Debug\_MyDLL.pdb
+C:\VS2012\Project\MyDLL\反射应用\bin\Debug\MyDLL.dll
+C:\VS2012\Project\MyDLL\反射应用\bin\Debug\MyDLL.pdb
+C:\VS2012\Project\MyDLL\MyDLL\obj\Debug\MyDLL.dll
+C:\VS2012\Project\MyDLL\MyDLL\obj\Debug\MyDLL.pdb

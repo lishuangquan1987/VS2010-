@@ -10,6 +10,8 @@ using System.Runtime.InteropServices;
 using Microsoft.Win32;
 using Sunisoft.IrisSkin;
 using System.IO;
+using System.Diagnostics;
+using System.Threading;
 
 namespace Capture_LikeQQ
 {
@@ -33,9 +35,22 @@ namespace Capture_LikeQQ
             InitializeComponent();
         }
         bool isReady = true;
+        bool SystemRead()
+        {
+            foreach (Process p in System.Diagnostics.Process.GetProcesses())
+            {
+                if (p.ProcessName.Contains("Idle"))
+                    return true;
+            }
+            return false;
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            //带系统资源加载完毕才出来
+            while (!SystemRead())
+            {
+                Thread.Sleep(500);
+            }
             this.checkBox_AutoRun.Checked = true;
             //this.Hide();
             

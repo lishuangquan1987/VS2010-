@@ -1,0 +1,5 @@
+C:\VS2012\Project\控制台程序\控制台程序\bin\Debug\控制台程序.exe
+C:\VS2012\Project\控制台程序\控制台程序\bin\Debug\控制台程序.pdb
+C:\VS2012\Project\控制台程序\控制台程序\obj\Debug\控制台程序.csprojResolveAssemblyReference.cache
+C:\VS2012\Project\控制台程序\控制台程序\obj\Debug\控制台程序.exe
+C:\VS2012\Project\控制台程序\控制台程序\obj\Debug\控制台程序.pdb

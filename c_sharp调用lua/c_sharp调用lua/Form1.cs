@@ -22,9 +22,11 @@ namespace c_sharp调用lua
         {
             Lua lua = new Lua();
             lua.DoFile("test.lua");
-            LuaFunction lf = lua.GetFunction("test");
-            object[] result = lf.Call();
-            MessageBox.Show(result[0].ToString());
+            //LuaFunction lf = lua.GetFunction("test");
+            //object[] result = lf.Call();
+            //MessageBox.Show(result[0].ToString());
+           object[] result= lua.DoString("return test()");
+           MessageBox.Show(result[0].ToString());
         }
     }
 }

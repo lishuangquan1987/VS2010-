@@ -7,3 +7,4 @@ C:\VS2012\Project\串口调试助手_Tony\Register\bin\Debug\Register.dll
 C:\VS2012\Project\串口调试助手_Tony\Register\bin\Debug\Register.pdb
 C:\VS2012\Project\串口调试助手_Tony\Register\obj\Debug\Register.dll
 C:\VS2012\Project\串口调试助手_Tony\Register\obj\Debug\Register.pdb
+C:\VS2012\Project\串口调试助手_Tony\Register\obj\Debug\Register.csprojResolveAssemblyReference.cache

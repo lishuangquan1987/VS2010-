@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForArgsTest", "ForArgsTest\ForArgsTest.csproj", "{EF048273-279E-4409-AA1B-8ADF6350B03D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "调用控制台程序", "调用控制台程序\调用控制台程序.csproj", "{8EDEC6FE-4253-4385-8296-417668873895}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForArgsTest1", "ForArgsTest1\ForArgsTest1.csproj", "{AF1EBC5B-7164-4A1F-8E7D-21F816EAA394}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF048273-279E-4409-AA1B-8ADF6350B03D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF048273-279E-4409-AA1B-8ADF6350B03D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF048273-279E-4409-AA1B-8ADF6350B03D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF048273-279E-4409-AA1B-8ADF6350B03D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EDEC6FE-4253-4385-8296-417668873895}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EDEC6FE-4253-4385-8296-417668873895}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EDEC6FE-4253-4385-8296-417668873895}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EDEC6FE-4253-4385-8296-417668873895}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF1EBC5B-7164-4A1F-8E7D-21F816EAA394}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF1EBC5B-7164-4A1F-8E7D-21F816EAA394}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF1EBC5B-7164-4A1F-8E7D-21F816EAA394}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF1EBC5B-7164-4A1F-8E7D-21F816EAA394}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -3,7 +3,6 @@ C:\VS2012\Project\c_sharp调用lua\c_sharp调用lua\bin\Debug\c_sharp调用lua.e
 C:\VS2012\Project\c_sharp调用lua\c_sharp调用lua\bin\Debug\c_sharp调用lua.pdb
 C:\VS2012\Project\c_sharp调用lua\c_sharp调用lua\bin\Debug\lua51.dll
 C:\VS2012\Project\c_sharp调用lua\c_sharp调用lua\bin\Debug\LuaInterface.dll
-C:\VS2012\Project\c_sharp调用lua\c_sharp调用lua\obj\Debug\c_sharp调用lua.csprojResolveAssemblyReference.cache
 C:\VS2012\Project\c_sharp调用lua\c_sharp调用lua\obj\Debug\c_sharp调用lua.Form1.resources
 C:\VS2012\Project\c_sharp调用lua\c_sharp调用lua\obj\Debug\c_sharp调用lua.Properties.Resources.resources
 C:\VS2012\Project\c_sharp调用lua\c_sharp调用lua\obj\Debug\c_sharp调用lua.csproj.GenerateResource.Cache

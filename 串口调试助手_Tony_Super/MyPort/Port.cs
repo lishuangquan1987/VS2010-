@@ -24,6 +24,10 @@ namespace MyPort
         {
             get { return serialport.IsOpen; }
         }
+        public void Close()
+        {
+            this.serialport.Close();
+        }
         public Port(string portname)
         {
             

@@ -1,0 +1,5 @@
+C:\VS2012\Project\字符串处理\字符串处理\bin\Debug\字符串处理.exe
+C:\VS2012\Project\字符串处理\字符串处理\bin\Debug\字符串处理.pdb
+C:\VS2012\Project\字符串处理\字符串处理\obj\Debug\字符串处理.csprojResolveAssemblyReference.cache
+C:\VS2012\Project\字符串处理\字符串处理\obj\Debug\字符串处理.exe
+C:\VS2012\Project\字符串处理\字符串处理\obj\Debug\字符串处理.pdb

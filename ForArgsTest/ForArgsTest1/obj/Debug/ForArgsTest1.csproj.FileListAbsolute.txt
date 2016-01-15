@@ -1,0 +1,4 @@
+C:\VS2012\Project\ForArgsTest\ForArgsTest1\bin\Debug\ForArgsTest1.exe
+C:\VS2012\Project\ForArgsTest\ForArgsTest1\bin\Debug\ForArgsTest1.pdb
+C:\VS2012\Project\ForArgsTest\ForArgsTest1\obj\Debug\ForArgsTest1.exe
+C:\VS2012\Project\ForArgsTest\ForArgsTest1\obj\Debug\ForArgsTest1.pdb

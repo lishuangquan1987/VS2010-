@@ -1,0 +1,1 @@
+.\ForArgsTest.exe "1000" >> ".\log.txt"

@@ -1,0 +1,8 @@
+C:\VS2012\Project\ForArgsTest\调用控制台程序\bin\Debug\调用控制台程序.exe
+C:\VS2012\Project\ForArgsTest\调用控制台程序\bin\Debug\调用控制台程序.pdb
+C:\VS2012\Project\ForArgsTest\调用控制台程序\obj\Debug\调用控制台程序.csprojResolveAssemblyReference.cache
+C:\VS2012\Project\ForArgsTest\调用控制台程序\obj\Debug\调用控制台程序.Form1.resources
+C:\VS2012\Project\ForArgsTest\调用控制台程序\obj\Debug\调用控制台程序.Properties.Resources.resources
+C:\VS2012\Project\ForArgsTest\调用控制台程序\obj\Debug\调用控制台程序.csproj.GenerateResource.Cache
+C:\VS2012\Project\ForArgsTest\调用控制台程序\obj\Debug\调用控制台程序.exe
+C:\VS2012\Project\ForArgsTest\调用控制台程序\obj\Debug\调用控制台程序.pdb

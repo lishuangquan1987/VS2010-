@@ -1,0 +1,8 @@
+C:\VS2012\Project\事件的装载与卸载\事件的装载与卸载\bin\Debug\事件的装载与卸载.exe
+C:\VS2012\Project\事件的装载与卸载\事件的装载与卸载\bin\Debug\事件的装载与卸载.pdb
+C:\VS2012\Project\事件的装载与卸载\事件的装载与卸载\obj\Debug\事件的装载与卸载.csprojResolveAssemblyReference.cache
+C:\VS2012\Project\事件的装载与卸载\事件的装载与卸载\obj\Debug\事件的装载与卸载.Form1.resources
+C:\VS2012\Project\事件的装载与卸载\事件的装载与卸载\obj\Debug\事件的装载与卸载.Properties.Resources.resources
+C:\VS2012\Project\事件的装载与卸载\事件的装载与卸载\obj\Debug\事件的装载与卸载.csproj.GenerateResource.Cache
+C:\VS2012\Project\事件的装载与卸载\事件的装载与卸载\obj\Debug\事件的装载与卸载.exe
+C:\VS2012\Project\事件的装载与卸载\事件的装载与卸载\obj\Debug\事件的装载与卸载.pdb

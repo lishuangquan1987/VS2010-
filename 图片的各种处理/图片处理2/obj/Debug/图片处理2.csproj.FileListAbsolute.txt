@@ -1,0 +1,10 @@
+C:\VS2012\Project\图片的各种处理\图片处理2\bin\Debug\图片处理2.exe
+C:\VS2012\Project\图片的各种处理\图片处理2\bin\Debug\图片处理2.pdb
+C:\VS2012\Project\图片的各种处理\图片处理2\bin\Debug\图片的各种处理.exe
+C:\VS2012\Project\图片的各种处理\图片处理2\bin\Debug\图片的各种处理.pdb
+C:\VS2012\Project\图片的各种处理\图片处理2\obj\Debug\图片处理2.csprojResolveAssemblyReference.cache
+C:\VS2012\Project\图片的各种处理\图片处理2\obj\Debug\图片处理2.Form1.resources
+C:\VS2012\Project\图片的各种处理\图片处理2\obj\Debug\图片处理2.Properties.Resources.resources
+C:\VS2012\Project\图片的各种处理\图片处理2\obj\Debug\图片处理2.csproj.GenerateResource.Cache
+C:\VS2012\Project\图片的各种处理\图片处理2\obj\Debug\图片处理2.exe
+C:\VS2012\Project\图片的各种处理\图片处理2\obj\Debug\图片处理2.pdb

@@ -38,12 +38,16 @@ namespace 串口调试助手_Tony_Supper
         }
         void ReScan()
         {
-            ports.Clear();
-            foreach (Control item in this.midForm.panel_serialport.Controls)
+            if (ports != null)
             {
-                this.midForm.panel_serialport.Controls.Remove(item);
+                foreach (Port p in ports)
+                {
+                    if (p.Isopen)
+                        p.Close();
+                }
             }
-	
+            ports.Clear();
+            this.midForm.panel_serialport.Controls.Clear();
             string[] port_names = SerialPort.GetPortNames();
             if (port_names != null)
             {
@@ -51,14 +55,17 @@ namespace 串口调试助手_Tony_Supper
                 {
                     Port p = new Port(port_names[i]);
                     RadioButton r = new RadioButton();
-                    p.textBox_PortName.Tag = r;                   
+
+                    r.Tag = p;                  
                     r.Location = new Point(5, i * 30 + 3);
                     p.Location = new Point(20, 30 * i);
+                    r.SendToBack();
                     ports.Add(p);
                     r.CheckedChanged += r_CheckedChanged;
                     this.midForm.panel_serialport.Controls.Add(p);
                     this.midForm.panel_serialport.Controls.Add(r);
                 }
+                Application.DoEvents();
             }
         }
         void I_UpdateStatus(N_EventCenter.Par par)
@@ -72,15 +79,8 @@ namespace 串口调试助手_Tony_Supper
             RadioButton r = (RadioButton)sender;
             if (r.Checked)
             {
-
-                foreach (Port i in ports)
-                {
-                    if (i.textBox_PortName.Tag == r as object)
-                    {
-                        i.Enabled = true;
-                        currentPort = i;
-                    }
-                }
+                ((Port)r.Tag).Enabled = true;
+                currentPort = (Port)r.Tag;
                 #region~通知主界面
                 Dic dic = new Dic();
                 string status="";
@@ -95,13 +95,7 @@ namespace 串口调试助手_Tony_Supper
             }
             else
             {
-                foreach (Port i in ports)
-                {
-                    if (i.textBox_PortName.Tag == r as object)
-                    {
-                        i.Enabled = false;
-                    }
-                }
+                ((Port)r.Tag).Enabled = false;
             }
 
         }
@@ -159,7 +153,6 @@ namespace 串口调试助手_Tony_Supper
 
             this.AcceptButton = midForm.button_Send;
             ReScan();
-
             N_EventCenter.EventCenter.GetInstance().AddObserver(EventName.Update_com_status, I_UpdateStatus);
             
         }
@@ -264,6 +257,16 @@ namespace 串口调试助手_Tony_Supper
                 ConfigStr += item.Key + "#" + item.Value + "\r\n";
             }
             File.WriteAllText("config.ini", ConfigStr);
+            if (ports != null)
+            {
+                foreach (Port i in ports)
+                {
+                    if (i.Isopen)
+                        i.Close();
+                }
+            }
         }
+
+        
     }
 }

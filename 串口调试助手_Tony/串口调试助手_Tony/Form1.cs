@@ -131,7 +131,7 @@ namespace 串口调试助手_Tony
         void LoadComBox()
         {
             #region~加载combox的其他配置
-            string[] BauRate = new string[] {"2400","4800", "9600", "19200", "38400", "57600", "115200","921600" };
+            string[] BauRate = new string[] {"2400","4800", "9600", "19200", "38400", "57600", "115200","921600","1152000" };
             string[] Parity = new string[] {"NONE","ODD","EVEN","MARK","SPACE"};
             string[] DataBits = new string[] {"6","7","8" };
             string[] StopBits = new string[] {"0","1","1.5","2" };

@@ -1,0 +1,8 @@
+C:\VS2012\Project\CyPressProgrammer\CyPressProgrammer\bin\Debug\CyPressProgrammer.exe
+C:\VS2012\Project\CyPressProgrammer\CyPressProgrammer\bin\Debug\CyPressProgrammer.pdb
+C:\VS2012\Project\CyPressProgrammer\CyPressProgrammer\obj\Debug\CyPressProgrammer.Form1.resources
+C:\VS2012\Project\CyPressProgrammer\CyPressProgrammer\obj\Debug\CyPressProgrammer.Properties.Resources.resources
+C:\VS2012\Project\CyPressProgrammer\CyPressProgrammer\obj\Debug\CyPressProgrammer.csproj.GenerateResource.Cache
+C:\VS2012\Project\CyPressProgrammer\CyPressProgrammer\obj\Debug\CyPressProgrammer.exe
+C:\VS2012\Project\CyPressProgrammer\CyPressProgrammer\obj\Debug\CyPressProgrammer.pdb
+C:\VS2012\Project\CyPressProgrammer\CyPressProgrammer\obj\Debug\CyPressProgrammer.csprojResolveAssemblyReference.cache

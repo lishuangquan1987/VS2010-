@@ -1,0 +1,8 @@
+C:\VS2012\Project\图片特效切换\图片特效切换\bin\Debug\图片特效切换.exe
+C:\VS2012\Project\图片特效切换\图片特效切换\bin\Debug\图片特效切换.pdb
+C:\VS2012\Project\图片特效切换\图片特效切换\obj\Debug\图片特效切换.csprojResolveAssemblyReference.cache
+C:\VS2012\Project\图片特效切换\图片特效切换\obj\Debug\图片特效切换.Form1.resources
+C:\VS2012\Project\图片特效切换\图片特效切换\obj\Debug\图片特效切换.Properties.Resources.resources
+C:\VS2012\Project\图片特效切换\图片特效切换\obj\Debug\图片特效切换.csproj.GenerateResource.Cache
+C:\VS2012\Project\图片特效切换\图片特效切换\obj\Debug\图片特效切换.exe
+C:\VS2012\Project\图片特效切换\图片特效切换\obj\Debug\图片特效切换.pdb
