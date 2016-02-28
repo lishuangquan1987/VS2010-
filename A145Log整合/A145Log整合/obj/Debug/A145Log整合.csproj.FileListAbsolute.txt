@@ -6,3 +6,6 @@ C:\VS2012\Project\A145Log整合\A145Log整合\obj\Debug\A145Log整合.csproj.Gen
 C:\VS2012\Project\A145Log整合\A145Log整合\obj\Debug\A145Log整合.exe
 C:\VS2012\Project\A145Log整合\A145Log整合\obj\Debug\A145Log整合.pdb
 C:\VS2012\Project\A145Log整合\A145Log整合\bin\Debug\A145Log整合.exe.config
+C:\VS2012\Project\A145Log整合\A145Log整合\obj\Debug\A145Log整合.csprojResolveAssemblyReference.cache
+C:\VS2012\Project\A145Log整合\A145Log整合\bin\Debug\lua51.dll
+C:\VS2012\Project\A145Log整合\A145Log整合\bin\Debug\LuaInterface.dll

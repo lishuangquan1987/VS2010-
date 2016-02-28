@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CyPressProgrammer", "CyPressProgrammer\CyPressProgrammer.csproj", "{392B79A4-186E-47E9-8FC6-5D7C3F609C2E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CyPressProgrammer1", "CyPressProgrammer1\CyPressProgrammer1.csproj", "{721B688E-8C6F-4CC6-BF04-07411D204AC8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{392B79A4-186E-47E9-8FC6-5D7C3F609C2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{392B79A4-186E-47E9-8FC6-5D7C3F609C2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{392B79A4-186E-47E9-8FC6-5D7C3F609C2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{721B688E-8C6F-4CC6-BF04-07411D204AC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{721B688E-8C6F-4CC6-BF04-07411D204AC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{721B688E-8C6F-4CC6-BF04-07411D204AC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{721B688E-8C6F-4CC6-BF04-07411D204AC8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

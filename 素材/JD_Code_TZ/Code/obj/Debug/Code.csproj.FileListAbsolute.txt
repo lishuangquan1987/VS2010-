@@ -1,0 +1,12 @@
+d:\我的文档\visual studio 2012\Projects\JD_Code_TZ\Code\bin\Debug\Code.exe.config
+C:\SogouDownLoad\素材\JD_Code_TZ\Code\bin\Debug\Code.exe.config
+C:\VS2012\Project\素材\JD_Code_TZ\Code\bin\Debug\Code.exe.config
+C:\VS2012\Project\素材\JD_Code_TZ\Code\bin\Debug\Code.exe
+C:\VS2012\Project\素材\JD_Code_TZ\Code\bin\Debug\Code.pdb
+C:\VS2012\Project\素材\JD_Code_TZ\Code\bin\Debug\ThoughtWorks.QRCode.dll
+C:\VS2012\Project\素材\JD_Code_TZ\Code\obj\Debug\Code.csprojResolveAssemblyReference.cache
+C:\VS2012\Project\素材\JD_Code_TZ\Code\obj\Debug\Code.frmOrCode.resources
+C:\VS2012\Project\素材\JD_Code_TZ\Code\obj\Debug\Code.Properties.Resources.resources
+C:\VS2012\Project\素材\JD_Code_TZ\Code\obj\Debug\Code.csproj.GenerateResource.Cache
+C:\VS2012\Project\素材\JD_Code_TZ\Code\obj\Debug\Code.exe
+C:\VS2012\Project\素材\JD_Code_TZ\Code\obj\Debug\Code.pdb

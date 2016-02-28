@@ -1,0 +1,4 @@
+C:\VS2012\Project\TM\OutPut\bin\Debug\LibCom.dll
+C:\VS2012\Project\TM\OutPut\bin\Debug\LibCom.pdb
+C:\VS2012\Project\TM\LibCom\obj\Debug\LibCom.dll
+C:\VS2012\Project\TM\LibCom\obj\Debug\LibCom.pdb

@@ -13,6 +13,7 @@ namespace CyPressProgrammer
 {
     public partial class Form1 : Form
     {
+        //PSoCProgrammerCOM_ObjectClass ppp = new PSoCProgrammerCOM_ObjectClass();
        static PSoCProgrammerCOM_ObjectClass pp = new PSoCProgrammerCOM_ObjectClass();
        static ProgrammerOperations programLib = new ProgrammerOperations();
         string FileName = "";
@@ -129,6 +130,11 @@ namespace CyPressProgrammer
             this.RB_5V.Checked = true;
             this.RB_5PIN.Checked = true;
 
+            string[] frequents=new string[14]{"0.2MHZ","0.4MHZ","0.8MHZ","1.5MHZ","1.6MHZ","3.0MHZ","3.2MHZ","4.0MHZ","6.0MHZ","8.0MHZ","12MHZ","16MHZ","24MHZ","48MHZ"};
+            this.comboBox_frequent.Items.AddRange(frequents);
+
+            this.comboBox_frequent.SelectedIndex = 4;
+
             int portopen=0;//open
             int hr = pp.IsPortOpen(out portopen, out m_lastError);
             //if(portopen==0)
@@ -148,7 +154,24 @@ namespace CyPressProgrammer
             else
                 programLib.SetProtocol(enumInterfaces.JTAG);
             programLib.SetProtocolConnector(0);//5pin
-            programLib.SetProtocolClock(enumFrequencies.FREQ_01_6);
+            switch(this.comboBox_frequent.SelectedIndex)
+            {
+                case 0: programLib.SetProtocolClock(enumFrequencies.FREQ_00_2); break;
+                case 1: programLib.SetProtocolClock(enumFrequencies.FREQ_00_4); break;
+                case 2: programLib.SetProtocolClock(enumFrequencies.FREQ_00_8); break;
+                case 3: programLib.SetProtocolClock(enumFrequencies.FREQ_01_5); break;
+                case 4: programLib.SetProtocolClock(enumFrequencies.FREQ_01_6); break;
+                case 5: programLib.SetProtocolClock(enumFrequencies.FREQ_03_0); break;
+                case 6: programLib.SetProtocolClock(enumFrequencies.FREQ_03_2); break;
+                case 7: programLib.SetProtocolClock(enumFrequencies.FREQ_04_0); break;
+                case 8: programLib.SetProtocolClock(enumFrequencies.FREQ_06_0); break;
+                case 9: programLib.SetProtocolClock(enumFrequencies.FREQ_08_0); break;
+                case 10: programLib.SetProtocolClock(enumFrequencies.FREQ_12_0); break;
+                case 11: programLib.SetProtocolClock(enumFrequencies.FREQ_16_0); break;
+                case 12: programLib.SetProtocolClock(enumFrequencies.FREQ_24_0); break;
+                case 13: programLib.SetProtocolClock(enumFrequencies.FREQ_48_0); break;
+            
+            }
         }
         private void button_program_Click(object sender, EventArgs e)
         {

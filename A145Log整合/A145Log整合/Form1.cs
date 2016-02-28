@@ -89,7 +89,7 @@ namespace A145Log整合
         string GetTestContent(string FileName)
         {
             string[] content = File.ReadAllLines(FileName, Encoding.Default);
-            string TestContent = content[content.Length-1];
+            string TestContent = content[content.Length-2];
             return TestContent;           
         }
         public delegate void UpdateProcessBar(int value);
@@ -147,7 +147,7 @@ namespace A145Log整合
         {
             this.toolStripProgressBar1.Maximum = path.ToArray().Length;
             this.toolStripProgressBar1.Value = 0;
-            new Thread(new ThreadStart(Merge)).Start();             
+            new Thread(new ThreadStart(_Merge)).Start();             
         }
         /// <summary>
         /// c#直接合并
@@ -160,7 +160,8 @@ namespace A145Log整合
             for (int i = 0; i < path.Count; i++)
             {
                 updateProcessBar(i + 1);
-                allContent += GetTestContent(path[i]) + "\r\n";
+                string content=GetTestContent(path[i]) + "\r\n";
+                allContent += content;
             }
              File.WriteAllText(DestinationPath, allContent, Encoding.Default);
                 int endTime = System.Environment.TickCount;
@@ -168,9 +169,9 @@ namespace A145Log整合
         }
         private void panel1_DragEnter(object sender, DragEventArgs e)
         {
-            if (e.Data.GetDataPresent(DataFormats.FileDrop))
+            if (e.Data.GetDataPresent(DataFormats.Text))
             {
-                e.Effect = DragDropEffects.Copy;
+                e.Effect = DragDropEffects.Link;
             }
             else
                 e.Effect = DragDropEffects.None;
@@ -179,7 +180,7 @@ namespace A145Log整合
         private void panel1_DragDrop(object sender, DragEventArgs e)
         {
            
-            Array _paths = (Array)e.Data.GetData(DataFormats.FileDrop);
+            Array _paths = (Array)e.Data.GetData(DataFormats.Text);
             for (int i = 0; i < _paths.Length; i++)
             {
                 string str = _paths.GetValue(i).ToString();
@@ -194,7 +195,7 @@ namespace A145Log整合
 
         private void panel1_DragOver(object sender, DragEventArgs e)
         {
-            e.Effect = DragDropEffects.All;
+            e.Effect = DragDropEffects.Link;
         }
         
 

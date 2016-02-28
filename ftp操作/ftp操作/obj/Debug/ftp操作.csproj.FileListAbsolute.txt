@@ -1,0 +1,8 @@
+C:\VS2012\Project\ftp操作\ftp操作\bin\Debug\ftp操作.exe
+C:\VS2012\Project\ftp操作\ftp操作\bin\Debug\ftp操作.pdb
+C:\VS2012\Project\ftp操作\ftp操作\obj\Debug\ftp操作.csprojResolveAssemblyReference.cache
+C:\VS2012\Project\ftp操作\ftp操作\obj\Debug\ftp操作.Form1.resources
+C:\VS2012\Project\ftp操作\ftp操作\obj\Debug\ftp操作.Properties.Resources.resources
+C:\VS2012\Project\ftp操作\ftp操作\obj\Debug\ftp操作.csproj.GenerateResource.Cache
+C:\VS2012\Project\ftp操作\ftp操作\obj\Debug\ftp操作.exe
+C:\VS2012\Project\ftp操作\ftp操作\obj\Debug\ftp操作.pdb

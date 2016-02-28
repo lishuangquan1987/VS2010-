@@ -1,0 +1,8 @@
+C:\VS2012\Project\调用烧录CMD程序\调用pythonserver\obj\Debug\调用pythonserver.csprojResolveAssemblyReference.cache
+C:\VS2012\Project\调用烧录CMD程序\调用pythonserver\obj\Debug\调用pythonserver.Form1.resources
+C:\VS2012\Project\调用烧录CMD程序\调用pythonserver\obj\Debug\调用pythonserver.Properties.Resources.resources
+C:\VS2012\Project\调用烧录CMD程序\调用pythonserver\obj\Debug\调用pythonserver.csproj.GenerateResource.Cache
+C:\VS2012\Project\调用烧录CMD程序\调用pythonserver\bin\Debug\调用pythonserver.exe
+C:\VS2012\Project\调用烧录CMD程序\调用pythonserver\bin\Debug\调用pythonserver.pdb
+C:\VS2012\Project\调用烧录CMD程序\调用pythonserver\obj\Debug\调用pythonserver.exe
+C:\VS2012\Project\调用烧录CMD程序\调用pythonserver\obj\Debug\调用pythonserver.pdb

@@ -1,0 +1,8 @@
+C:\VS2012\Project\TreeView\TreeView\bin\Debug\TreeView.exe
+C:\VS2012\Project\TreeView\TreeView\bin\Debug\TreeView.pdb
+C:\VS2012\Project\TreeView\TreeView\obj\Debug\TreeView.csprojResolveAssemblyReference.cache
+C:\VS2012\Project\TreeView\TreeView\obj\Debug\TreeView.Form1.resources
+C:\VS2012\Project\TreeView\TreeView\obj\Debug\TreeView.Properties.Resources.resources
+C:\VS2012\Project\TreeView\TreeView\obj\Debug\TreeView.csproj.GenerateResource.Cache
+C:\VS2012\Project\TreeView\TreeView\obj\Debug\TreeView.exe
+C:\VS2012\Project\TreeView\TreeView\obj\Debug\TreeView.pdb

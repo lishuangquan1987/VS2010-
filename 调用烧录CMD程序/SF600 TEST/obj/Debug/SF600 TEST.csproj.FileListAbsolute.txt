@@ -1,0 +1,8 @@
+C:\VS2012\Project\调用烧录CMD程序\SF600 TEST\bin\Debug\SF600 TEST.exe
+C:\VS2012\Project\调用烧录CMD程序\SF600 TEST\bin\Debug\SF600 TEST.pdb
+C:\VS2012\Project\调用烧录CMD程序\SF600 TEST\obj\Debug\SF600 TEST.csprojResolveAssemblyReference.cache
+C:\VS2012\Project\调用烧录CMD程序\SF600 TEST\obj\Debug\SF600_TEST.Form1.resources
+C:\VS2012\Project\调用烧录CMD程序\SF600 TEST\obj\Debug\SF600_TEST.Properties.Resources.resources
+C:\VS2012\Project\调用烧录CMD程序\SF600 TEST\obj\Debug\SF600 TEST.csproj.GenerateResource.Cache
+C:\VS2012\Project\调用烧录CMD程序\SF600 TEST\obj\Debug\SF600 TEST.exe
+C:\VS2012\Project\调用烧录CMD程序\SF600 TEST\obj\Debug\SF600 TEST.pdb

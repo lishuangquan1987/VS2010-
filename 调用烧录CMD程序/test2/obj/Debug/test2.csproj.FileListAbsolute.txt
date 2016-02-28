@@ -1,0 +1,5 @@
+C:\VS2012\Project\调用烧录CMD程序\test2\bin\Debug\test2.exe
+C:\VS2012\Project\调用烧录CMD程序\test2\bin\Debug\test2.pdb
+C:\VS2012\Project\调用烧录CMD程序\test2\obj\Debug\test2.csprojResolveAssemblyReference.cache
+C:\VS2012\Project\调用烧录CMD程序\test2\obj\Debug\test2.exe
+C:\VS2012\Project\调用烧录CMD程序\test2\obj\Debug\test2.pdb

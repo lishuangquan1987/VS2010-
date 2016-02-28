@@ -1,0 +1,8 @@
+C:\VS2012\Project\获取串口名称\获取串口名称\bin\Debug\获取串口名称.exe
+C:\VS2012\Project\获取串口名称\获取串口名称\bin\Debug\获取串口名称.pdb
+C:\VS2012\Project\获取串口名称\获取串口名称\obj\Debug\获取串口名称.csprojResolveAssemblyReference.cache
+C:\VS2012\Project\获取串口名称\获取串口名称\obj\Debug\获取串口名称.Form1.resources
+C:\VS2012\Project\获取串口名称\获取串口名称\obj\Debug\获取串口名称.Properties.Resources.resources
+C:\VS2012\Project\获取串口名称\获取串口名称\obj\Debug\获取串口名称.csproj.GenerateResource.Cache
+C:\VS2012\Project\获取串口名称\获取串口名称\obj\Debug\获取串口名称.exe
+C:\VS2012\Project\获取串口名称\获取串口名称\obj\Debug\获取串口名称.pdb

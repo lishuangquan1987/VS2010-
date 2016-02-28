@@ -9,10 +9,15 @@ namespace 控制台程序
     {
         static void Main(string[] args)
         {
-            foreach (string i in args)
+            string sn = "A113FB35BQ000A6";
+            byte[] bytes = Encoding.Default.GetBytes(sn);
+            string output = "";
+            foreach (byte i in bytes)
             {
-                Console.WriteLine("this is "+i);
+                output += i.ToString() + "  ";
             }
+            Console.WriteLine(output);
+            Console.Read();
         }
     }
 }

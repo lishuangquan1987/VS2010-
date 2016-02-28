@@ -1,0 +1,5 @@
+C:\VS2012\Project\十六进制与byte的转换\十六进制与byte的转换\bin\Debug\十六进制与byte的转换.exe
+C:\VS2012\Project\十六进制与byte的转换\十六进制与byte的转换\bin\Debug\十六进制与byte的转换.pdb
+C:\VS2012\Project\十六进制与byte的转换\十六进制与byte的转换\obj\Debug\十六进制与byte的转换.csprojResolveAssemblyReference.cache
+C:\VS2012\Project\十六进制与byte的转换\十六进制与byte的转换\obj\Debug\十六进制与byte的转换.exe
+C:\VS2012\Project\十六进制与byte的转换\十六进制与byte的转换\obj\Debug\十六进制与byte的转换.pdb

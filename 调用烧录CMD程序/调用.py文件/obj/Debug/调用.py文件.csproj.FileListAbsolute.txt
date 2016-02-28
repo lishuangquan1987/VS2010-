@@ -1,0 +1,8 @@
+C:\VS2012\Project\调用烧录CMD程序\调用.py文件\bin\Debug\调用.py文件.exe
+C:\VS2012\Project\调用烧录CMD程序\调用.py文件\bin\Debug\调用.py文件.pdb
+C:\VS2012\Project\调用烧录CMD程序\调用.py文件\obj\Debug\调用.py文件.csprojResolveAssemblyReference.cache
+C:\VS2012\Project\调用烧录CMD程序\调用.py文件\obj\Debug\调用.py文件.Form1.resources
+C:\VS2012\Project\调用烧录CMD程序\调用.py文件\obj\Debug\调用.py文件.Properties.Resources.resources
+C:\VS2012\Project\调用烧录CMD程序\调用.py文件\obj\Debug\调用.py文件.csproj.GenerateResource.Cache
+C:\VS2012\Project\调用烧录CMD程序\调用.py文件\obj\Debug\调用.py文件.exe
+C:\VS2012\Project\调用烧录CMD程序\调用.py文件\obj\Debug\调用.py文件.pdb

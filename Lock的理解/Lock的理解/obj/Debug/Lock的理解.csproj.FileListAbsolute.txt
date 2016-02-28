@@ -1,0 +1,8 @@
+C:\VS2012\Project\Lock的理解\Lock的理解\bin\Debug\Lock的理解.exe
+C:\VS2012\Project\Lock的理解\Lock的理解\bin\Debug\Lock的理解.pdb
+C:\VS2012\Project\Lock的理解\Lock的理解\obj\Debug\Lock的理解.csprojResolveAssemblyReference.cache
+C:\VS2012\Project\Lock的理解\Lock的理解\obj\Debug\Lock的理解.Form1.resources
+C:\VS2012\Project\Lock的理解\Lock的理解\obj\Debug\Lock的理解.Properties.Resources.resources
+C:\VS2012\Project\Lock的理解\Lock的理解\obj\Debug\Lock的理解.csproj.GenerateResource.Cache
+C:\VS2012\Project\Lock的理解\Lock的理解\obj\Debug\Lock的理解.exe
+C:\VS2012\Project\Lock的理解\Lock的理解\obj\Debug\Lock的理解.pdb

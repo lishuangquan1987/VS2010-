@@ -13,9 +13,15 @@ namespace TM
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            SpalishForm sf = new SpalishForm();
+            sf.Show();
+            sf.AppLoad();
+            Application.DoEvents();
+            sf.Close();
+            Application.Run();
+            //Application.EnableVisualStyles();
+            //Application.SetCompatibleTextRenderingDefault(false);
+            //Application.Run(new SpalishForm());
         }
     }
 }

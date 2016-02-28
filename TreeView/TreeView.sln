@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeView", "TreeView\TreeView.csproj", "{69046956-36B6-4047-8701-6B69E2DD1806}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "利用tree显示电脑所有的文件(资源管理器)", "利用tree显示电脑所有的文件(资源管理器)\利用tree显示电脑所有的文件(资源管理器).csproj", "{0494B8F2-AC77-42C9-9E03-96D1561B6847}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{69046956-36B6-4047-8701-6B69E2DD1806}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69046956-36B6-4047-8701-6B69E2DD1806}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69046956-36B6-4047-8701-6B69E2DD1806}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69046956-36B6-4047-8701-6B69E2DD1806}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0494B8F2-AC77-42C9-9E03-96D1561B6847}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0494B8F2-AC77-42C9-9E03-96D1561B6847}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0494B8F2-AC77-42C9-9E03-96D1561B6847}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0494B8F2-AC77-42C9-9E03-96D1561B6847}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

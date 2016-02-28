@@ -46,7 +46,7 @@
     <Reference Include="System.Xml" />
     <Reference Include="ThoughtWorks.QRCode, Version=1.0.5636.33897, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>QRCode.DLL\ThoughtWorks.QRCode.dll</HintPath>
+      <HintPath>bin\Debug\111\ThoughtWorks.QRCode.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

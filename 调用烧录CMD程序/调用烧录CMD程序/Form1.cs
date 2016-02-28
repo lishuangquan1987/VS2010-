@@ -17,22 +17,21 @@ namespace 调用烧录CMD程序
         {
             InitializeComponent();
         }
-        string fileName = @"C:\Program Files (x86)\DediProg\SF100\dpcmd.exe";
-        Process p = null;
+        string fileName = @"C:\VS2012\Project\调用烧录CMD程序\test\bin\Debug\test.exe";
+        Process p = new Process();
+        string output = "";
         private void button1_Click(object sender, EventArgs e)
         {
-            p= new Process();
-            p.StartInfo.FileName = fileName;
-            p.StartInfo.Arguments = " "+"--help";
-            p.StartInfo.UseShellExecute = false;
-            p.StartInfo.RedirectStandardOutput = true;
-            p.StartInfo.RedirectStandardInput = true;
-            p.StartInfo.CreateNoWindow = true;
-            p.StartInfo.RedirectStandardError = true;
+           
+           
             //p.OutputDataReceived += p_OutputDataReceived;
-            p.Start();
-            this.richTextBox1.Text = p.StandardOutput.ReadToEnd();
-            p.WaitForExit();
+            p.StandardInput.WriteLine("1");
+            System.Threading.Thread.Sleep(2000);
+            this.richTextBox1.AppendText(output);
+            output = "";
+            
+            
+
             
         }
 
@@ -41,6 +40,21 @@ namespace 调用烧录CMD程序
             //if(this.InvokeRequired)
             //    this.Invoke()
             //this.richTextBox1.Text += p.StandardOutput.ReadLine();
+            output += e.Data;
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            p.StartInfo.FileName = fileName;
+            p.StartInfo.UseShellExecute = false;
+            p.StartInfo.RedirectStandardOutput = true;
+            p.StartInfo.RedirectStandardInput = true;
+            p.StartInfo.CreateNoWindow = true;
+            p.StartInfo.RedirectStandardError = true;
+            p.OutputDataReceived += p_OutputDataReceived;
+            p.Start();
+            p.BeginOutputReadLine();
         }
     }
 }

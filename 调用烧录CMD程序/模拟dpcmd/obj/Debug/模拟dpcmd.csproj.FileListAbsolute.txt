@@ -1,0 +1,5 @@
+C:\VS2012\Project\调用烧录CMD程序\模拟dpcmd\bin\Debug\模拟dpcmd.exe
+C:\VS2012\Project\调用烧录CMD程序\模拟dpcmd\bin\Debug\模拟dpcmd.pdb
+C:\VS2012\Project\调用烧录CMD程序\模拟dpcmd\obj\Debug\模拟dpcmd.csprojResolveAssemblyReference.cache
+C:\VS2012\Project\调用烧录CMD程序\模拟dpcmd\obj\Debug\模拟dpcmd.exe
+C:\VS2012\Project\调用烧录CMD程序\模拟dpcmd\obj\Debug\模拟dpcmd.pdb

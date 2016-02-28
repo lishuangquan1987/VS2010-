@@ -1,0 +1,8 @@
+C:\VS2012\Project\调用烧录CMD程序\dpcmd.bat\bin\Debug\dpcmd.bat.exe
+C:\VS2012\Project\调用烧录CMD程序\dpcmd.bat\bin\Debug\dpcmd.bat.pdb
+C:\VS2012\Project\调用烧录CMD程序\dpcmd.bat\obj\Debug\dpcmd.bat.csprojResolveAssemblyReference.cache
+C:\VS2012\Project\调用烧录CMD程序\dpcmd.bat\obj\Debug\dpcmd.bat.Form1.resources
+C:\VS2012\Project\调用烧录CMD程序\dpcmd.bat\obj\Debug\dpcmd.bat.Properties.Resources.resources
+C:\VS2012\Project\调用烧录CMD程序\dpcmd.bat\obj\Debug\dpcmd.bat.csproj.GenerateResource.Cache
+C:\VS2012\Project\调用烧录CMD程序\dpcmd.bat\obj\Debug\dpcmd.bat.exe
+C:\VS2012\Project\调用烧录CMD程序\dpcmd.bat\obj\Debug\dpcmd.bat.pdb

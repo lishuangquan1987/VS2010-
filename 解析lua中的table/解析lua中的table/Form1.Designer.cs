@@ -44,14 +44,15 @@
             WeifenLuo.WinFormsUI.Docking.TabGradient tabGradient6 = new WeifenLuo.WinFormsUI.Docking.TabGradient();
             WeifenLuo.WinFormsUI.Docking.TabGradient tabGradient7 = new WeifenLuo.WinFormsUI.Docking.TabGradient();
             this.dockPanel1 = new WeifenLuo.WinFormsUI.Docking.DockPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.SuspendLayout();
             // 
             // dockPanel1
             // 
             this.dockPanel1.ActiveAutoHideContent = null;
-            this.dockPanel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.dockPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dockPanel1.DockBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.dockPanel1.DocumentStyle = WeifenLuo.WinFormsUI.Docking.DocumentStyle.DockingWindow;
             this.dockPanel1.Location = new System.Drawing.Point(0, 0);
@@ -105,19 +106,11 @@
             this.dockPanel1.Skin = dockPanelSkin1;
             this.dockPanel1.TabIndex = 1;
             // 
-            // panel1
-            // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(338, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(116, 316);
-            this.panel1.TabIndex = 3;
-            // 
             // statusStrip1
             // 
-            this.statusStrip1.Location = new System.Drawing.Point(223, 294);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 294);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(115, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(454, 22);
             this.statusStrip1.TabIndex = 4;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -127,7 +120,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(454, 316);
             this.Controls.Add(this.statusStrip1);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.dockPanel1);
             this.IsMdiContainer = true;
             this.KeyPreview = true;
@@ -145,7 +137,6 @@
         #endregion
 
         private WeifenLuo.WinFormsUI.Docking.DockPanel dockPanel1;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.StatusStrip statusStrip1;
 
     }

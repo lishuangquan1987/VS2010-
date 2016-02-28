@@ -1,0 +1,7 @@
+C:\VS2012\Project\调用烧录CMD程序\console命令\bin\Debug\console命令.exe
+C:\VS2012\Project\调用烧录CMD程序\console命令\bin\Debug\console命令.pdb
+C:\VS2012\Project\调用烧录CMD程序\console命令\obj\Debug\console命令.csprojResolveAssemblyReference.cache
+C:\VS2012\Project\调用烧录CMD程序\console命令\obj\Debug\console命令.Properties.Resources.resources
+C:\VS2012\Project\调用烧录CMD程序\console命令\obj\Debug\console命令.csproj.GenerateResource.Cache
+C:\VS2012\Project\调用烧录CMD程序\console命令\obj\Debug\console命令.exe
+C:\VS2012\Project\调用烧录CMD程序\console命令\obj\Debug\console命令.pdb

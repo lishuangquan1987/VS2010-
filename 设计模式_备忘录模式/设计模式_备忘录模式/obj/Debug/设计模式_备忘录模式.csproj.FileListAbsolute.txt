@@ -1,0 +1,5 @@
+C:\VS2012\Project\设计模式_备忘录模式\设计模式_备忘录模式\bin\Debug\设计模式_备忘录模式.exe
+C:\VS2012\Project\设计模式_备忘录模式\设计模式_备忘录模式\bin\Debug\设计模式_备忘录模式.pdb
+C:\VS2012\Project\设计模式_备忘录模式\设计模式_备忘录模式\obj\Debug\设计模式_备忘录模式.csprojResolveAssemblyReference.cache
+C:\VS2012\Project\设计模式_备忘录模式\设计模式_备忘录模式\obj\Debug\设计模式_备忘录模式.exe
+C:\VS2012\Project\设计模式_备忘录模式\设计模式_备忘录模式\obj\Debug\设计模式_备忘录模式.pdb

@@ -49,16 +49,19 @@
             this.button1 = new System.Windows.Forms.Button();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.comboBox_frequent = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.statusStrip1.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // comboBox_ports
             // 
             this.comboBox_ports.FormattingEnabled = true;
-            this.comboBox_ports.Location = new System.Drawing.Point(92, 39);
+            this.comboBox_ports.Location = new System.Drawing.Point(60, 39);
             this.comboBox_ports.Name = "comboBox_ports";
             this.comboBox_ports.Size = new System.Drawing.Size(145, 20);
             this.comboBox_ports.TabIndex = 0;
@@ -66,7 +69,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(51, 42);
+            this.label1.Location = new System.Drawing.Point(19, 42);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 12);
             this.label1.TabIndex = 1;
@@ -74,7 +77,7 @@
             // 
             // btn_rescan
             // 
-            this.btn_rescan.Location = new System.Drawing.Point(326, 36);
+            this.btn_rescan.Location = new System.Drawing.Point(294, 36);
             this.btn_rescan.Name = "btn_rescan";
             this.btn_rescan.Size = new System.Drawing.Size(75, 23);
             this.btn_rescan.TabIndex = 2;
@@ -146,7 +149,7 @@
             // 
             this.groupBox1.Controls.Add(this.SWD);
             this.groupBox1.Controls.Add(this.JTAG);
-            this.groupBox1.Location = new System.Drawing.Point(53, 65);
+            this.groupBox1.Location = new System.Drawing.Point(21, 65);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(117, 41);
             this.groupBox1.TabIndex = 10;
@@ -157,7 +160,7 @@
             // 
             this.groupBox2.Controls.Add(this.RB_3V3);
             this.groupBox2.Controls.Add(this.RB_5V);
-            this.groupBox2.Location = new System.Drawing.Point(190, 68);
+            this.groupBox2.Location = new System.Drawing.Point(158, 68);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(130, 38);
             this.groupBox2.TabIndex = 11;
@@ -168,7 +171,7 @@
             // 
             this.groupBox3.Controls.Add(this.RB_10PIN);
             this.groupBox3.Controls.Add(this.RB_5PIN);
-            this.groupBox3.Location = new System.Drawing.Point(53, 113);
+            this.groupBox3.Location = new System.Drawing.Point(21, 113);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(117, 43);
             this.groupBox3.TabIndex = 12;
@@ -199,7 +202,7 @@
             // 
             // btn_connect
             // 
-            this.btn_connect.Location = new System.Drawing.Point(245, 37);
+            this.btn_connect.Location = new System.Drawing.Point(213, 37);
             this.btn_connect.Name = "btn_connect";
             this.btn_connect.Size = new System.Drawing.Size(75, 23);
             this.btn_connect.TabIndex = 13;
@@ -219,7 +222,7 @@
             // 
             // button_program
             // 
-            this.button_program.Location = new System.Drawing.Point(326, 78);
+            this.button_program.Location = new System.Drawing.Point(407, 78);
             this.button_program.Name = "button_program";
             this.button_program.Size = new System.Drawing.Size(75, 23);
             this.button_program.TabIndex = 15;
@@ -259,11 +262,30 @@
             this.toolStripProgressBar1.Name = "toolStripProgressBar1";
             this.toolStripProgressBar1.Size = new System.Drawing.Size(100, 16);
             // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.comboBox_frequent);
+            this.groupBox4.Location = new System.Drawing.Point(174, 113);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(142, 43);
+            this.groupBox4.TabIndex = 19;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Frequent";
+            // 
+            // comboBox_frequent
+            // 
+            this.comboBox_frequent.FormattingEnabled = true;
+            this.comboBox_frequent.Location = new System.Drawing.Point(6, 17);
+            this.comboBox_frequent.Name = "comboBox_frequent";
+            this.comboBox_frequent.Size = new System.Drawing.Size(121, 20);
+            this.comboBox_frequent.TabIndex = 0;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(527, 356);
+            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
@@ -290,6 +312,7 @@
             this.groupBox3.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -318,6 +341,8 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripProgressBar toolStripProgressBar1;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.ComboBox comboBox_frequent;
     }
 }
 

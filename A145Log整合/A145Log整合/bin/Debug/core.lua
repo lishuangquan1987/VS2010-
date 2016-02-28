@@ -56,7 +56,7 @@ function GetTestInfo(msg)--获取测试的数据
   local _result={};
   local TestContent;
   if(result) then
-    TestContent=result[#result-1];
+    TestContent=result[#result-2];
 	 --msgbox("TestContent:"..TestContent);
 	 --msgbox(tostring(#result));
    _result=split(TestContent,",");

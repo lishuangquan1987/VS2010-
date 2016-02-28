@@ -15,6 +15,7 @@ namespace 事件的装载与卸载
         {
             InitializeComponent();
         }
+        
         public delegate void TestHandler();
         public event TestHandler testHandler;
         private void button1_Click(object sender, EventArgs e)

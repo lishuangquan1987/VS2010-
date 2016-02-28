@@ -1,0 +1,10 @@
+C:\VS2012\Project\TM\TM\bin\Debug\TM.exe.config
+C:\VS2012\Project\TM\OutPut\bin\Debug\TM.exe.config
+C:\VS2012\Project\TM\OutPut\bin\Debug\TM.exe
+C:\VS2012\Project\TM\OutPut\bin\Debug\TM.pdb
+C:\VS2012\Project\TM\TM\obj\x86\Debug\TM.Properties.Resources.resources
+C:\VS2012\Project\TM\TM\obj\x86\Debug\TM.SpalishForm.resources
+C:\VS2012\Project\TM\TM\obj\x86\Debug\TM.csproj.GenerateResource.Cache
+C:\VS2012\Project\TM\TM\obj\x86\Debug\TM.exe
+C:\VS2012\Project\TM\TM\obj\x86\Debug\TM.pdb
+C:\VS2012\Project\TM\OutPut\bin\Debug\TM.txt

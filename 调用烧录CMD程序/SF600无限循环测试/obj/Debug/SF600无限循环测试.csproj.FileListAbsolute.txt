@@ -1,0 +1,8 @@
+C:\VS2012\Project\调用烧录CMD程序\SF600无限循环测试\obj\Debug\SF600无限循环测试.csprojResolveAssemblyReference.cache
+C:\VS2012\Project\调用烧录CMD程序\SF600无限循环测试\obj\Debug\SF600无限循环测试.Form1.resources
+C:\VS2012\Project\调用烧录CMD程序\SF600无限循环测试\obj\Debug\SF600无限循环测试.Properties.Resources.resources
+C:\VS2012\Project\调用烧录CMD程序\SF600无限循环测试\obj\Debug\SF600无限循环测试.csproj.GenerateResource.Cache
+C:\VS2012\Project\调用烧录CMD程序\SF600无限循环测试\bin\Debug\SF600无限循环测试.exe
+C:\VS2012\Project\调用烧录CMD程序\SF600无限循环测试\bin\Debug\SF600无限循环测试.pdb
+C:\VS2012\Project\调用烧录CMD程序\SF600无限循环测试\obj\Debug\SF600无限循环测试.exe
+C:\VS2012\Project\调用烧录CMD程序\SF600无限循环测试\obj\Debug\SF600无限循环测试.pdb

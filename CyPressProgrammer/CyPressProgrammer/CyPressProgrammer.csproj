@@ -32,12 +32,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="PP_COM_Wrapper, Version=3.23.0.2140, Culture=neutral, PublicKeyToken=f1ff4c79bfa9df96, processorArchitecture=MSIL">
+    <Reference Include="PP_COM_Wrapper, Version=3.24.0.2218, Culture=neutral, PublicKeyToken=f1ff4c79bfa9df96, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>False</EmbedInteropTypes>
       <HintPath>bin\Debug\PP_COM_Wrapper.dll</HintPath>
     </Reference>
-    <Reference Include="ProgrammerLibrary, Version=3.23.0.2140, Culture=neutral, PublicKeyToken=26be2ebb6afe79ba, processorArchitecture=MSIL">
+    <Reference Include="ProgrammerLibrary, Version=3.24.0.2218, Culture=neutral, PublicKeyToken=26be2ebb6afe79ba, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\ProgrammerLibrary.dll</HintPath>
     </Reference>
@@ -45,7 +45,6 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />

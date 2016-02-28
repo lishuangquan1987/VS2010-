@@ -39,7 +39,7 @@ namespace 二维码解析
             QRCodeEncoder qr = new QRCodeEncoder();
             qr.QRCodeEncodeMode = QRCodeEncoder.ENCODE_MODE.BYTE;
             qr.QRCodeScale = 4;
-            qr.QRCodeVersion = 0; //为0可以防止字符串太长时编码错误
+            qr.QRCodeVersion = 7; //为0可以防止字符串太长时编码错误
             qr.QRCodeErrorCorrect = QRCodeEncoder.ERROR_CORRECTION.H;
             Image bmp = qr.Encode(textBox1.Text.Trim());
             this.pictureBox1.Image = bmp;
@@ -91,7 +91,27 @@ namespace 二维码解析
         private void button4_Click(object sender, EventArgs e)
         {
             QRCodeDecoder qrd = new QRCodeDecoder();
-            label1.Text = qrd.decode(new QRCodeBitmapImage(new Bitmap(this.pictureBox1.Image)));
+            sbyte[] resultData =qrd.decodeBytes(new QRCodeBitmapImage(new Bitmap(this.pictureBox1.Image)));
+            //label1.Text = qrd.decode(new QRCodeBitmapImage(new Bitmap(this.pictureBox1.Image)),Encoding.Unicode);
+            byte[] myResultData = SbyteToByte(resultData);
+            if (IsUnicode(myResultData))
+                label1.Text = Encoding.Unicode.GetString(myResultData);
+            else
+                label1.Text = Encoding.ASCII.GetString(myResultData);
+
+
+        }
+        byte[] SbyteToByte(sbyte[] _sbyte)
+        {
+            byte[] myByte = new byte[_sbyte.Length];
+            for (int i = 0; i < _sbyte.Length; i++)
+            {
+                if (_sbyte[i] > 0)
+                    myByte[i] = (byte)_sbyte[i];
+                else
+                    myByte[i] = (byte)(_sbyte[i] + 256);
+            }
+            return myByte;
         }
         public static bool IsUnicode(byte[] byteData)//unicode（中文）与ASCII码的区别
         {
@@ -105,7 +125,7 @@ namespace 二维码解析
             bool isUnicode = false;
             foreach (byte value in byteData)
             {
-                if (value > 128)
+                if (value > 127)
                 {
                     isUnicode = true;
                     break;

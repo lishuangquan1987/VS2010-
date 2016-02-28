@@ -18,8 +18,7 @@ namespace 解析lua中的table
             InitializeComponent();
         }
 
-        ListView listView1 = new ListView();
-        DockPanel dockPanel = new DockPanel();
+        ListView[] listViews = new ListView[6];
         Sunisoft.IrisSkin.SkinEngine skin;
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -30,48 +29,62 @@ namespace 解析lua中的table
             //dockPanel.Dock = DockStyle.Fill;
             //dockPanel.Size = new Size(this.Width - 150, this.Height);
             this.dockPanel1.Size = new Size(this.Width - 140, this.Height);
-            this.panel1.Size = new Size(150, this.Height);
+            //this.panel1.Size = new Size(150, this.Height);
             
 
-            DockContent f = new DockContent();
-            f.Text = "UUT";
+            DockContent[] dockpanels = new DockContent[6];
+            for(int i=0;i<6;i++)
+            {
+                dockpanels[i]=new DockContent();
+                listViews[i] = new ListView();
+            }
+            int j = 0;
+            foreach (DockContent f in dockpanels)
+            {
+                f.Text = "UUT" + j.ToString();
+                
 
-            f.CloseButtonVisible = false;
-            f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            
-            //f.IsMdiContainer = true;
+                f.CloseButtonVisible = false;
+                f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 
-            
-            f.Size = dockPanel1.Size;
-            f.Show(dockPanel1);
+                //f.IsMdiContainer = true;
 
-            f.Controls.Add(listView1);
-            listView1.Dock = DockStyle.Fill;
-            listView1.View = View.Details;
-            listView1.GridLines = true;
-            listView1.FullRowSelect = true;
-            //listView1.Size = dockPanel.Size;
-            
+
+                f.Size = dockPanel1.Size;
+                f.Show(dockPanel1);
+
+                ListView listView1 = listViews[j];
+
+                f.Controls.Add(listView1);
+
+                listView1.Dock = DockStyle.Fill;
+                listView1.View = View.Details;
+                listView1.GridLines = true;
+                listView1.FullRowSelect = true;
+                //listView1.Size = dockPanel.Size;
+
             #endregion
-            lua = new Lua();
-            lua.DoFile("test.lua");
-            ShowItem(lua);
-            ColumnHeader[] columheaders = new ColumnHeader[11];
-            string[] headnames=new string[]{"Index","Item_name","lower","upper","UUT1","UUT2","UUT3","UUT4","UUT5","UUT6","Remark"};
-            for (int i = 0; i < columheaders.Length; i++)
-            {
-                columheaders[i] = new ColumnHeader();
-                columheaders[i].Text = headnames[i];
+                lua = new Lua();
+                lua.DoFile("test.lua");
+                ShowItem(lua);
+                ColumnHeader[] columheaders = new ColumnHeader[11];
+                string[] headnames = new string[] { "Index", "Item_name", "lower", "upper", "UUT1", "UUT2", "UUT3", "UUT4", "UUT5", "UUT6", "Remark" };
+                for (int i = 0; i < columheaders.Length; i++)
+                {
+                    columheaders[i] = new ColumnHeader();
+                    columheaders[i].Text = headnames[i];
+                }
+                listView1.Columns.AddRange(columheaders);
+                ListViewItem[] listviewitems = new ListViewItem[names.Count];
+                for (int i = 0; i < listviewitems.Length; i++)
+                {
+                    listviewitems[i] = new ListViewItem();
+                    listviewitems[i].Text = i.ToString("d2");
+                    listviewitems[i].SubItems.AddRange(new string[] { names.ToArray()[i], lower.ToArray()[i], upper.ToArray()[i] });
+                }
+                listView1.Items.AddRange(listviewitems);
+                j++;
             }
-            this.listView1.Columns.AddRange(columheaders);
-            ListViewItem[] listviewitems = new ListViewItem[names.Count];
-            for (int i = 0; i < listviewitems.Length; i++)
-            {
-                listviewitems[i] = new ListViewItem();
-                listviewitems[i].Text =i.ToString("d2");
-                listviewitems[i].SubItems.AddRange(new string[] { names.ToArray()[i], lower.ToArray()[i], upper.ToArray()[i] });
-            }
-            this.listView1.Items.AddRange(listviewitems);
            
         }
         Lua lua;
@@ -112,7 +125,7 @@ namespace 解析lua中的table
         private void Form1_SizeChanged(object sender, EventArgs e)
         {
             this.dockPanel1.Size = new Size(this.Width - 140, this.Height);
-            this.panel1.Size = new Size(150, this.Height);
+            //this.panel1.Size = new Size(150, this.Height);
 
         }
 

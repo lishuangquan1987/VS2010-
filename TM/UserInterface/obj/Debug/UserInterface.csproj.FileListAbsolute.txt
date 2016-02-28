@@ -1,0 +1,6 @@
+C:\VS2012\Project\TM\OutPut\bin\Debug\UserInterface.exe
+C:\VS2012\Project\TM\OutPut\bin\Debug\UserInterface.pdb
+C:\VS2012\Project\TM\UserInterface\obj\Debug\UserInterface.Properties.Resources.resources
+C:\VS2012\Project\TM\UserInterface\obj\Debug\UserInterface.csproj.GenerateResource.Cache
+C:\VS2012\Project\TM\UserInterface\obj\Debug\UserInterface.exe
+C:\VS2012\Project\TM\UserInterface\obj\Debug\UserInterface.pdb
